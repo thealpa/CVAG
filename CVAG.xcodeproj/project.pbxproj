@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D53804527D92D60005860CE /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D53804427D92D60005860CE /* DrawerView.swift */; };
+		3D53804727D92D67005860CE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D53804627D92D67005860CE /* MapView.swift */; };
 		3D635F4827D81789008906D3 /* CVAGApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D635F4727D81789008906D3 /* CVAGApp.swift */; };
 		3D635F4A27D81789008906D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D635F4927D81789008906D3 /* ContentView.swift */; };
 		3D635F4C27D8178A008906D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D635F4B27D8178A008906D3 /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D53804427D92D60005860CE /* DrawerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerView.swift; sourceTree = "<group>"; };
+		3D53804627D92D67005860CE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		3D635F4427D81789008906D3 /* CVAG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVAG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D635F4727D81789008906D3 /* CVAGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVAGApp.swift; sourceTree = "<group>"; };
 		3D635F4927D81789008906D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +38,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D53804127D92CEF005860CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D53804427D92D60005860CE /* DrawerView.swift */,
+				3D53804627D92D67005860CE /* MapView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		3D635F3B27D81789008906D3 = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +68,7 @@
 			children = (
 				3D635F4727D81789008906D3 /* CVAGApp.swift */,
 				3D635F4927D81789008906D3 /* ContentView.swift */,
+				3D53804127D92CEF005860CE /* Views */,
 				3D635F4B27D8178A008906D3 /* Assets.xcassets */,
 				3D635F4D27D8178A008906D3 /* Preview Content */,
 			);
@@ -145,6 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D53804527D92D60005860CE /* DrawerView.swift in Sources */,
+				3D53804727D92D67005860CE /* MapView.swift in Sources */,
 				3D635F4A27D81789008906D3 /* ContentView.swift in Sources */,
 				3D635F4827D81789008906D3 /* CVAGApp.swift in Sources */,
 			);
