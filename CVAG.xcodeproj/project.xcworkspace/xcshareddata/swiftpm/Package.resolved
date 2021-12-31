@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Drawer",
+        "repositoryURL": "https://github.com/maustinstar/swiftui-drawer",
+        "state": {
+          "branch": "master",
+          "revision": "6d22f5c1362bfa71f2915c28aebba343b9243363",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
