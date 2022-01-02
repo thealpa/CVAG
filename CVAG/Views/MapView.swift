@@ -9,7 +9,7 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
-    
+    @Binding var drawerHeight: drawerType
     @ObservedObject var stopData = StopLoader()
     
     @State private var region = MKCoordinateRegion(
@@ -22,13 +22,21 @@ struct MapView: View {
     
     var body: some View {
         Map(coordinateRegion: $region, annotationItems: stopData.stops) { stop in
-            MapMarker(coordinate: stop.coordinate)
+            MapAnnotation(coordinate: stop.coordinate) {
+                Image(systemName: "mappin.circle.fill")
+                    .font(.title)
+                    .foregroundColor(.blue)
+                    .onTapGesture {
+                        print("Tapped on \(stop.name)")
+                        drawerHeight = .medium
+                    }
+            }
         }.edgesIgnoringSafeArea(.all)
     }
 }
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView()
+        MapView(drawerHeight: .constant(.variable))
     }
 }

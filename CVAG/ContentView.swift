@@ -9,10 +9,12 @@ import SwiftUI
 
 
 struct ContentView: View {
+    @State var drawerHeight: drawerType = .variable
+    
     var body: some View {
         ZStack {
-            MapView()
-            DrawerView()
+            MapView(drawerHeight: $drawerHeight)
+            DrawerView(drawerHeight: $drawerHeight, drawerHeights: drawerDefault)
         }
     }
 }

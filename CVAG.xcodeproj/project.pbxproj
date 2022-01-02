@@ -12,6 +12,7 @@
 		3D53804927D93B2E005860CE /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D53804827D93B2E005860CE /* Stop.swift */; };
 		3D53804D27D94181005860CE /* Stops.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D53804C27D94181005860CE /* Stops.json */; };
 		3D53805227D95AE8005860CE /* StopLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D53805127D95AE8005860CE /* StopLoader.swift */; };
+		3D53805427DA3760005860CE /* Drawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D53805327DA3760005860CE /* Drawer.swift */; };
 		3D635F4827D81789008906D3 /* CVAGApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D635F4727D81789008906D3 /* CVAGApp.swift */; };
 		3D635F4A27D81789008906D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D635F4927D81789008906D3 /* ContentView.swift */; };
 		3D635F4C27D8178A008906D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D635F4B27D8178A008906D3 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		3D53804827D93B2E005860CE /* Stop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
 		3D53804C27D94181005860CE /* Stops.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Stops.json; sourceTree = "<group>"; };
 		3D53805127D95AE8005860CE /* StopLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopLoader.swift; sourceTree = "<group>"; };
+		3D53805327DA3760005860CE /* Drawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawer.swift; sourceTree = "<group>"; };
 		3D635F4427D81789008906D3 /* CVAG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVAG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D635F4727D81789008906D3 /* CVAGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVAGApp.swift; sourceTree = "<group>"; };
 		3D635F4927D81789008906D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				3D53804827D93B2E005860CE /* Stop.swift */,
+				3D53805327DA3760005860CE /* Drawer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				3D635F4A27D81789008906D3 /* ContentView.swift in Sources */,
 				3D635F4827D81789008906D3 /* CVAGApp.swift in Sources */,
 				3D53804927D93B2E005860CE /* Stop.swift in Sources */,
+				3D53805427DA3760005860CE /* Drawer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
