@@ -8,8 +8,8 @@
 import Foundation
 import MapKit
 
-struct TransportStop: Identifiable {
-    var id: Int16
+struct Stop: Identifiable, Codable {
+    let id: Int16
     let name: String
     let latitude: Double
     let longitude: Double

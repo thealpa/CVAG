@@ -1,0 +1,62 @@
+[
+    {
+        "id": 858,
+        "name": "Rußdorf, Kindergarten",
+        "latitude": 50.8536168,
+        "longitude": 12.73808095
+    },
+    {
+        "id": 859,
+        "name": "Limb.-O., Kreuzstraße",
+        "latitude": 50.854507749999996,
+        "longitude": 12.7406593
+    },
+    {
+        "id": 863,
+        "name": "Hoh.-E., Logenstraße",
+        "latitude": 50.7977211,
+        "longitude": 12.7140369
+    },
+    {
+        "id": 860,
+        "name": "Limb.-O., Polizeirevier",
+        "latitude": 50.8556097,
+        "longitude": 12.74415835
+    },
+    {
+        "id": 861,
+        "name": "Kändler, Am Mühlgraben",
+        "latitude": 50.8520592,
+        "longitude": 12.78794905
+    },
+    {
+        "id": 866,
+        "name": "Limb.-O, Gym. Hohenstein",
+        "latitude": 50.8548181,
+        "longitude": 12.7755275
+    },
+    {
+        "id": 867,
+        "name": "Bräunsdorf, Am Pfarrholz",
+        "latitude": 50.8650008,
+        "longitude": 12.7173981
+    },
+    {
+        "id": 864,
+        "name": "Hoh.-E., Pestalozzischul",
+        "latitude": 50.8014981,
+        "longitude": 12.7153714
+    },
+    {
+        "id": 865,
+        "name": "Limb, Gym. Pleißaer Stra",
+        "latitude": 50.8547169,
+        "longitude": 12.7735289
+    },
+    {
+        "id": 586,
+        "name": "Hauboldstraße",
+        "latitude": 50.848185,
+        "longitude": 12.9236533
+    }
+]
