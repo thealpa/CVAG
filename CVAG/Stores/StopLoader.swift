@@ -7,7 +7,7 @@
 
 import Foundation
 
-class StopLoader: ObservableObject  {
+class StopLoader: ObservableObject {
     @Published var stops = [Stop]()
         
     init(){
