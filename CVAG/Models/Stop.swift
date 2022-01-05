@@ -8,7 +8,7 @@
 import Foundation
 import MapKit
 
-struct Stop: Identifiable, Codable {
+struct Stop: Identifiable, Codable, Equatable {
     let id: Int16
     let name: String
     let latitude: Double

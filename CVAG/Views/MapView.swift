@@ -9,6 +9,7 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
+    @Binding var selectedStop: Stop
     @Binding var drawerHeight: drawerType
     @ObservedObject var stopData = StopLoader()
     
@@ -29,6 +30,7 @@ struct MapView: View {
                     .onTapGesture {
                         print("Tapped on \(stop.name)")
                         drawerHeight = .medium
+                        selectedStop = stop
                     }
             }
         }.edgesIgnoringSafeArea(.all)
@@ -37,6 +39,6 @@ struct MapView: View {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(drawerHeight: .constant(.variable))
+        MapView(selectedStop: .constant(Stop(id: 131, name: "Zentralhaltestelle", latitude: 50.1, longitude: 50.1)), drawerHeight: .constant(.variable))
     }
 }

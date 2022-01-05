@@ -10,6 +10,8 @@ import Drawer
 
 struct DrawerView: View {
     
+    @Binding var selectedStop: Stop
+    @StateObject var departuresList = DeparturesLoader()
     @Binding var drawerHeight: drawerType
     @State var drawerHeights: [CGFloat]
     
@@ -43,17 +45,28 @@ struct DrawerView: View {
     var body: some View {
         Drawer(){
             ZStack {
-                RoundedRectangle(cornerRadius: 30.0)
-                    .foregroundColor(Color(.systemGray6))
-                    .opacity(0.95)
+                RoundedRectangle(cornerRadius: 50.0)
+                    .foregroundColor(Color(.systemBackground))
+                    //.opacity(0.95)
                     .shadow(radius: 50)
                 
                 VStack {
                     Spacer().frame(height: 8.0)
                     RoundedRectangle(cornerRadius: 3.0)
-                        .foregroundColor(.gray)
+                        .foregroundColor(Color(.systemGray5))
                         .frame(width: 35.0, height: 6.0)
-                    
+                    HStack{
+                        Text(selectedStop.name)
+                            .font(.title)
+                        Spacer()
+                    }
+                    List {
+                        ForEach(departuresList.departures) { departure in
+                            Text(departure.destination)
+                        }
+                    }.onChange(of: selectedStop) {newStop in
+                        departuresList.loadData(id: selectedStop.id)
+                    }
                     Spacer()
                 }
             }
@@ -68,6 +81,6 @@ struct DrawerView: View {
 
 struct DrawerView_Previews: PreviewProvider {
     static var previews: some View {
-        DrawerView(drawerHeight: .constant(.variable), drawerHeights: drawerDefault)
+        DrawerView(selectedStop: .constant(Stop(id: 131, name: "Zentralhaltestelle", latitude: 50.1, longitude: 50.1)), drawerHeight: .constant(.variable), drawerHeights: [drawerDefault.last!])
     }
 }
