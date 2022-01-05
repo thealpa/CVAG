@@ -22,7 +22,7 @@ struct MapView: View {
             longitudeDelta: 0.02))
     
     var body: some View {
-        Map(coordinateRegion: $region, annotationItems: stopData.stops) { stop in
+        Map(coordinateRegion: .constant(region), annotationItems: stopData.stops) { stop in
             MapAnnotation(coordinate: stop.coordinate) {
                 Image(systemName: "mappin.circle.fill")
                     .font(.title)
