@@ -63,15 +63,17 @@ struct DrawerView: View {
                           .font(.system(size: 30, weight: .semibold, design: .default))
                           .padding()
                     
-                    List {
-                        ForEach(departuresList.departures) { departure in
-                            DepartureCellView(departure: departure)
+                    ScrollView {
+                        VStack {
+                            ForEach(departuresList.departures) { departure in
+                                DepartureCellView(departure: departure)
+                            }
                         }
-                    }.listStyle(.inset)
-                        .onChange(of: selectedStop) {newStop in
-                        departuresList.loadData(id: selectedStop.id)
+                    }.onChange(of: selectedStop) { newStop in
+                            departuresList.loadData(id: selectedStop.id)
                         }
-                        .frame(maxHeight: UIScreen.main.bounds.height - 300)
+                    .frame(maxHeight: UIScreen.main.bounds.height - 300)
+                    .disabled(true)
                     
                     Button(action: {showSettingsView.toggle()}) {
                         Text("Settings")
