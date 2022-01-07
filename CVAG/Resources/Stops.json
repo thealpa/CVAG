@@ -1,62 +1,3218 @@
 [
     {
-        "id": 671,
-        "name": "Henriettenstraße",
-        "latitude": 50.835060999999996,
-        "longitude": 12.900994050000001
+        "id": 717,
+        "name": "Am Unritzbach",
+        "latitude": 50.8182726874895,
+        "longitude": 12.8262893588894
     },
     {
-        "id": 131,
-        "name": "Zentralhaltestelle",
-        "latitude": 50.83159596666668,
-        "longitude": 12.922535166666668
+        "id": 716,
+        "name": "Röntgenstr.",
+        "latitude": 50.8144132591452,
+        "longitude": 12.8272325899379
     },
     {
-        "id": 208,
-        "name": "Weststraße",
-        "latitude": 50.830398349999996,
-        "longitude": 12.889914399999999
+        "id": 712,
+        "name": "Lichtenstein, Stadtgrenze",
+        "latitude": 50.7528065739867,
+        "longitude": 12.6221831431562
     },
     {
-        "id": 860,
-        "name": "Limb.-O., Polizeirevier",
-        "latitude": 50.8556097,
-        "longitude": 12.74415835
+        "id": 807,
+        "name": "Hexenberg",
+        "latitude": 50.8164678768762,
+        "longitude": 12.7975073371822
+    },
+    {
+        "id": 806,
+        "name": "Blumenweg",
+        "latitude": 50.8150603032087,
+        "longitude": 12.7921533780881
+    },
+    {
+        "id": 804,
+        "name": "Forsthaus Grüna",
+        "latitude": 50.820015001375,
+        "longitude": 12.7992680351393
+    },
+    {
+        "id": 792,
+        "name": "Keplerstr. Süd",
+        "latitude": 50.8224325670276,
+        "longitude": 12.8519182939489
+    },
+    {
+        "id": 791,
+        "name": "Carl-von-Ossietzky-Str.",
+        "latitude": 50.822438241917,
+        "longitude": 12.9672440101402
+    },
+    {
+        "id": 782,
+        "name": "Gartenstr.",
+        "latitude": 50.8150943579111,
+        "longitude": 12.8017024695596
+    },
+    {
+        "id": 781,
+        "name": "Lichtenstein, Miniwelt/Daetz-Centrum",
+        "latitude": 50.7598590773721,
+        "longitude": 12.6424760854273
+    },
+    {
+        "id": 828,
+        "name": "Oberlungwitz, Autohaus",
+        "latitude": 50.791488494832,
+        "longitude": 12.7717256885244
+    },
+    {
+        "id": 827,
+        "name": "Oberlungwitz, Limbacher Str.",
+        "latitude": 50.7922721419511,
+        "longitude": 12.7551158389187
+    },
+    {
+        "id": 826,
+        "name": "Oberlungwitz, Galvanik-Zentrum",
+        "latitude": 50.7901312777997,
+        "longitude": 12.7490791602086
+    },
+    {
+        "id": 825,
+        "name": "Oberlungwitz, Goethestr.",
+        "latitude": 50.7903811449828,
+        "longitude": 12.7401229568247
+    },
+    {
+        "id": 824,
+        "name": "Oberlungwitz, Rathaus",
+        "latitude": 50.7891034010214,
+        "longitude": 12.7334844068741
+    },
+    {
+        "id": 823,
+        "name": "Oberlungwitz, Hirschgrundstr.",
+        "latitude": 50.788461676435,
+        "longitude": 12.7288760494659
+    },
+    {
+        "id": 822,
+        "name": "Gersdorf, Schachthaus",
+        "latitude": 50.773824557201,
+        "longitude": 12.6777798760981
+    },
+    {
+        "id": 820,
+        "name": "Lichtenstein, Chemnitzer Berg",
+        "latitude": 50.7557334066487,
+        "longitude": 12.6388289253733
+    },
+    {
+        "id": 819,
+        "name": "Lichtenstein, Zwickauer Str.",
+        "latitude": 50.7555799655989,
+        "longitude": 12.6291630529148
+    },
+    {
+        "id": 818,
+        "name": "Lichtenstein, Bahnhof",
+        "latitude": 50.7570291110095,
+        "longitude": 12.6269621804684
+    },
+    {
+        "id": 817,
+        "name": "Lichtenstein, Photo-Diettrich",
+        "latitude": 50.7558527493396,
+        "longitude": 12.6374006040713
+    },
+    {
+        "id": 815,
+        "name": "Grüna, Ortsmitte",
+        "latitude": 50.8108827380375,
+        "longitude": 12.7867185706184
+    },
+    {
+        "id": 809,
+        "name": "Karl-Liebknecht-Str.",
+        "latitude": 50.8125118058555,
+        "longitude": 12.7898626741133
+    },
+    {
+        "id": 808,
+        "name": "Grundschule Adelsberg",
+        "latitude": 50.812858046398,
+        "longitude": 12.98835441932
     },
     {
         "id": 861,
         "name": "Kändler, Am Mühlgraben",
-        "latitude": 50.8520592,
-        "longitude": 12.78794905
+        "latitude": 50.8520234105697,
+        "longitude": 12.7878953636408
     },
     {
-        "id": 866,
-        "name": "Limb.-O, Gym. Hohenstein",
-        "latitude": 50.8548181,
-        "longitude": 12.7755275
+        "id": 858,
+        "name": "Rußdorf, Kindergarten",
+        "latitude": 50.8537247673299,
+        "longitude": 12.7383981914789
     },
     {
-        "id": 867,
-        "name": "Bräunsdorf, Am Pfarrholz",
-        "latitude": 50.8650008,
-        "longitude": 12.7173981
+        "id": 857,
+        "name": "Rußdorf, Meinsdorfer Str.",
+        "latitude": 50.8508097381558,
+        "longitude": 12.7306277642702
     },
     {
-        "id": 864,
-        "name": "Hoh.-E., Pestalozzischul",
-        "latitude": 50.8014981,
-        "longitude": 12.7153714
+        "id": 856,
+        "name": "Rußdorf, Schule",
+        "latitude": 50.8491366332898,
+        "longitude": 12.7229741180485
     },
     {
-        "id": 865,
-        "name": "Limb, Gym. Pleißaer Stra",
-        "latitude": 50.8547169,
-        "longitude": 12.7735289
+        "id": 854,
+        "name": "Rußdorf, Wendeschleife",
+        "latitude": 50.8495620046228,
+        "longitude": 12.7122751830131
+    },
+    {
+        "id": 852,
+        "name": "Oberlungwitz, Post",
+        "latitude": 50.7868601660349,
+        "longitude": 12.72465396763
+    },
+    {
+        "id": 851,
+        "name": "Oberlungwitz, Humboldtschule",
+        "latitude": 50.7848723995194,
+        "longitude": 12.7186711878369
+    },
+    {
+        "id": 850,
+        "name": "Oberlungwitz, Sonnenweg",
+        "latitude": 50.7835831457693,
+        "longitude": 12.7120416210392
+    },
+    {
+        "id": 849,
+        "name": "Oberlungwitz, Neue Welt",
+        "latitude": 50.7830833373965,
+        "longitude": 12.7085112419721
+    },
+    {
+        "id": 894,
+        "name": "Wüstenbrand, An den Heroldteichen",
+        "latitude": 50.8057283792148,
+        "longitude": 12.7432041782496
+    },
+    {
+        "id": 893,
+        "name": "Wüstenbrand, Lindenhofweg",
+        "latitude": 50.8074484542491,
+        "longitude": 12.7497528966718
+    },
+    {
+        "id": 892,
+        "name": "Wüstenbrand, Schubertstr.",
+        "latitude": 50.8077436422777,
+        "longitude": 12.7527981854854
+    },
+    {
+        "id": 891,
+        "name": "Wüstenbrand, Bahnhof",
+        "latitude": 50.8059554554549,
+        "longitude": 12.7565441602207
+    },
+    {
+        "id": 884,
+        "name": "Carl-Hamel-Str.",
+        "latitude": 50.8148957051304,
+        "longitude": 12.8851290100074
+    },
+    {
+        "id": 904,
+        "name": "Wüstenbrand, Rathaus",
+        "latitude": 50.8081183013201,
+        "longitude": 12.7560950025785
+    },
+    {
+        "id": 946,
+        "name": "Burgstädt",
+        "latitude": 50.9157308505642,
+        "longitude": 12.8125900508047
+    },
+    {
+        "id": 944,
+        "name": "Altmittweida",
+        "latitude": 50.9684964537654,
+        "longitude": 12.9596262965298
+    },
+    {
+        "id": 943,
+        "name": "Ottendorf",
+        "latitude": 50.9771962878697,
+        "longitude": 13.1288239803173
+    },
+    {
+        "id": 939,
+        "name": "Frankenberg",
+        "latitude": 50.9183643235151,
+        "longitude": 13.0162201594372
+    },
+    {
+        "id": 979,
+        "name": "Oberlichtenau, Bahnzugang",
+        "latitude": 50.9055410214363,
+        "longitude": 12.9601652857004
+    },
+    {
+        "id": 977,
+        "name": "Hainichen",
+        "latitude": 50.9676478781697,
+        "longitude": 13.1190413268719
+    },
+    {
+        "id": 974,
+        "name": "Braunsdorf-Lichtenwalde",
+        "latitude": 50.8798101346334,
+        "longitude": 13.0119082460729
+    },
+    {
+        "id": 972,
+        "name": "Mittweida",
+        "latitude": 50.9871046464984,
+        "longitude": 12.9600664710191
+    },
+    {
+        "id": 7,
+        "name": "Luisenplatz",
+        "latitude": 50.8428463564402,
+        "longitude": 12.9018466574472
+    },
+    {
+        "id": 6,
+        "name": "Obere Hauptstr.",
+        "latitude": 50.877038442561,
+        "longitude": 12.8287237933097
+    },
+    {
+        "id": 5,
+        "name": "An der Bahnbrücke",
+        "latitude": 50.8606770002532,
+        "longitude": 12.8920460376961
+    },
+    {
+        "id": 3,
+        "name": "An der Wiesenmühle",
+        "latitude": 50.8122166479566,
+        "longitude": 12.809607644061
+    },
+    {
+        "id": 39,
+        "name": "Waisenstr.",
+        "latitude": 50.8349667159099,
+        "longitude": 12.9278978006903
+    },
+    {
+        "id": 38,
+        "name": "Rabensteiner Str.",
+        "latitude": 50.8131134681039,
+        "longitude": 12.8176026500908
+    },
+    {
+        "id": 37,
+        "name": "Gustav-Freytag-Str.",
+        "latitude": 50.8261267741573,
+        "longitude": 12.9201543229401
+    },
+    {
+        "id": 36,
+        "name": "Treffurthstr.",
+        "latitude": 50.8193964022593,
+        "longitude": 12.9152135888768
+    },
+    {
+        "id": 35,
+        "name": "Rößlerstr.",
+        "latitude": 50.8166494961948,
+        "longitude": 12.9140547621601
+    },
+    {
+        "id": 34,
+        "name": "Erdmannsdorfer Str.",
+        "latitude": 50.8115411834393,
+        "longitude": 12.9121683000632
+    },
+    {
+        "id": 33,
+        "name": "Uhlestr.",
+        "latitude": 50.806273360337,
+        "longitude": 12.9119257549365
+    },
+    {
+        "id": 32,
+        "name": "Max-Saupe-Str.",
+        "latitude": 50.8681327701888,
+        "longitude": 12.9606324096482
+    },
+    {
+        "id": 30,
+        "name": "Altendorfer Str.",
+        "latitude": 50.842233732311,
+        "longitude": 12.8974628788601
+    },
+    {
+        "id": 27,
+        "name": "Rudolf-Liebold-Str.",
+        "latitude": 50.8486942429888,
+        "longitude": 12.9444896839903
+    },
+    {
+        "id": 25,
+        "name": "Johannes-Reitz-Str.",
+        "latitude": 50.8106954199774,
+        "longitude": 12.9000859594901
+    },
+    {
+        "id": 24,
+        "name": "Pappelhain",
+        "latitude": 50.8227049609449,
+        "longitude": 12.9637315973788
+    },
+    {
+        "id": 23,
+        "name": "Arthur-Strobel-Str.",
+        "latitude": 50.8279312114688,
+        "longitude": 12.9607402074823
+    },
+    {
+        "id": 22,
+        "name": "Sachsenring",
+        "latitude": 50.8209684224956,
+        "longitude": 12.9571559294982
+    },
+    {
+        "id": 21,
+        "name": "Alfred-Brehm-Str.",
+        "latitude": 50.86050122247,
+        "longitude": 12.8627429931241
+    },
+    {
+        "id": 20,
+        "name": "Nürnberger Str.",
+        "latitude": 50.8315795933222,
+        "longitude": 12.9501041545169
+    },
+    {
+        "id": 19,
+        "name": "Reineckerstr.",
+        "latitude": 50.8312561868536,
+        "longitude": 12.9441303578766
+    },
+    {
+        "id": 18,
+        "name": "Tschaikowskistr.",
+        "latitude": 50.8305185847701,
+        "longitude": 12.9380577465551
+    },
+    {
+        "id": 17,
+        "name": "Zieschestr./Schauspielhaus",
+        "latitude": 50.8316646999152,
+        "longitude": 12.9320480173035
+    },
+    {
+        "id": 16,
+        "name": "Stefan-Heym-Platz",
+        "latitude": 50.83332141068,
+        "longitude": 12.9254813325757
+    },
+    {
+        "id": 15,
+        "name": "Falkeplatz/Museum Gunzenhauser",
+        "latitude": 50.829718557026,
+        "longitude": 12.9166059775674
+    },
+    {
+        "id": 14,
+        "name": "Reichsstr.",
+        "latitude": 50.827641825275,
+        "longitude": 12.9120964348405
+    },
+    {
+        "id": 13,
+        "name": "Rudolf-Drechsel-Str.",
+        "latitude": 50.778306490138,
+        "longitude": 12.899124762136
+    },
+    {
+        "id": 12,
+        "name": "Heinrich-Lorenz-Str.",
+        "latitude": 50.8148559744729,
+        "longitude": 12.9134978066839
+    },
+    {
+        "id": 71,
+        "name": "Richard-Hartmann-Platz",
+        "latitude": 50.8383365738304,
+        "longitude": 12.911323883696
+    },
+    {
+        "id": 70,
+        "name": "Leipziger Str.",
+        "latitude": 50.839181836717,
+        "longitude": 12.9063741664798
+    },
+    {
+        "id": 69,
+        "name": "Friedrich-Oskar-Schimmel-Str.",
+        "latitude": 50.8066366775533,
+        "longitude": 12.9237475840771
+    },
+    {
+        "id": 68,
+        "name": "Ludwigstr.",
+        "latitude": 50.8434930065169,
+        "longitude": 12.9059429751434
+    },
+    {
+        "id": 67,
+        "name": "Küchwaldring",
+        "latitude": 50.8475145150082,
+        "longitude": 12.8992684925814
+    },
+    {
+        "id": 66,
+        "name": "Botanischer Garten",
+        "latitude": 50.8506339231781,
+        "longitude": 12.8915609474426
+    },
+    {
+        "id": 65,
+        "name": "Louis-Otto-Str.",
+        "latitude": 50.8521651926701,
+        "longitude": 12.8864315671696
+    },
+    {
+        "id": 64,
+        "name": "Friedhof Reichenbrand",
+        "latitude": 50.8134199723073,
+        "longitude": 12.8328290941587
+    },
+    {
+        "id": 63,
+        "name": "Schillerplatz",
+        "latitude": 50.8395959532143,
+        "longitude": 12.927062367476
+    },
+    {
+        "id": 61,
+        "name": "Johann-Richter-Str.",
+        "latitude": 50.7920052491177,
+        "longitude": 12.8794965731752
+    },
+    {
+        "id": 60,
+        "name": "Ernst-Wabra-Str.",
+        "latitude": 50.7860991454103,
+        "longitude": 12.8793797921883
+    },
+    {
+        "id": 59,
+        "name": "Hauptbahnhof",
+        "latitude": 50.8400951572571,
+        "longitude": 12.929685448106
+    },
+    {
+        "id": 58,
+        "name": "Am Feld",
+        "latitude": 50.7633252688452,
+        "longitude": 12.973702897034
+    },
+    {
+        "id": 57,
+        "name": "Lutherstr.",
+        "latitude": 50.8229660036246,
+        "longitude": 12.9302424035822
+    },
+    {
+        "id": 56,
+        "name": "Gutenbergstr.",
+        "latitude": 50.819997975821,
+        "longitude": 12.9351202555757
+    },
+    {
+        "id": 55,
+        "name": "Carl-Bobach-Str.",
+        "latitude": 50.8063244519912,
+        "longitude": 12.893707920972
+    },
+    {
+        "id": 54,
+        "name": "Augsburger Str.",
+        "latitude": 50.8147821888763,
+        "longitude": 12.9450825720779
+    },
+    {
+        "id": 53,
+        "name": "Wilhelm-Külz-Platz",
+        "latitude": 50.8460908612308,
+        "longitude": 12.9298471448571
+    },
+    {
+        "id": 52,
+        "name": "Marktsteig",
+        "latitude": 50.8144075832805,
+        "longitude": 12.9434206888021
+    },
+    {
+        "id": 51,
+        "name": "Dittersdorfer Str.",
+        "latitude": 50.7972633250345,
+        "longitude": 12.9030414167753
+    },
+    {
+        "id": 50,
+        "name": "Robert-Siewert-Str.",
+        "latitude": 50.7977402702602,
+        "longitude": 12.8972562663447
+    },
+    {
+        "id": 49,
+        "name": "VITA-CENTER",
+        "latitude": 50.7948501346937,
+        "longitude": 12.8907794131453
+    },
+    {
+        "id": 48,
+        "name": "Jagdschänkenstr.",
+        "latitude": 50.8010503631176,
+        "longitude": 12.8513343890142
+    },
+    {
+        "id": 47,
+        "name": "Glauchauer Str.",
+        "latitude": 50.8458412919497,
+        "longitude": 12.9030773493866
+    },
+    {
+        "id": 46,
+        "name": "Bahnstr.",
+        "latitude": 50.8105194538428,
+        "longitude": 12.8715374997568
+    },
+    {
+        "id": 45,
+        "name": "Stelzendorfer Gutsweg",
+        "latitude": 50.8027989967655,
+        "longitude": 12.8650426802517
+    },
+    {
+        "id": 44,
+        "name": "Bergstr.",
+        "latitude": 50.8442530925168,
+        "longitude": 12.9064819643139
+    },
+    {
+        "id": 43,
+        "name": "Friedrich-Viertel-Str.",
+        "latitude": 50.7883480959446,
+        "longitude": 12.8758673794269
+    },
+    {
+        "id": 42,
+        "name": "Heiterer Blick",
+        "latitude": 50.8009708782151,
+        "longitude": 12.884697818671
+    },
+    {
+        "id": 41,
+        "name": "Klinikum Küchwald",
+        "latitude": 50.8463631171057,
+        "longitude": 12.8938606345703
+    },
+    {
+        "id": 40,
+        "name": "Stelzendorfer Str.",
+        "latitude": 50.8191296643322,
+        "longitude": 12.8708637632936
+    },
+    {
+        "id": 103,
+        "name": "Am Steinbruch",
+        "latitude": 50.7582509046286,
+        "longitude": 12.916399365052
+    },
+    {
+        "id": 102,
+        "name": "Rödelwaldstr.",
+        "latitude": 50.7631832168633,
+        "longitude": 12.9096979330315
+    },
+    {
+        "id": 101,
+        "name": "Max-Brand-Str.",
+        "latitude": 50.7954804152518,
+        "longitude": 12.9815541726183
+    },
+    {
+        "id": 100,
+        "name": "Adorfer Str.",
+        "latitude": 50.765478724064,
+        "longitude": 12.9065178969253
+    },
+    {
+        "id": 98,
+        "name": "Am Pfarrwald",
+        "latitude": 50.8678493026432,
+        "longitude": 13.084995177599
+    },
+    {
+        "id": 95,
+        "name": "Alte Harth",
+        "latitude": 50.7784087345475,
+        "longitude": 12.9260113385934
+    },
+    {
+        "id": 93,
+        "name": "Konradstr.",
+        "latitude": 50.8418480018807,
+        "longitude": 12.9057004300166
+    },
+    {
+        "id": 91,
+        "name": "Technopark",
+        "latitude": 50.8114333352591,
+        "longitude": 12.9240799607323
+    },
+    {
+        "id": 90,
+        "name": "Am Technologie-Campus",
+        "latitude": 50.8116490313704,
+        "longitude": 12.9266940582094
+    },
+    {
+        "id": 89,
+        "name": "Ebersdorf",
+        "latitude": 50.8708879849271,
+        "longitude": 12.9567247381617
+    },
+    {
+        "id": 88,
+        "name": "Lichtenauer Str.",
+        "latitude": 50.8677699314215,
+        "longitude": 12.9619349668103
+    },
+    {
+        "id": 87,
+        "name": "Am Schnellen Markt",
+        "latitude": 50.8656495359017,
+        "longitude": 12.958817812774
+    },
+    {
+        "id": 86,
+        "name": "Landgraben",
+        "latitude": 50.7940551741213,
+        "longitude": 12.7849578726613
+    },
+    {
+        "id": 85,
+        "name": "Bahnhof Hilbersdorf",
+        "latitude": 50.8624744318089,
+        "longitude": 12.9527002856883
+    },
+    {
+        "id": 84,
+        "name": "Trinitatisstr.",
+        "latitude": 50.856588577714,
+        "longitude": 12.95077789098
+    },
+    {
+        "id": 83,
+        "name": "Helmholtzstr.",
+        "latitude": 50.8542578463454,
+        "longitude": 12.9479392146818
+    },
+    {
+        "id": 82,
+        "name": "Margaretenstr.",
+        "latitude": 50.8512294228429,
+        "longitude": 12.9457832579996
+    },
+    {
+        "id": 81,
+        "name": "Forststr.",
+        "latitude": 50.8457675553157,
+        "longitude": 12.9421271147928
+    },
+    {
+        "id": 80,
+        "name": "Hohe Brücke",
+        "latitude": 50.8373381227775,
+        "longitude": 12.9160041063269
+    },
+    {
+        "id": 79,
+        "name": "Lessingstr.",
+        "latitude": 50.8409687514814,
+        "longitude": 12.936126368694
+    },
+    {
+        "id": 78,
+        "name": "Fürstenstr.",
+        "latitude": 50.8371849494192,
+        "longitude": 12.9341051593045
+    },
+    {
+        "id": 77,
+        "name": "Friedrich-Hähnel-Str.",
+        "latitude": 50.8045135025826,
+        "longitude": 12.8980018680307
+    },
+    {
+        "id": 76,
+        "name": "Virchowstr.",
+        "latitude": 50.8132553684481,
+        "longitude": 12.8709086790578
+    },
+    {
+        "id": 75,
+        "name": "Roter Turm",
+        "latitude": 50.8341894582534,
+        "longitude": 12.9226965551945
+    },
+    {
+        "id": 74,
+        "name": "Graefestr.",
+        "latitude": 50.8147765130564,
+        "longitude": 12.870899695905
+    },
+    {
+        "id": 73,
+        "name": "Getreidemarkt",
+        "latitude": 50.8325384519621,
+        "longitude": 12.9154561340035
+    },
+    {
+        "id": 134,
+        "name": "Euba",
+        "latitude": 50.8493351403946,
+        "longitude": 13.0076592147784
+    },
+    {
+        "id": 133,
+        "name": "Rabenstein, Grünaer Str.",
+        "latitude": 50.8296901869961,
+        "longitude": 12.8186536789733
+    },
+    {
+        "id": 131,
+        "name": "Zentralhaltestelle",
+        "latitude": 50.8327427033286,
+        "longitude": 12.9213850148795
+    },
+    {
+        "id": 130,
+        "name": "Annenplatz",
+        "latitude": 50.8286575061716,
+        "longitude": 12.9230019823912
+    },
+    {
+        "id": 129,
+        "name": "Mauersbergerstr. West",
+        "latitude": 50.8072384154777,
+        "longitude": 12.8519272771018
+    },
+    {
+        "id": 128,
+        "name": "Sommerbad Einsiedel",
+        "latitude": 50.7664389399544,
+        "longitude": 12.9590334084422
+    },
+    {
+        "id": 127,
+        "name": "Clemens-Winkler-Str.",
+        "latitude": 50.8134029443488,
+        "longitude": 12.8634077464344
+    },
+    {
+        "id": 126,
+        "name": "Rosenstr.",
+        "latitude": 50.7665980270746,
+        "longitude": 12.9734244192958
+    },
+    {
+        "id": 124,
+        "name": "Hilbersdorfer Str.",
+        "latitude": 50.8516207470545,
+        "longitude": 12.9392884384945
+    },
+    {
+        "id": 123,
+        "name": "Am Plan",
+        "latitude": 50.7703648247611,
+        "longitude": 12.9738825600908
+    },
+    {
+        "id": 121,
+        "name": "Bruno-Granz-Str.",
+        "latitude": 50.7959233100186,
+        "longitude": 12.8840600148192
+    },
+    {
+        "id": 116,
+        "name": "Am Heim",
+        "latitude": 50.8324419996172,
+        "longitude": 12.8764063685974
+    },
+    {
+        "id": 115,
+        "name": "Sterzelstr.",
+        "latitude": 50.8230851747975,
+        "longitude": 12.8449653336489
+    },
+    {
+        "id": 114,
+        "name": "August-Bebel-Platz",
+        "latitude": 50.7682968165201,
+        "longitude": 12.973586116047
+    },
+    {
+        "id": 111,
+        "name": "Funkstr.",
+        "latitude": 50.7807659742232,
+        "longitude": 12.9727506828327
+    },
+    {
+        "id": 110,
+        "name": "Kurt-Franke-Str.",
+        "latitude": 50.784560028526,
+        "longitude": 12.9629051473173
+    },
+    {
+        "id": 109,
+        "name": "Am Gutsberg",
+        "latitude": 50.7852869977964,
+        "longitude": 12.9548742086762
+    },
+    {
+        "id": 108,
+        "name": "Am Steinberg",
+        "latitude": 50.7871214090647,
+        "longitude": 12.9514785769017
+    },
+    {
+        "id": 107,
+        "name": "Gornauer Str.",
+        "latitude": 50.7937428644827,
+        "longitude": 12.943366789885
+    },
+    {
+        "id": 106,
+        "name": "Bahnhof Reichenhain",
+        "latitude": 50.7949239517751,
+        "longitude": 12.9360545034713
+    },
+    {
+        "id": 105,
+        "name": "Klaffenbach",
+        "latitude": 50.7713022159667,
+        "longitude": 12.9031761640679
+    },
+    {
+        "id": 167,
+        "name": "Reichenbrand",
+        "latitude": 50.812182591156,
+        "longitude": 12.829505327607
+    },
+    {
+        "id": 166,
+        "name": "Brauerei Reichenbrand",
+        "latitude": 50.814203251689,
+        "longitude": 12.8358384503609
+    },
+    {
+        "id": 165,
+        "name": "Schönau",
+        "latitude": 50.8204463133409,
+        "longitude": 12.8759931435667
+    },
+    {
+        "id": 164,
+        "name": "Kopernikusstr.",
+        "latitude": 50.8175973105527,
+        "longitude": 12.8492233480962
+    },
+    {
+        "id": 163,
+        "name": "Niederwiesa, Schulzentrum",
+        "latitude": 50.8674751228437,
+        "longitude": 13.0209183483738
+    },
+    {
+        "id": 162,
+        "name": "Friedhofstr.",
+        "latitude": 50.8193907270001,
+        "longitude": 12.8636053757969
+    },
+    {
+        "id": 161,
+        "name": "Dickensstr.",
+        "latitude": 50.7985749126926,
+        "longitude": 12.9774309054636
+    },
+    {
+        "id": 160,
+        "name": "Zeisigwald, Klinik Bethanien",
+        "latitude": 50.8392726022912,
+        "longitude": 12.9631207429856
+    },
+    {
+        "id": 159,
+        "name": "Zeisigwaldstr.",
+        "latitude": 50.8376444679859,
+        "longitude": 12.9602012183118
+    },
+    {
+        "id": 158,
+        "name": "Terra Nova Campus",
+        "latitude": 50.8387280061981,
+        "longitude": 12.9553592989297
+    },
+    {
+        "id": 157,
+        "name": "Hofer Str.",
+        "latitude": 50.8402313028874,
+        "longitude": 12.9482446418785
+    },
+    {
+        "id": 156,
+        "name": "Stadion Gellertstr.",
+        "latitude": 50.8410935493212,
+        "longitude": 12.9441213747238
+    },
+    {
+        "id": 155,
+        "name": "Reinhardtstr.",
+        "latitude": 50.8430505626958,
+        "longitude": 12.9399711581106
+    },
+    {
+        "id": 154,
+        "name": "Zöllnerstr.",
+        "latitude": 50.843827672774,
+        "longitude": 12.9297034144117
+    },
+    {
+        "id": 153,
+        "name": "Omnibusbahnhof",
+        "latitude": 50.8407134821332,
+        "longitude": 12.927915766996
+    },
+    {
+        "id": 152,
+        "name": "Innere Klosterstr.",
+        "latitude": 50.8346206392819,
+        "longitude": 12.917423444476
+    },
+    {
+        "id": 150,
+        "name": "Keglerheim",
+        "latitude": 50.7643707581639,
+        "longitude": 12.9449298584796
+    },
+    {
+        "id": 149,
+        "name": "Franz-Mehring-Str.",
+        "latitude": 50.8368105235379,
+        "longitude": 12.8952979390251
+    },
+    {
+        "id": 148,
+        "name": "Erzbergerstr.",
+        "latitude": 50.8360389698247,
+        "longitude": 12.8918573914864
+    },
+    {
+        "id": 147,
+        "name": "Zinzendorfstr.",
+        "latitude": 50.8338717433676,
+        "longitude": 12.8839162843737
+    },
+    {
+        "id": 146,
+        "name": "Rudolf-Krahl-Str.",
+        "latitude": 50.8335937410684,
+        "longitude": 12.880305056931
+    },
+    {
+        "id": 145,
+        "name": "Waldenburger Str.",
+        "latitude": 50.8326632723478,
+        "longitude": 12.8744749907363
+    },
+    {
+        "id": 144,
+        "name": "Kalkstr.",
+        "latitude": 50.8332590014089,
+        "longitude": 12.8708727464465
+    },
+    {
+        "id": 143,
+        "name": "Rottluff",
+        "latitude": 50.8340703154247,
+        "longitude": 12.8689952675024
+    },
+    {
+        "id": 142,
+        "name": "Borna",
+        "latitude": 50.8525735227114,
+        "longitude": 12.8842666273346
+    },
+    {
+        "id": 141,
+        "name": "Heidelberger Str.",
+        "latitude": 50.8556415549295,
+        "longitude": 12.876657896877
+    },
+    {
+        "id": 138,
+        "name": "Yorckgebiet",
+        "latitude": 50.8326973142133,
+        "longitude": 12.9659773855894
+    },
+    {
+        "id": 137,
+        "name": "Eckstr.",
+        "latitude": 50.8452003465425,
+        "longitude": 12.9228223193343
+    },
+    {
+        "id": 199,
+        "name": "Wilhelm-Firl-Str.",
+        "latitude": 50.7947195349564,
+        "longitude": 12.9006518981192
+    },
+    {
+        "id": 198,
+        "name": "Tuchschererstr.",
+        "latitude": 50.8043545444245,
+        "longitude": 12.8564458029815
+    },
+    {
+        "id": 196,
+        "name": "Reichenbrander Str.",
+        "latitude": 50.8135107879813,
+        "longitude": 12.8098591723406
+    },
+    {
+        "id": 194,
+        "name": "Flemmingstr.",
+        "latitude": 50.8442077145957,
+        "longitude": 12.8860273252917
+    },
+    {
+        "id": 193,
+        "name": "Rehabilitationszentrum für Blinde",
+        "latitude": 50.8417742589354,
+        "longitude": 12.8778436730522
+    },
+    {
+        "id": 192,
+        "name": "Frauen- und Kinderklinik",
+        "latitude": 50.843124303624,
+        "longitude": 12.8846888355182
+    },
+    {
+        "id": 191,
+        "name": "Talanger",
+        "latitude": 50.8397094091475,
+        "longitude": 12.8880844672926
+    },
+    {
+        "id": 190,
+        "name": "Wattstr.",
+        "latitude": 50.8395165338969,
+        "longitude": 12.8955584504575
+    },
+    {
+        "id": 189,
+        "name": "Leonhardtstr.",
+        "latitude": 50.8380302331654,
+        "longitude": 12.9004632519095
+    },
+    {
+        "id": 188,
+        "name": "Gerhart-Hauptmann-Platz",
+        "latitude": 50.8304391500044,
+        "longitude": 12.9025832759803
+    },
+    {
+        "id": 187,
+        "name": "Marianne-Brandt-Str.",
+        "latitude": 50.8262232395518,
+        "longitude": 12.9061495876588
+    },
+    {
+        "id": 186,
+        "name": "Uhlandstr.",
+        "latitude": 50.8364701337662,
+        "longitude": 12.9353358512439
+    },
+    {
+        "id": 185,
+        "name": "Würzburger Str.",
+        "latitude": 50.8351936500105,
+        "longitude": 12.9455856286371
+    },
+    {
+        "id": 184,
+        "name": "Münchner Str.",
+        "latitude": 50.8345071709764,
+        "longitude": 12.9526913025355
+    },
+    {
+        "id": 182,
+        "name": "Ulmenstr.",
+        "latitude": 50.8312675344869,
+        "longitude": 12.8961962543093
+    },
+    {
+        "id": 181,
+        "name": "Barbarossastr.",
+        "latitude": 50.8315455506416,
+        "longitude": 12.9020802194211
+    },
+    {
+        "id": 180,
+        "name": "Kanzlerstr.",
+        "latitude": 50.8327710715033,
+        "longitude": 12.9064460317026
+    },
+    {
+        "id": 178,
+        "name": "Niederwiesa, Kirchstr.",
+        "latitude": 50.8625027819094,
+        "longitude": 13.0142797984233
+    },
+    {
+        "id": 177,
+        "name": "Georgbrücke",
+        "latitude": 50.8419784698831,
+        "longitude": 12.9225977405133
+    },
+    {
+        "id": 176,
+        "name": "Müllerstr.",
+        "latitude": 50.8446388030641,
+        "longitude": 12.9242236911778
+    },
+    {
+        "id": 175,
+        "name": "Zöllnerplatz",
+        "latitude": 50.8475372023661,
+        "longitude": 12.9274755925067
+    },
+    {
+        "id": 174,
+        "name": "Emilienstr.",
+        "latitude": 50.8504070641631,
+        "longitude": 12.9289488295729
+    },
+    {
+        "id": 173,
+        "name": "Hochhaus Furth",
+        "latitude": 50.8559647924129,
+        "longitude": 12.9293800209093
+    },
+    {
+        "id": 172,
+        "name": "Chemnitztal",
+        "latitude": 50.8616295909065,
+        "longitude": 12.9213400991153
+    },
+    {
+        "id": 171,
+        "name": "Karl-Seibt-Str.",
+        "latitude": 50.808799491881,
+        "longitude": 12.8222199906518
+    },
+    {
+        "id": 170,
+        "name": "Rosental",
+        "latitude": 50.8656325269916,
+        "longitude": 12.9185732880399
+    },
+    {
+        "id": 169,
+        "name": "Kaßbergauffahrt",
+        "latitude": 50.833939825311,
+        "longitude": 12.9149351111387
+    },
+    {
+        "id": 231,
+        "name": "Wittenberger Str.",
+        "latitude": 50.8206676429345,
+        "longitude": 12.940060989639
+    },
+    {
+        "id": 230,
+        "name": "Clausstr.",
+        "latitude": 50.8182670120938,
+        "longitude": 12.9453430835104
+    },
+    {
+        "id": 229,
+        "name": "Turnstr.",
+        "latitude": 50.8240215091435,
+        "longitude": 12.9316707248841
+    },
+    {
+        "id": 228,
+        "name": "Annenstr.",
+        "latitude": 50.8279028403526,
+        "longitude": 12.9244123373875
+    },
+    {
+        "id": 227,
+        "name": "Am Lehngericht",
+        "latitude": 50.76272296548,
+        "longitude": 12.9385158873501
+    },
+    {
+        "id": 225,
+        "name": "Dresdner Str.",
+        "latitude": 50.8519213271906,
+        "longitude": 12.9552515010956
+    },
+    {
+        "id": 224,
+        "name": "Klinikum Dresdner Str.",
+        "latitude": 50.8519213271906,
+        "longitude": 12.9552515010956
+    },
+    {
+        "id": 223,
+        "name": "Friedrich-Naumann-Str.",
+        "latitude": 50.8515867189925,
+        "longitude": 12.943878829597
+    },
+    {
+        "id": 222,
+        "name": "Christian-Wehner-Str.",
+        "latitude": 50.850350349237,
+        "longitude": 12.9335841364396
+    },
+    {
+        "id": 219,
+        "name": "Südbahnhof",
+        "latitude": 50.8245776261093,
+        "longitude": 12.9253915010473
+    },
+    {
+        "id": 216,
+        "name": "TU Campus",
+        "latitude": 50.8134653801663,
+        "longitude": 12.931050887338
+    },
+    {
+        "id": 215,
+        "name": "Städtischer Friedhof",
+        "latitude": 50.810967882362,
+        "longitude": 12.9340602435402
+    },
+    {
+        "id": 214,
+        "name": "Sportforum",
+        "latitude": 50.8080672116276,
+        "longitude": 12.9371953638823
+    },
+    {
+        "id": 213,
+        "name": "Jägerschlößchenstr.",
+        "latitude": 50.8011695902178,
+        "longitude": 12.9413096478841
+    },
+    {
+        "id": 212,
+        "name": "Kirche Reichenbrand",
+        "latitude": 50.812182591156,
+        "longitude": 12.829505327607
+    },
+    {
+        "id": 211,
+        "name": "Fraunhoferstr. Süd",
+        "latitude": 50.815718689721,
+        "longitude": 12.9236667357015
+    },
+    {
+        "id": 210,
+        "name": "Reichenhain",
+        "latitude": 50.7949239517751,
+        "longitude": 12.9360545034713
+    },
+    {
+        "id": 209,
+        "name": "Ernst-Heilmann-Str.",
+        "latitude": 50.8324079575655,
+        "longitude": 12.8856590160251
+    },
+    {
+        "id": 208,
+        "name": "Weststr.",
+        "latitude": 50.8304107804125,
+        "longitude": 12.8899080473196
+    },
+    {
+        "id": 207,
+        "name": "Fraunhoferstr. Nord",
+        "latitude": 50.8206846682444,
+        "longitude": 12.9255442146456
+    },
+    {
+        "id": 206,
+        "name": "Kanalstr.",
+        "latitude": 50.8410878766994,
+        "longitude": 12.9005351171322
+    },
+    {
+        "id": 205,
+        "name": "CFC-Stadion",
+        "latitude": 50.841621100138,
+        "longitude": 12.9419474517359
+    },
+    {
+        "id": 204,
+        "name": "Schauplatz Eisenbahn",
+        "latitude": 50.859497575338,
+        "longitude": 12.952888931898
+    },
+    {
+        "id": 203,
+        "name": "Am Küchwald",
+        "latitude": 50.8541841230148,
+        "longitude": 12.902888703177
+    },
+    {
+        "id": 202,
+        "name": "Uferstr.",
+        "latitude": 50.8294689001712,
+        "longitude": 12.9399981075691
+    },
+    {
+        "id": 201,
+        "name": "Lindenhof",
+        "latitude": 50.8204860392426,
+        "longitude": 12.9422798283911
+    },
+    {
+        "id": 263,
+        "name": "Ikarus",
+        "latitude": 50.8089981705902,
+        "longitude": 12.8930341845088
+    },
+    {
+        "id": 262,
+        "name": "Haltepunkt Wittgensdorf Mitte",
+        "latitude": 50.87516788235,
+        "longitude": 12.8708008812237
+    },
+    {
+        "id": 261,
+        "name": "Mitschurinstr.",
+        "latitude": 50.8090095236338,
+        "longitude": 12.8241244190544
+    },
+    {
+        "id": 260,
+        "name": "Wilhelm-Busch-Str.",
+        "latitude": 50.804854125386,
+        "longitude": 12.9718613507013
+    },
+    {
+        "id": 259,
+        "name": "Paul-Bertz-Str.",
+        "latitude": 50.8029466057017,
+        "longitude": 12.894219960684
+    },
+    {
+        "id": 257,
+        "name": "Am Wartburghof",
+        "latitude": 50.8146856998435,
+        "longitude": 12.9348777104489
+    },
+    {
+        "id": 256,
+        "name": "Helbersdorf",
+        "latitude": 50.8009652007169,
+        "longitude": 12.898783402328
+    },
+    {
+        "id": 255,
+        "name": "Markersdorfer Str.",
+        "latitude": 50.7963037419159,
+        "longitude": 12.9082965611881
+    },
+    {
+        "id": 252,
+        "name": "Max-Türpe-Str.",
+        "latitude": 50.7924595338809,
+        "longitude": 12.8845810376841
+    },
+    {
+        "id": 251,
+        "name": "Marie-Tilch-Str.",
+        "latitude": 50.7833559608076,
+        "longitude": 12.8786252073495
+    },
+    {
+        "id": 250,
+        "name": "Johannes-Dick-Str.",
+        "latitude": 50.7838898437166,
+        "longitude": 12.8850301953262
+    },
+    {
+        "id": 249,
+        "name": "Fritz-Fritzsche-Str.",
+        "latitude": 50.7859287659614,
+        "longitude": 12.8909051772851
+    },
+    {
+        "id": 248,
+        "name": "Max-Müller-Str.",
+        "latitude": 50.7875700621662,
+        "longitude": 12.8984150930614
+    },
+    {
+        "id": 247,
+        "name": "Arno-Schreiter-Str.",
+        "latitude": 50.7880130318902,
+        "longitude": 12.9020802194211
+    },
+    {
+        "id": 246,
+        "name": "Am Harthwald",
+        "latitude": 50.7895804295191,
+        "longitude": 12.9052153397631
+    },
+    {
+        "id": 245,
+        "name": "Steinweg",
+        "latitude": 50.8532483936928,
+        "longitude": 12.9574613566948
+    },
+    {
+        "id": 244,
+        "name": "Wenzel-Verner-Str.",
+        "latitude": 50.8079025889051,
+        "longitude": 12.8978940701966
+    },
+    {
+        "id": 242,
+        "name": "Schösserholz",
+        "latitude": 50.8014704953562,
+        "longitude": 12.9915973374961
+    },
+    {
+        "id": 241,
+        "name": "Hermersdorfer Str.",
+        "latitude": 50.8020041714015,
+        "longitude": 12.9845994614318
+    },
+    {
+        "id": 240,
+        "name": "Kleinolbersdorfer Str.",
+        "latitude": 50.8055807790669,
+        "longitude": 12.9860367658866
+    },
+    {
+        "id": 239,
+        "name": "Felsenkeller",
+        "latitude": 50.8104229560036,
+        "longitude": 12.9882915372501
+    },
+    {
+        "id": 237,
+        "name": "Adelsberg",
+        "latitude": 50.819231819463,
+        "longitude": 12.9689238597218
+    },
+    {
+        "id": 236,
+        "name": "Kleiner Weg",
+        "latitude": 50.8132723964604,
+        "longitude": 12.9808175540852
+    },
+    {
+        "id": 235,
+        "name": "Dreiserstr.",
+        "latitude": 50.8114503639357,
+        "longitude": 12.9733345877674
+    },
+    {
+        "id": 234,
+        "name": "Georgistr.",
+        "latitude": 50.8093898489992,
+        "longitude": 12.9660851834236
+    },
+    {
+        "id": 233,
+        "name": "Mittagleite",
+        "latitude": 50.8115411834393,
+        "longitude": 12.9612881798057
+    },
+    {
+        "id": 232,
+        "name": "Höppnerweg",
+        "latitude": 50.8165870646337,
+        "longitude": 12.9496010979577
+    },
+    {
+        "id": 295,
+        "name": "Hans-Benz-Str.",
+        "latitude": 50.833491617359,
+        "longitude": 12.8390813685371
+    },
+    {
+        "id": 294,
+        "name": "Georgenkirchweg",
+        "latitude": 50.8292022197832,
+        "longitude": 12.8345269100459
+    },
+    {
+        "id": 293,
+        "name": "Riedstr.",
+        "latitude": 50.8288504263027,
+        "longitude": 12.8256695213433
+    },
+    {
+        "id": 292,
+        "name": "RabensteinCenter",
+        "latitude": 50.8261097508318,
+        "longitude": 12.8319936609444
+    },
+    {
+        "id": 291,
+        "name": "DRK-Krankenhaus",
+        "latitude": 50.8220069483503,
+        "longitude": 12.825687487649
+    },
+    {
+        "id": 290,
+        "name": "Rabenstein, Tierpark",
+        "latitude": 50.8191807419255,
+        "longitude": 12.8275380171345
+    },
+    {
+        "id": 289,
+        "name": "Pelzmühlenstr.",
+        "latitude": 50.8220807225324,
+        "longitude": 12.8372128727458
+    },
+    {
+        "id": 288,
+        "name": "Bahnhof Siegmar",
+        "latitude": 50.816195446574,
+        "longitude": 12.8420458089751
+    },
+    {
+        "id": 287,
+        "name": "Ehrlichstr.",
+        "latitude": 50.8066196471219,
+        "longitude": 12.8679532217727
+    },
+    {
+        "id": 285,
+        "name": "Pasteurstr.",
+        "latitude": 50.8098723468723,
+        "longitude": 12.8666596477634
+    },
+    {
+        "id": 284,
+        "name": "Überflieger",
+        "latitude": 50.8120179829361,
+        "longitude": 12.874151597234
+    },
+    {
+        "id": 283,
+        "name": "Albert-Jentzsch-Str.",
+        "latitude": 50.8176824426374,
+        "longitude": 12.9587908633155
+    },
+    {
+        "id": 282,
+        "name": "Johannes-Ebert-Str.",
+        "latitude": 50.7995003831311,
+        "longitude": 13.0072010739834
+    },
+    {
+        "id": 281,
+        "name": "Schillerstr.",
+        "latitude": 50.7975188320107,
+        "longitude": 13.0017483002081
+    },
+    {
+        "id": 278,
+        "name": "Gartenstadt",
+        "latitude": 50.7957018631598,
+        "longitude": 12.9965201052538
+    },
+    {
+        "id": 277,
+        "name": "Schneeberger Str.",
+        "latitude": 50.794134670787,
+        "longitude": 12.9224090943036
+    },
+    {
+        "id": 276,
+        "name": "Schule Altchemnitz",
+        "latitude": 50.7990177781341,
+        "longitude": 12.9129139017491
+    },
+    {
+        "id": 275,
+        "name": "Casparistr.",
+        "latitude": 50.8235902302016,
+        "longitude": 12.9422079631683
+    },
+    {
+        "id": 274,
+        "name": "Cervantesstr.",
+        "latitude": 50.8177789254791,
+        "longitude": 12.9782483723722
+    },
+    {
+        "id": 273,
+        "name": "Adelsbergstr.",
+        "latitude": 50.8221317968978,
+        "longitude": 12.9753737634626
+    },
+    {
+        "id": 272,
+        "name": "Sandgrubenweg",
+        "latitude": 50.8241747257034,
+        "longitude": 12.9728584806668
+    },
+    {
+        "id": 270,
+        "name": "Röhrsdorfer Allee/SIEMENS",
+        "latitude": 50.8721521544679,
+        "longitude": 12.8418571627654
+    },
+    {
+        "id": 269,
+        "name": "Gewerbegebiet Chemnitz-Park",
+        "latitude": 50.8672766929434,
+        "longitude": 12.853454413085
+    },
+    {
+        "id": 266,
+        "name": "Fleischergasse",
+        "latitude": 50.7915907104187,
+        "longitude": 12.8956931977502
+    },
+    {
+        "id": 265,
+        "name": "Dietrich-Bonhoeffer-Kirche",
+        "latitude": 50.7920279634607,
+        "longitude": 12.8988912001621
+    },
+    {
+        "id": 326,
+        "name": "Bernsbachplatz",
+        "latitude": 50.8247251662333,
+        "longitude": 12.927286946297
+    },
+    {
+        "id": 325,
+        "name": "Zschopauer Str.",
+        "latitude": 50.8241747257034,
+        "longitude": 12.9331170124918
+    },
+    {
+        "id": 324,
+        "name": "Müllergasse",
+        "latitude": 50.7976551018269,
+        "longitude": 12.7947584924124
+    },
+    {
+        "id": 323,
+        "name": "Andreasstr.",
+        "latitude": 50.822721985512,
+        "longitude": 12.9384709715859
+    },
+    {
+        "id": 322,
+        "name": "Grüner Winkel",
+        "latitude": 50.8215132258243,
+        "longitude": 12.944049509501
+    },
+    {
+        "id": 321,
+        "name": "Kreherstr.",
+        "latitude": 50.8218139999386,
+        "longitude": 12.9545148825625
+    },
+    {
+        "id": 319,
+        "name": "Teichstr.",
+        "latitude": 50.8098326119417,
+        "longitude": 12.772776717407
+    },
+    {
+        "id": 318,
+        "name": "Ebersdorf, Brettmühle",
+        "latitude": 50.887631198631,
+        "longitude": 12.9876267839397
+    },
+    {
+        "id": 316,
+        "name": "Mittweidaer Str.",
+        "latitude": 50.8859990849877,
+        "longitude": 12.9836652135362
+    },
+    {
+        "id": 315,
+        "name": "Am Dorfbach",
+        "latitude": 50.8847296237321,
+        "longitude": 12.9821021449416
+    },
+    {
+        "id": 314,
+        "name": "Stiftstal",
+        "latitude": 50.8822472736489,
+        "longitude": 12.9789580414468
+    },
+    {
+        "id": 313,
+        "name": "Ludwig-Kühn-Str.",
+        "latitude": 50.7823676933795,
+        "longitude": 12.8974628788601
+    },
+    {
+        "id": 312,
+        "name": "Braunsdorfer Str.",
+        "latitude": 50.8792093319419,
+        "longitude": 12.975580375978
+    },
+    {
+        "id": 311,
+        "name": "Diesterwegschule",
+        "latitude": 50.8192999227594,
+        "longitude": 12.9554850630695
+    },
+    {
+        "id": 310,
+        "name": "Stiftskirche Ebersdorf",
+        "latitude": 50.876040819792,
+        "longitude": 12.9729303458895
+    },
+    {
+        "id": 308,
+        "name": "Ebersdorfer Höhe",
+        "latitude": 50.8694366986967,
+        "longitude": 12.964917373554
+    },
+    {
+        "id": 305,
+        "name": "Aktienstr.",
+        "latitude": 50.8041615230768,
+        "longitude": 12.8067779509156
+    },
+    {
+        "id": 304,
+        "name": "Morgenleite",
+        "latitude": 50.7953384609128,
+        "longitude": 12.882245417945
+    },
+    {
+        "id": 302,
+        "name": "Löbenhainer Str.",
+        "latitude": 50.8623383510872,
+        "longitude": 12.8124822529706
+    },
+    {
+        "id": 300,
+        "name": "Guerickestr./Messe Chemnitz",
+        "latitude": 50.8217288753859,
+        "longitude": 12.8815087994119
+    },
+    {
+        "id": 299,
+        "name": "An der Würschnitz",
+        "latitude": 50.7715692269939,
+        "longitude": 12.9020442868098
+    },
+    {
+        "id": 298,
+        "name": "Wiesengrund",
+        "latitude": 50.8357042477024,
+        "longitude": 12.8574339497942
+    },
+    {
+        "id": 297,
+        "name": "Gerstenbergerstr.",
+        "latitude": 50.835602128611,
+        "longitude": 12.8527986429275
+    },
+    {
+        "id": 296,
+        "name": "Felsendome",
+        "latitude": 50.8345355380786,
+        "longitude": 12.8437795574737
+    },
+    {
+        "id": 358,
+        "name": "Chemnitzer Str.",
+        "latitude": 50.7818905912831,
+        "longitude": 12.8980916995591
+    },
+    {
+        "id": 357,
+        "name": "Am Stadtpark",
+        "latitude": 50.8020212035153,
+        "longitude": 12.9041373614221
+    },
+    {
+        "id": 355,
+        "name": "Pleißaer Str.",
+        "latitude": 50.8120123067802,
+        "longitude": 12.7931235585951
+    },
+    {
+        "id": 354,
+        "name": "Am Winkel",
+        "latitude": 50.7847758487079,
+        "longitude": 13.000158282155
+    },
+    {
+        "id": 353,
+        "name": "Poststr.",
+        "latitude": 50.81247207317,
+        "longitude": 12.7982349725625
+    },
+    {
+        "id": 350,
+        "name": "Altenhain",
+        "latitude": 50.7894157416594,
+        "longitude": 13.0122316395752
+    },
+    {
+        "id": 349,
+        "name": "Liselotte-Herrmann-Str.",
+        "latitude": 50.8157243654265,
+        "longitude": 12.9529158813565
+    },
+    {
+        "id": 348,
+        "name": "Rosa-Luxemburg-Str.",
+        "latitude": 50.8128864266565,
+        "longitude": 12.9573445757079
+    },
+    {
+        "id": 347,
+        "name": "Wartburgstr.",
+        "latitude": 50.8173929929164,
+        "longitude": 12.9399082760407
+    },
+    {
+        "id": 346,
+        "name": "Mauersbergerstr.",
+        "latitude": 50.8053253161704,
+        "longitude": 12.8481453697551
+    },
+    {
+        "id": 344,
+        "name": "Grenzgraben",
+        "latitude": 50.8110927604238,
+        "longitude": 12.9401957369316
+    },
+    {
+        "id": 343,
+        "name": "Dürerstr.",
+        "latitude": 50.8255876991662,
+        "longitude": 12.9415791424694
+    },
+    {
+        "id": 342,
+        "name": "Betriebshof Werner-Seelenbinder-Str.",
+        "latitude": 50.8065969398704,
+        "longitude": 12.9279696659131
+    },
+    {
+        "id": 341,
+        "name": "Hermann-Pöge-Str.",
+        "latitude": 50.8052742234235,
+        "longitude": 12.9212682338926
+    },
+    {
+        "id": 340,
+        "name": "Carl-von-Bach-Str.",
+        "latitude": 50.8042920964287,
+        "longitude": 12.851460153154
+    },
+    {
+        "id": 339,
+        "name": "Hohensteiner Str.",
+        "latitude": 50.8127729055189,
+        "longitude": 12.8223188053331
+    },
+    {
+        "id": 336,
+        "name": "Heinersdorf",
+        "latitude": 50.8729514547353,
+        "longitude": 12.8952260738023
+    },
+    {
+        "id": 335,
+        "name": "Damaschkestr.",
+        "latitude": 50.8693573301779,
+        "longitude": 12.8994571387911
+    },
+    {
+        "id": 334,
+        "name": "Bornaer Str.",
+        "latitude": 50.8659103384133,
+        "longitude": 12.9050356767063
+    },
+    {
+        "id": 333,
+        "name": "Industriemuseum",
+        "latitude": 50.8251564346916,
+        "longitude": 12.9021161520325
+    },
+    {
+        "id": 332,
+        "name": "In der Delle",
+        "latitude": 50.8592140552859,
+        "longitude": 12.912922884902
+    },
+    {
+        "id": 331,
+        "name": "Kändler, An den Teichen",
+        "latitude": 50.8593217931088,
+        "longitude": 12.8001124515065
+    },
+    {
+        "id": 330,
+        "name": "Kändler, Goetheweg",
+        "latitude": 50.8602460599929,
+        "longitude": 12.8039482577703
+    },
+    {
+        "id": 329,
+        "name": "Nordstr.",
+        "latitude": 50.8462213173692,
+        "longitude": 12.9202531376214
+    },
+    {
+        "id": 328,
+        "name": "Bräuteichweg",
+        "latitude": 50.8794247149296,
+        "longitude": 12.8640275839805
+    },
+    {
+        "id": 390,
+        "name": "Irkutsker Str.",
+        "latitude": 50.8138740489114,
+        "longitude": 12.897696440834
+    },
+    {
+        "id": 389,
+        "name": "Am Flughafen",
+        "latitude": 50.8109792349268,
+        "longitude": 12.8950913265097
+    },
+    {
+        "id": 384,
+        "name": "Sandstr.",
+        "latitude": 50.8639826332144,
+        "longitude": 12.9015322470977
+    },
+    {
+        "id": 382,
+        "name": "Auerswalder Str.",
+        "latitude": 50.8626502021535,
+        "longitude": 12.8960345575582
+    },
+    {
+        "id": 381,
+        "name": "An der Schmiede",
+        "latitude": 50.8595032457215,
+        "longitude": 12.8901775419049
+    },
+    {
+        "id": 380,
+        "name": "Wittgensdorf, Kornweg",
+        "latitude": 50.870666893458,
+        "longitude": 12.875463137549
+    },
+    {
+        "id": 378,
+        "name": "Paul-Fischer-Weg",
+        "latitude": 50.8643171524793,
+        "longitude": 12.886009358986
+    },
+    {
+        "id": 377,
+        "name": "Haltepunkt Borna",
+        "latitude": 50.8591630214935,
+        "longitude": 12.8927018078536
+    },
+    {
+        "id": 376,
+        "name": "Wittgensdorfer Str.",
+        "latitude": 50.856843760205,
+        "longitude": 12.8953248884836
+    },
+    {
+        "id": 375,
+        "name": "Waldrand",
+        "latitude": 50.8527039607212,
+        "longitude": 12.8970766032879
+    },
+    {
+        "id": 374,
+        "name": "Eisstadion",
+        "latitude": 50.8512067372807,
+        "longitude": 12.8941930112255
+    },
+    {
+        "id": 373,
+        "name": "Am Erlenwald",
+        "latitude": 50.7872065966936,
+        "longitude": 12.9923968380991
+    },
+    {
+        "id": 372,
+        "name": "An der Walzenmühle",
+        "latitude": 50.7910398793362,
+        "longitude": 12.9478044673892
+    },
+    {
+        "id": 370,
+        "name": "Am Schwarzbach",
+        "latitude": 50.7989212565365,
+        "longitude": 13.028266567399
+    },
+    {
+        "id": 369,
+        "name": "Wildparkstr.",
+        "latitude": 50.8670045591353,
+        "longitude": 12.8575507307811
+    },
+    {
+        "id": 368,
+        "name": "Kändler, Schulstr.",
+        "latitude": 50.8557776551955,
+        "longitude": 12.7937793287526
+    },
+    {
+        "id": 366,
+        "name": "Glösa",
+        "latitude": 50.8673560650049,
+        "longitude": 12.9130306827361
+    },
+    {
+        "id": 365,
+        "name": "Ottostr.",
+        "latitude": 50.8476166080319,
+        "longitude": 12.9319851352336
+    },
+    {
+        "id": 364,
+        "name": "Yorckstr.",
+        "latitude": 50.8362772451269,
+        "longitude": 12.9560150690872
+    },
+    {
+        "id": 363,
+        "name": "Bleicherstr.",
+        "latitude": 50.8102810470545,
+        "longitude": 12.7770616813128
+    },
+    {
+        "id": 362,
+        "name": "Gablenzplatz",
+        "latitude": 50.8310859720227,
+        "longitude": 12.9540926743789
+    },
+    {
+        "id": 423,
+        "name": "Horststr.",
+        "latitude": 50.8178754081214,
+        "longitude": 12.8959716754883
+    },
+    {
+        "id": 421,
+        "name": "Heimgarten",
+        "latitude": 50.8174156949201,
+        "longitude": 12.9518109535569
+    },
+    {
+        "id": 420,
+        "name": "Am Feldschlößchen",
+        "latitude": 50.8226028134122,
+        "longitude": 12.8869885226458
+    },
+    {
+        "id": 418,
+        "name": "Eibenberger Str.",
+        "latitude": 50.7622399807652,
+        "longitude": 12.9681962243415
+    },
+    {
+        "id": 415,
+        "name": "Lichtenauer Weg",
+        "latitude": 50.8831200784804,
+        "longitude": 12.9471756466902
+    },
+    {
+        "id": 414,
+        "name": "Liebermannstr.",
+        "latitude": 50.8851660049404,
+        "longitude": 12.9396926803725
+    },
+    {
+        "id": 413,
+        "name": "Corinthstr.",
+        "latitude": 50.8854436999448,
+        "longitude": 12.934473468571
+    },
+    {
+        "id": 412,
+        "name": "Kiefernweg",
+        "latitude": 50.8838908535673,
+        "longitude": 12.932991248352
+    },
+    {
+        "id": 411,
+        "name": "Schmidt-Rottluff-Str.",
+        "latitude": 50.880501614935,
+        "longitude": 12.9309610558096
+    },
+    {
+        "id": 410,
+        "name": "Genossenschaftsplatz",
+        "latitude": 50.8787502227769,
+        "longitude": 12.9263526984014
+    },
+    {
+        "id": 409,
+        "name": "Gürtelstr.",
+        "latitude": 50.8752075616794,
+        "longitude": 12.920387884914
+    },
+    {
+        "id": 408,
+        "name": "Am Berg",
+        "latitude": 50.8720047642692,
+        "longitude": 12.9143422230511
+    },
+    {
+        "id": 407,
+        "name": "Dorfstr.",
+        "latitude": 50.7952362535217,
+        "longitude": 12.7909496356072
+    },
+    {
+        "id": 406,
+        "name": "Eibenberg, Einsiedler Str.",
+        "latitude": 50.7534885707672,
+        "longitude": 12.9522151954348
+    },
+    {
+        "id": 403,
+        "name": "Händelstr.",
+        "latitude": 50.8126593841055,
+        "longitude": 12.9021970004081
+    },
+    {
+        "id": 402,
+        "name": "Kauffahrtei",
+        "latitude": 50.8148673260928,
+        "longitude": 12.9063562001741
+    },
+    {
+        "id": 401,
+        "name": "Waplerstr.",
+        "latitude": 50.8164111206943,
+        "longitude": 12.9120245696177
+    },
+    {
+        "id": 400,
+        "name": "Altchemnitzer Str.",
+        "latitude": 50.8169786794096,
+        "longitude": 12.9173246297948
+    },
+    {
+        "id": 399,
+        "name": "Bruno-Salzer-Str.",
+        "latitude": 50.8198163695247,
+        "longitude": 12.923639786243
+    },
+    {
+        "id": 398,
+        "name": "Lothringer Str.",
+        "latitude": 50.822313394189,
+        "longitude": 12.9250321749336
+    },
+    {
+        "id": 397,
+        "name": "Stadlerplatz",
+        "latitude": 50.8213486504888,
+        "longitude": 12.9269994854061
+    },
+    {
+        "id": 396,
+        "name": "Stelzendorf",
+        "latitude": 50.7972803588764,
+        "longitude": 12.8624106164689
+    },
+    {
+        "id": 395,
+        "name": "Oberrabenstein",
+        "latitude": 50.8410368230718,
+        "longitude": 12.8147639737926
+    },
+    {
+        "id": 394,
+        "name": "Weigandstr.",
+        "latitude": 50.8300873658456,
+        "longitude": 12.8226960977524
+    },
+    {
+        "id": 392,
+        "name": "Goetheplatz",
+        "latitude": 50.82140540067,
+        "longitude": 12.9066077284537
+    },
+    {
+        "id": 454,
+        "name": "Gewerbepark am Südring",
+        "latitude": 50.801447785602,
+        "longitude": 12.9466815732839
+    },
+    {
+        "id": 453,
+        "name": "Stephanplatz",
+        "latitude": 50.8300987137631,
+        "longitude": 12.910129124368
+    },
+    {
+        "id": 452,
+        "name": "Beyerstr.",
+        "latitude": 50.8386372395646,
+        "longitude": 12.9013076682767
+    },
+    {
+        "id": 451,
+        "name": "Palmstr.",
+        "latitude": 50.8430789246051,
+        "longitude": 12.9385518199615
+    },
+    {
+        "id": 450,
+        "name": "Kemtau, Bahnhof",
+        "latitude": 50.7429562958087,
+        "longitude": 12.953913011322
+    },
+    {
+        "id": 449,
+        "name": "Am Knie",
+        "latitude": 50.8807906733311,
+        "longitude": 12.9552784505541
+    },
+    {
+        "id": 446,
+        "name": "Weg zur Sternmühle",
+        "latitude": 50.7983421227649,
+        "longitude": 13.0316532160206
+    },
+    {
+        "id": 445,
+        "name": "Kaßbergstr.",
+        "latitude": 50.8335086379928,
+        "longitude": 12.9111442206392
+    },
+    {
+        "id": 444,
+        "name": "Brückenstr./Freie Presse",
+        "latitude": 50.8349950827328,
+        "longitude": 12.9242955564005
+    },
+    {
+        "id": 440,
+        "name": "Humboldtplatz",
+        "latitude": 50.8348192081527,
+        "longitude": 12.9486219342978
+    },
+    {
+        "id": 438,
+        "name": "eins energie in sachsen",
+        "latitude": 50.833485943813,
+        "longitude": 12.9268198223492
+    },
+    {
+        "id": 437,
+        "name": "Humboldtstr.",
+        "latitude": 50.8380529251355,
+        "longitude": 12.9410042206875
+    },
+    {
+        "id": 436,
+        "name": "Eibenberg",
+        "latitude": 50.7630525286591,
+        "longitude": 12.9420821990285
+    },
+    {
+        "id": 434,
+        "name": "Rosenhof",
+        "latitude": 50.8305866716046,
+        "longitude": 12.916570044956
+    },
+    {
+        "id": 432,
+        "name": "Beutenberg",
+        "latitude": 50.8466637311219,
+        "longitude": 12.9857403218428
+    },
+    {
+        "id": 431,
+        "name": "Am Beutenberg",
+        "latitude": 50.8466637311219,
+        "longitude": 12.9857403218428
+    },
+    {
+        "id": 430,
+        "name": "Beutenbergstr.",
+        "latitude": 50.8436972099423,
+        "longitude": 12.9866206708214
+    },
+    {
+        "id": 429,
+        "name": "Anton-Günther-Siedlung",
+        "latitude": 50.8380415791518,
+        "longitude": 12.9901241004299
+    },
+    {
+        "id": 428,
+        "name": "Kuckucksdelle",
+        "latitude": 50.8335880675349,
+        "longitude": 12.9908966515744
+    },
+    {
+        "id": 426,
+        "name": "Kleinhofweg",
+        "latitude": 50.8270290015312,
+        "longitude": 12.9861265974151
+    },
+    {
+        "id": 425,
+        "name": "Augustusburger Str.",
+        "latitude": 50.8246173484962,
+        "longitude": 12.9822907911513
+    },
+    {
+        "id": 487,
+        "name": "Kändler, Feldweg",
+        "latitude": 50.854229491232,
+        "longitude": 12.7891889376501
+    },
+    {
+        "id": 485,
+        "name": "Scheffelstr.",
+        "latitude": 50.8024753909277,
+        "longitude": 12.9114226983773
+    },
+    {
+        "id": 484,
+        "name": "Zwickau, Amtsgericht",
+        "latitude": 50.7183698764156,
+        "longitude": 12.4919364100936
+    },
+    {
+        "id": 483,
+        "name": "Am Glücksberg",
+        "latitude": 50.8545810934191,
+        "longitude": 12.9192021087388
+    },
+    {
+        "id": 482,
+        "name": "Schönherrpark",
+        "latitude": 50.8499419997332,
+        "longitude": 12.9211963686699
+    },
+    {
+        "id": 481,
+        "name": "Neue Str.",
+        "latitude": 50.8115922693324,
+        "longitude": 12.8417044491671
+    },
+    {
+        "id": 480,
+        "name": "Höckericht",
+        "latitude": 50.8187323922546,
+        "longitude": 12.8551162963608
+    },
+    {
+        "id": 479,
+        "name": "Mittelbach",
+        "latitude": 50.7914771375309,
+        "longitude": 12.7803045994889
+    },
+    {
+        "id": 478,
+        "name": "Bernsdorfer Str.",
+        "latitude": 50.8002214424873,
+        "longitude": 12.9473822592056
+    },
+    {
+        "id": 477,
+        "name": "Mittelbacher Str.",
+        "latitude": 50.8074598076693,
+        "longitude": 12.8022594250359
+    },
+    {
+        "id": 476,
+        "name": "Am Stadtbad",
+        "latitude": 50.8380302331654,
+        "longitude": 12.9214838295608
+    },
+    {
+        "id": 474,
+        "name": "Dammweg",
+        "latitude": 50.8592707594343,
+        "longitude": 12.9247267477369
+    },
+    {
+        "id": 473,
+        "name": "Zietenstr.",
+        "latitude": 50.8353865431285,
+        "longitude": 12.939773528748
+    },
+    {
+        "id": 470,
+        "name": "Scharnhorststr.",
+        "latitude": 50.8333894934261,
+        "longitude": 12.9583327225205
+    },
+    {
+        "id": 469,
+        "name": "Hans-Ziegler-Str.",
+        "latitude": 50.8219615487958,
+        "longitude": 12.9598688416566
+    },
+    {
+        "id": 468,
+        "name": "Lützowstr.",
+        "latitude": 50.8221374718238,
+        "longitude": 12.8921179029189
+    },
+    {
+        "id": 467,
+        "name": "Kappler Drehe",
+        "latitude": 50.8238909909368,
+        "longitude": 12.8970676201351
+    },
+    {
+        "id": 466,
+        "name": "Chemnitz Center",
+        "latitude": 50.8629393712785,
+        "longitude": 12.8661835406627
+    },
+    {
+        "id": 462,
+        "name": "Knappschaft/Wismut GmbH",
+        "latitude": 50.8082148039201,
+        "longitude": 12.8427375117439
+    },
+    {
+        "id": 461,
+        "name": "Gewerbegebiet Blankenburgstr.",
+        "latitude": 50.8618960859983,
+        "longitude": 12.9091858933195
+    },
+    {
+        "id": 460,
+        "name": "Dr.-Salvador-Allende-Str.",
+        "latitude": 50.80556942519,
+        "longitude": 12.8890276983411
+    },
+    {
+        "id": 456,
+        "name": "Südring",
+        "latitude": 50.801447785602,
+        "longitude": 12.9466815732839
+    },
+    {
+        "id": 518,
+        "name": "Schwanauer Str.",
+        "latitude": 50.8377749477417,
+        "longitude": 13.0251134807513
+    },
+    {
+        "id": 517,
+        "name": "Am Lehngut",
+        "latitude": 50.833656149892,
+        "longitude": 13.0215022533086
+    },
+    {
+        "id": 516,
+        "name": "Erfenschlag Mitte",
+        "latitude": 50.7878199430394,
+        "longitude": 12.9499873735299
+    },
+    {
+        "id": 515,
+        "name": "Walter-Klippel-Str.",
+        "latitude": 50.8327937660306,
+        "longitude": 12.9898007069276
+    },
+    {
+        "id": 514,
+        "name": "Heideschänke",
+        "latitude": 50.8324817153127,
+        "longitude": 12.9841143711783
+    },
+    {
+        "id": 513,
+        "name": "Jungborn",
+        "latitude": 50.832124272836,
+        "longitude": 12.9757869884934
+    },
+    {
+        "id": 512,
+        "name": "Eubaer Str.",
+        "latitude": 50.8288731227363,
+        "longitude": 12.9622134445485
+    },
+    {
+        "id": 509,
+        "name": "Bürgelstr.",
+        "latitude": 50.8221374718238,
+        "longitude": 12.8467350147588
+    },
+    {
+        "id": 508,
+        "name": "Neubauernweg",
+        "latitude": 50.8149184083481,
+        "longitude": 12.879739118302
+    },
+    {
+        "id": 507,
+        "name": "Solaris",
+        "latitude": 50.8191920924942,
+        "longitude": 12.8908153457567
+    },
+    {
+        "id": 506,
+        "name": "Rosenbergstr.",
+        "latitude": 50.8180229694241,
+        "longitude": 12.9292362904638
+    },
+    {
+        "id": 505,
+        "name": "Querstr.",
+        "latitude": 50.8656098484351,
+        "longitude": 12.8577932759079
+    },
+    {
+        "id": 504,
+        "name": "Neefepark Süd",
+        "latitude": 50.8042580338503,
+        "longitude": 12.8623118017876
+    },
+    {
+        "id": 503,
+        "name": "Neefepark Nord",
+        "latitude": 50.8066196471219,
+        "longitude": 12.8613506044335
+    },
+    {
+        "id": 501,
+        "name": "Kaufmannstr.",
+        "latitude": 50.8204009122689,
+        "longitude": 12.8477680773357
+    },
+    {
+        "id": 498,
+        "name": "Am Bahrebach",
+        "latitude": 50.8681100928485,
+        "longitude": 12.8789486008518
+    },
+    {
+        "id": 495,
+        "name": "TU Erfenschlager Str.",
+        "latitude": 50.7949693776134,
+        "longitude": 12.9426391545048
+    },
+    {
+        "id": 492,
+        "name": "Wasserschänkenstr.",
+        "latitude": 50.8645269345225,
+        "longitude": 12.8198484383014
+    },
+    {
+        "id": 491,
+        "name": "Thomas-Mann-Platz/SACHSEN-ALLEE",
+        "latitude": 50.8447692632628,
+        "longitude": 12.9373480774806
+    },
+    {
+        "id": 490,
+        "name": "Knieweg",
+        "latitude": 50.7934305527573,
+        "longitude": 12.9045416033
+    },
+    {
+        "id": 488,
+        "name": "Sechsruthen",
+        "latitude": 50.8750375071728,
+        "longitude": 12.9066706105236
+    },
+    {
+        "id": 545,
+        "name": "Dresdner Platz",
+        "latitude": 50.8361127218339,
+        "longitude": 12.9307005443772
+    },
+    {
+        "id": 544,
+        "name": "Dorfchemnitz",
+        "latitude": 50.729044150862,
+        "longitude": 13.4547058159827
+    },
+    {
+        "id": 543,
+        "name": "Betriebshof Adelsberg",
+        "latitude": 50.819231819463,
+        "longitude": 12.9689238597218
+    },
+    {
+        "id": 542,
+        "name": "Albert-Köhler-Str.",
+        "latitude": 50.7929081357519,
+        "longitude": 12.8917765431108
+    },
+    {
+        "id": 540,
+        "name": "Kochstr.",
+        "latitude": 50.8350064294571,
+        "longitude": 12.8870693710214
+    },
+    {
+        "id": 538,
+        "name": "Am Eubaer Bach",
+        "latitude": 50.843294474552,
+        "longitude": 13.0180257731586
+    },
+    {
+        "id": 537,
+        "name": "Platnerstr.",
+        "latitude": 50.8196517882085,
+        "longitude": 12.8941301291556
+    },
+    {
+        "id": 534,
+        "name": "Waldeck",
+        "latitude": 50.8776392732425,
+        "longitude": 12.9555389619865
+    },
+    {
+        "id": 533,
+        "name": "IKEA",
+        "latitude": 50.8023164258356,
+        "longitude": 12.860919413097
+    },
+    {
+        "id": 532,
+        "name": "Alt Chemnitz Center",
+        "latitude": 50.7961163653983,
+        "longitude": 12.9183576923716
+    },
+    {
+        "id": 531,
+        "name": "Otto-Schmerbach-Str.",
+        "latitude": 50.8105591881892,
+        "longitude": 12.8503462422015
+    },
+    {
+        "id": 530,
+        "name": "Mauersbergerstr. Ost",
+        "latitude": 50.8103945742483,
+        "longitude": 12.8553947740989
+    },
+    {
+        "id": 528,
+        "name": "Einsiedel, Brauerei",
+        "latitude": 50.7651889509008,
+        "longitude": 12.9747090101523
+    },
+    {
+        "id": 526,
+        "name": "An der Luthereiche",
+        "latitude": 50.7932772353285,
+        "longitude": 12.8681688174409
+    },
+    {
+        "id": 525,
+        "name": "Einsiedel, Gymnasium",
+        "latitude": 50.7820666652426,
+        "longitude": 12.9728764469724
+    },
+    {
+        "id": 524,
+        "name": "Küchwald",
+        "latitude": 50.8463631171057,
+        "longitude": 12.8938606345703
+    },
+    {
+        "id": 523,
+        "name": "Klingerstr.",
+        "latitude": 50.8209740975631,
+        "longitude": 12.8424141182416
+    },
+    {
+        "id": 522,
+        "name": "Stadthalle",
+        "latitude": 50.83573828735,
+        "longitude": 12.9228043530287
+    },
+    {
+        "id": 521,
+        "name": "Erfenschlag Ost",
+        "latitude": 50.7839863963577,
+        "longitude": 12.9647197441915
+    },
+    {
+        "id": 520,
+        "name": "Bergeshöh",
+        "latitude": 50.8457165068085,
+        "longitude": 13.0144145457159
+    },
+    {
+        "id": 583,
+        "name": "Schloßberg",
+        "latitude": 50.8460227970139,
+        "longitude": 12.9145129029551
+    },
+    {
+        "id": 578,
+        "name": "Altchemnitz",
+        "latitude": 50.7909717348335,
+        "longitude": 12.9260742206633
+    },
+    {
+        "id": 576,
+        "name": "Gablenz",
+        "latitude": 50.8202249826982,
+        "longitude": 12.9645131316761
+    },
+    {
+        "id": 575,
+        "name": "Bernsdorf",
+        "latitude": 50.8104570140873,
+        "longitude": 12.9507689078272
+    },
+    {
+        "id": 574,
+        "name": "Hutholz",
+        "latitude": 50.7828675094021,
+        "longitude": 12.876487216973
+    },
+    {
+        "id": 573,
+        "name": "Aue",
+        "latitude": 50.7440306622668,
+        "longitude": 13.0606059176318
+    },
+    {
+        "id": 572,
+        "name": "Grüna",
+        "latitude": 50.820015001375,
+        "longitude": 12.7992680351393
+    },
+    {
+        "id": 570,
+        "name": "Moritzhof",
+        "latitude": 50.8298547329295,
+        "longitude": 12.9198578788963
+    },
+    {
+        "id": 568,
+        "name": "Zwönitz",
+        "latitude": 50.6842322824555,
+        "longitude": 12.8041638534385
+    },
+    {
+        "id": 567,
+        "name": "Niederzwönitz",
+        "latitude": 50.6461737366137,
+        "longitude": 12.8220493107478
+    },
+    {
+        "id": 564,
+        "name": "Braunsdorf, Ortseingang",
+        "latitude": 50.8749354741711,
+        "longitude": 13.0173071209312
+    },
+    {
+        "id": 563,
+        "name": "Burkhardtsdorf, Mitte",
+        "latitude": 50.7329333725204,
+        "longitude": 12.9161478367724
+    },
+    {
+        "id": 556,
+        "name": "Neuoelsnitz",
+        "latitude": 50.7214694767402,
+        "longitude": 12.7262619519888
+    },
+    {
+        "id": 555,
+        "name": "Mitteloelsnitz",
+        "latitude": 50.7177328689356,
+        "longitude": 12.7063822347485
+    },
+    {
+        "id": 608,
+        "name": "Rosenplatz",
+        "latitude": 50.8410084599212,
+        "longitude": 13.0231731197373
+    },
+    {
+        "id": 607,
+        "name": "Helbersdorfer Str.",
+        "latitude": 50.8027933194894,
+        "longitude": 12.8969688054538
+    },
+    {
+        "id": 602,
+        "name": "Neukirchen, Oberschule",
+        "latitude": 50.7769943337065,
+        "longitude": 12.8734419281594
+    },
+    {
+        "id": 599,
+        "name": "Reitbahnstr.",
+        "latitude": 50.8305356064881,
+        "longitude": 12.923352325352
+    },
+    {
+        "id": 595,
+        "name": "Jack-London-Str.",
+        "latitude": 50.8646573391007,
+        "longitude": 12.823747126635
+    },
+    {
+        "id": 594,
+        "name": "Sebastian-Bach-Gasse",
+        "latitude": 50.8622929907583,
+        "longitude": 12.8303766934327
+    },
+    {
+        "id": 591,
+        "name": "Genossenschaftsweg",
+        "latitude": 50.8618790757188,
+        "longitude": 12.8502114949089
+    },
+    {
+        "id": 589,
+        "name": "Richard-Wagner-Str.",
+        "latitude": 50.8205711660611,
+        "longitude": 12.8975437272357
+    },
+    {
+        "id": 588,
+        "name": "Keplerstr. Nord",
+        "latitude": 50.822988702919,
+        "longitude": 12.8498162361838
+    },
+    {
+        "id": 587,
+        "name": "Lohrstr.",
+        "latitude": 50.8477924343822,
+        "longitude": 12.9255981135627
     },
     {
         "id": 586,
-        "name": "Hauboldstraße",
-        "latitude": 50.848185,
-        "longitude": 12.9236533
+        "name": "Hauboldstr.",
+        "latitude": 50.8475825770488,
+        "longitude": 12.9232804601293
+    },
+    {
+        "id": 643,
+        "name": "Am Ried",
+        "latitude": 50.827539688543,
+        "longitude": 12.8266397018503
+    },
+    {
+        "id": 641,
+        "name": "Salzstr.",
+        "latitude": 50.8469927027311,
+        "longitude": 12.9165969944145
+    },
+    {
+        "id": 640,
+        "name": "Hechlerstr.",
+        "latitude": 50.8440432192618,
+        "longitude": 12.9113777826131
+    },
+    {
+        "id": 639,
+        "name": "Parkstr.",
+        "latitude": 50.8236469776584,
+        "longitude": 12.9109735407352
+    },
+    {
+        "id": 638,
+        "name": "Alfred-Neubert-Str.",
+        "latitude": 50.7860877867997,
+        "longitude": 12.8951092928154
+    },
+    {
+        "id": 637,
+        "name": "Niederwiesa, Rathaus",
+        "latitude": 50.8636481115492,
+        "longitude": 13.0220322593263
+    },
+    {
+        "id": 634,
+        "name": "Steinbruchsweg",
+        "latitude": 50.8804165974184,
+        "longitude": 12.8392250989825
+    },
+    {
+        "id": 632,
+        "name": "Am Wittgensdorfer Bach",
+        "latitude": 50.881385787912,
+        "longitude": 12.8531400027355
+    },
+    {
+        "id": 631,
+        "name": "Nordplatz",
+        "latitude": 50.8798498100102,
+        "longitude": 12.8584580292182
+    },
+    {
+        "id": 628,
+        "name": "Herzogshöhe",
+        "latitude": 50.8870078286415,
+        "longitude": 12.8765051832787
+    },
+    {
+        "id": 626,
+        "name": "Zum Chemnitztalradweg",
+        "latitude": 50.8908102558236,
+        "longitude": 12.8884976923234
+    },
+    {
+        "id": 621,
+        "name": "Niederwiesa, Ortseingang",
+        "latitude": 50.8578361232855,
+        "longitude": 13.0101475481158
+    },
+    {
+        "id": 616,
+        "name": "Am Regenbogenhaus",
+        "latitude": 50.8812157559502,
+        "longitude": 12.8675849125061
+    },
+    {
+        "id": 679,
+        "name": "Pappelstr.",
+        "latitude": 50.8145324521463,
+        "longitude": 12.9545238657153
+    },
+    {
+        "id": 677,
+        "name": "Rudolfstr.",
+        "latitude": 50.8263480768252,
+        "longitude": 12.9378062182755
+    },
+    {
+        "id": 675,
+        "name": "Reichenhainer Mühlberg",
+        "latitude": 50.7960822968598,
+        "longitude": 12.9450286731609
+    },
+    {
+        "id": 674,
+        "name": "Am Stollen",
+        "latitude": 50.7989155787893,
+        "longitude": 12.9450556226194
+    },
+    {
+        "id": 673,
+        "name": "Waldschlößchenstr.",
+        "latitude": 50.8504581075377,
+        "longitude": 12.9518199367098
+    },
+    {
+        "id": 672,
+        "name": "Katharina-von-Bora-Str.",
+        "latitude": 50.8064890802749,
+        "longitude": 12.9493495696781
+    },
+    {
+        "id": 671,
+        "name": "Henriettenstr.",
+        "latitude": 50.8349270023288,
+        "longitude": 12.9011549546784
+    },
+    {
+        "id": 670,
+        "name": "Schloßviertel",
+        "latitude": 50.8450245104226,
+        "longitude": 12.9186990521797
+    },
+    {
+        "id": 669,
+        "name": "Berganger",
+        "latitude": 50.8391477995812,
+        "longitude": 12.8758494131212
+    },
+    {
+        "id": 668,
+        "name": "Albert-Schweitzer-Str.",
+        "latitude": 50.8363680163506,
+        "longitude": 12.8770172229907
+    },
+    {
+        "id": 666,
+        "name": "Further Str.",
+        "latitude": 50.8472706252139,
+        "longitude": 12.9249153939466
+    },
+    {
+        "id": 665,
+        "name": "Klinikum Flemmingstr.",
+        "latitude": 50.8442077145957,
+        "longitude": 12.8860273252917
+    },
+    {
+        "id": 664,
+        "name": "Messe",
+        "latitude": 50.8163259862921,
+        "longitude": 12.8822184684865
+    },
+    {
+        "id": 663,
+        "name": "Köthensdorfer Str.",
+        "latitude": 50.8570649172345,
+        "longitude": 12.8851739257717
+    },
+    {
+        "id": 662,
+        "name": "Kirche Adelsberg",
+        "latitude": 50.8146289414957,
+        "longitude": 12.9855157430218
+    },
+    {
+        "id": 661,
+        "name": "Stollberg (Sachs)",
+        "latitude": 50.7094225407158,
+        "longitude": 12.7738457125952
+    },
+    {
+        "id": 660,
+        "name": "Stollberg, Schlachthofstr.",
+        "latitude": 50.7136546784138,
+        "longitude": 12.7805022288515
+    },
+    {
+        "id": 659,
+        "name": "Niederdorf",
+        "latitude": 50.7357193123315,
+        "longitude": 13.0270628249181
+    },
+    {
+        "id": 657,
+        "name": "Pfaffenhain",
+        "latitude": 50.7500955385295,
+        "longitude": 12.8229206765735
+    },
+    {
+        "id": 656,
+        "name": "Jahnsdorf (Erzgeb)",
+        "latitude": 50.7550912240873,
+        "longitude": 12.8578381916721
+    },
+    {
+        "id": 655,
+        "name": "Adorf (Erzgeb)",
+        "latitude": 50.7638821084552,
+        "longitude": 12.8737743048146
+    },
+    {
+        "id": 651,
+        "name": "Harthau",
+        "latitude": 50.7768693645072,
+        "longitude": 12.9241967417192
+    },
+    {
+        "id": 711,
+        "name": "Mülsen St. Jacob, Funkenburg",
+        "latitude": 50.7450708983633,
+        "longitude": 12.6002642502206
+    },
+    {
+        "id": 710,
+        "name": "Mülsen St. Jacob, Feuerwehrplatz",
+        "latitude": 50.7381241842481,
+        "longitude": 12.574814978218
+    },
+    {
+        "id": 708,
+        "name": "Mülsen St. Jacob, Lippoldsruhe",
+        "latitude": 50.7298913918605,
+        "longitude": 12.5584117411277
+    },
+    {
+        "id": 707,
+        "name": "Zwickau, Colombstr.",
+        "latitude": 50.7209803791192,
+        "longitude": 12.5400501767177
+    },
+    {
+        "id": 706,
+        "name": "Zwickau, Friedrichsruh",
+        "latitude": 50.719029625035,
+        "longitude": 12.5314353331418
+    },
+    {
+        "id": 705,
+        "name": "Zwickau, Brückenberg",
+        "latitude": 50.7179489974439,
+        "longitude": 12.510612384853
+    },
+    {
+        "id": 704,
+        "name": "Zwickau, Zentrum",
+        "latitude": 50.7155885926341,
+        "longitude": 12.4970298577553
+    },
+    {
+        "id": 703,
+        "name": "Zwickau, Schillerstr.",
+        "latitude": 50.7150539302126,
+        "longitude": 12.4931042199631
+    },
+    {
+        "id": 702,
+        "name": "Zwickau, Zentralhaltestelle",
+        "latitude": 50.7189955003342,
+        "longitude": 12.4883431489566
+    },
+    {
+        "id": 701,
+        "name": "Zwickau, Hauptbahnhof",
+        "latitude": 50.7156909741041,
+        "longitude": 12.4773118372661
+    },
+    {
+        "id": 689,
+        "name": "Dittersdorf, Bahnhof",
+        "latitude": 50.7516471566547,
+        "longitude": 12.9789310919883
     }
 ]
