@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D0BDBA327E2ADC900ADC84A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0BDBA227E2ADC900ADC84A /* SettingsView.swift */; };
+		3D4CA70227E8025000154B91 /* Drawer in Frameworks */ = {isa = PBXBuildFile; productRef = 3D4CA70127E8025000154B91 /* Drawer */; };
 		3D53804527D92D60005860CE /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D53804427D92D60005860CE /* DrawerView.swift */; };
 		3D53804727D92D67005860CE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D53804627D92D67005860CE /* MapView.swift */; };
 		3D53804927D93B2E005860CE /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D53804827D93B2E005860CE /* Stop.swift */; };
@@ -21,7 +22,6 @@
 		3D635F4A27D81789008906D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D635F4927D81789008906D3 /* ContentView.swift */; };
 		3D635F4C27D8178A008906D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D635F4B27D8178A008906D3 /* Assets.xcassets */; };
 		3D635F4F27D8178A008906D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D635F4E27D8178A008906D3 /* Preview Assets.xcassets */; };
-		3D635F5727D92A2E008906D3 /* Drawer in Frameworks */ = {isa = PBXBuildFile; productRef = 3D635F5627D92A2E008906D3 /* Drawer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D635F5727D92A2E008906D3 /* Drawer in Frameworks */,
+				3D4CA70227E8025000154B91 /* Drawer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +148,7 @@
 			);
 			name = CVAG;
 			packageProductDependencies = (
-				3D635F5627D92A2E008906D3 /* Drawer */,
+				3D4CA70127E8025000154B91 /* Drawer */,
 			);
 			productName = CVAG;
 			productReference = 3D635F4427D81789008906D3 /* CVAG.app */;
@@ -179,7 +179,7 @@
 			);
 			mainGroup = 3D635F3B27D81789008906D3;
 			packageReferences = (
-				3D635F5527D92A2E008906D3 /* XCRemoteSwiftPackageReference "swiftui-drawer" */,
+				3D4CA70027E8025000154B91 /* XCRemoteSwiftPackageReference "swiftui-drawer" */,
 			);
 			productRefGroup = 3D635F4527D81789008906D3 /* Products */;
 			projectDirPath = "";
@@ -423,9 +423,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3D635F5527D92A2E008906D3 /* XCRemoteSwiftPackageReference "swiftui-drawer" */ = {
+		3D4CA70027E8025000154B91 /* XCRemoteSwiftPackageReference "swiftui-drawer" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/maustinstar/swiftui-drawer";
+			repositoryURL = "https://github.com/thealpa/swiftui-drawer";
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -434,9 +434,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3D635F5627D92A2E008906D3 /* Drawer */ = {
+		3D4CA70127E8025000154B91 /* Drawer */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3D635F5527D92A2E008906D3 /* XCRemoteSwiftPackageReference "swiftui-drawer" */;
+			package = 3D4CA70027E8025000154B91 /* XCRemoteSwiftPackageReference "swiftui-drawer" */;
 			productName = Drawer;
 		};
 /* End XCSwiftPackageProductDependency section */

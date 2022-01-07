@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct ContentView: View {
     
     // Start with a placeholder stop

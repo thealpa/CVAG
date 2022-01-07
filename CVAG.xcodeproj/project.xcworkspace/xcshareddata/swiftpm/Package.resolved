@@ -3,10 +3,10 @@
     {
       "identity" : "swiftui-drawer",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/maustinstar/swiftui-drawer",
+      "location" : "https://github.com/thealpa/swiftui-drawer",
       "state" : {
         "branch" : "master",
-        "revision" : "6d22f5c1362bfa71f2915c28aebba343b9243363"
+        "revision" : "fa1c439ddff2a402f20178f1ac2c9d9426c1d125"
       }
     }
   ],

@@ -82,7 +82,8 @@ struct DrawerView: View {
                     Spacer()
                 }
             }
-        }   .impact(.light)
+        }   .impact(.medium)
+            .dislodge(.light)
             .spring(0)
             .rest(at: $drawerHeights)
             .onChange(of: drawerHeight) {newValue in
