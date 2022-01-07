@@ -55,16 +55,17 @@ struct DrawerView: View {
                     RoundedRectangle(cornerRadius: 3.0)
                         .foregroundColor(Color(.systemGray5))
                         .frame(width: 35.0, height: 6.0)
-                    HStack{
-                        Text(selectedStop.name)
-                            .font(.title)
-                        Spacer()
-                    }
+                    Text(selectedStop.name)
+                          .frame(maxWidth: .infinity, alignment: .leading) // << full width
+                          .font(.system(size: 30, weight: .semibold, design: .default))
+                          .padding()
                     List {
                         ForEach(departuresList.departures) { departure in
-                            Text(departure.destination)
+                            //Text(departure.destination)
+                            DepartureCellView(departure: departure)
                         }
-                    }.onChange(of: selectedStop) {newStop in
+                    }.listStyle(.inset)
+                        .onChange(of: selectedStop) {newStop in
                         departuresList.loadData(id: selectedStop.id)
                     }
                     Spacer()
