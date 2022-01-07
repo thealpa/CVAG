@@ -12,7 +12,7 @@ struct DrawerView: View {
     
     @Binding var selectedStop: Stop
     @StateObject var departuresList = DeparturesLoader()
-    @Binding var drawerHeight: drawerType
+    @Binding var setDrawerHeight: drawerType
     @State var drawerHeights: [CGFloat]
     @State var showSettingsView: Bool = false
     
@@ -37,7 +37,7 @@ struct DrawerView: View {
                 usleep(useconds_t(0.5 * second))
                 DispatchQueue.main.async {
                     drawerHeights = drawerDefault
-                    drawerHeight = .variable
+                    setDrawerHeight = .variable
                 }
             }
         }
@@ -46,6 +46,7 @@ struct DrawerView: View {
     var body: some View {
         Drawer(){
             ZStack {
+                
                 RoundedRectangle(cornerRadius: 50.0)
                     .foregroundColor(Color(.systemBackground))
                     //.opacity(0.95)
@@ -64,14 +65,12 @@ struct DrawerView: View {
                           .padding()
                     
                     ScrollView {
-                        VStack {
-                            ForEach(departuresList.departures) { departure in
-                                DepartureCellView(departure: departure)
-                            }
+                        ForEach(departuresList.departures) { departure in
+                            DepartureCellView(departure: departure)
                         }
                     }.onChange(of: selectedStop) { newStop in
-                            departuresList.loadData(id: selectedStop.id)
-                        }
+                        departuresList.loadData(id: selectedStop.id)
+                    }
                     .frame(maxHeight: UIScreen.main.bounds.height - 300)
                     .disabled(true)
                     
@@ -84,18 +83,18 @@ struct DrawerView: View {
                     Spacer()
                 }
             }
-        }   .impact(.medium)
-            .dislodge(.light)
-            .spring(0)
-            .rest(at: $drawerHeights)
-            .onChange(of: drawerHeight) {newValue in
-                changeHeight(newHeight: newValue)
-            }
+        }.impact(.medium)
+        .dislodge(.light)
+        .spring(0)
+        .rest(at: $drawerHeights)
+        .onChange(of: setDrawerHeight) {newValue in
+            changeHeight(newHeight: newValue)
+        }
     }
 }
 
 struct DrawerView_Previews: PreviewProvider {
     static var previews: some View {
-        DrawerView(selectedStop: .constant(Stop(id: 131, name: "Zentralhaltestelle", latitude: 50.1, longitude: 50.1)), drawerHeight: .constant(.variable), drawerHeights: [drawerDefault.last!])
+        DrawerView(selectedStop: .constant(Stop(id: 131, name: "Zentralhaltestelle", latitude: 50.1, longitude: 50.1)), setDrawerHeight: .constant(.variable), drawerHeights: [drawerDefault.last!])
     }
 }

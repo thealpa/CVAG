@@ -10,7 +10,7 @@ import MapKit
 
 struct MapView: View {
     @Binding var selectedStop: Stop
-    @Binding var drawerHeight: drawerType
+    @Binding var setDrawerHeight: drawerType
     @ObservedObject var stopData = StopLoader()
     
     @State private var region = MKCoordinateRegion(
@@ -29,7 +29,7 @@ struct MapView: View {
                     .foregroundColor(.blue)
                     .onTapGesture {
                         print("Tapped on \(stop.name)")
-                        drawerHeight = .medium
+                        setDrawerHeight = .medium
                         selectedStop = stop
                     }
             }
@@ -39,6 +39,6 @@ struct MapView: View {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(selectedStop: .constant(Stop(id: 131, name: "Zentralhaltestelle", latitude: 50.1, longitude: 50.1)), drawerHeight: .constant(.variable))
+        MapView(selectedStop: .constant(Stop(id: 131, name: "Zentralhaltestelle", latitude: 50.1, longitude: 50.1)), setDrawerHeight: .constant(.variable))
     }
 }
