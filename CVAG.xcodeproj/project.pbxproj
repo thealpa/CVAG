@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D0BDBA327E2ADC900ADC84A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0BDBA227E2ADC900ADC84A /* SettingsView.swift */; };
 		3D53804527D92D60005860CE /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D53804427D92D60005860CE /* DrawerView.swift */; };
 		3D53804727D92D67005860CE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D53804627D92D67005860CE /* MapView.swift */; };
 		3D53804927D93B2E005860CE /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D53804827D93B2E005860CE /* Stop.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D0BDBA227E2ADC900ADC84A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3D53804427D92D60005860CE /* DrawerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerView.swift; sourceTree = "<group>"; };
 		3D53804627D92D67005860CE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		3D53804827D93B2E005860CE /* Stop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				3D53804427D92D60005860CE /* DrawerView.swift */,
 				3D53804627D92D67005860CE /* MapView.swift */,
 				3D59B66927DE73BE00BA0DFA /* DepartureCellView.swift */,
+				3D0BDBA227E2ADC900ADC84A /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				3D53804927D93B2E005860CE /* Stop.swift in Sources */,
 				3D53805427DA3760005860CE /* Drawer.swift in Sources */,
 				3D59B66A27DE73BE00BA0DFA /* DepartureCellView.swift in Sources */,
+				3D0BDBA327E2ADC900ADC84A /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

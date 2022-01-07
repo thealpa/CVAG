@@ -14,6 +14,7 @@ struct DrawerView: View {
     @StateObject var departuresList = DeparturesLoader()
     @Binding var drawerHeight: drawerType
     @State var drawerHeights: [CGFloat]
+    @State var showSettingsView: Bool = false
     
     /// Sets the drawer height
     func changeHeight(newHeight: drawerType) -> Void {
@@ -52,22 +53,32 @@ struct DrawerView: View {
                 
                 VStack {
                     Spacer().frame(height: 8.0)
+                    
                     RoundedRectangle(cornerRadius: 3.0)
                         .foregroundColor(Color(.systemGray5))
                         .frame(width: 35.0, height: 6.0)
+                    
                     Text(selectedStop.name)
                           .frame(maxWidth: .infinity, alignment: .leading) // << full width
                           .font(.system(size: 30, weight: .semibold, design: .default))
                           .padding()
+                    
                     List {
                         ForEach(departuresList.departures) { departure in
-                            //Text(departure.destination)
                             DepartureCellView(departure: departure)
                         }
                     }.listStyle(.inset)
                         .onChange(of: selectedStop) {newStop in
                         departuresList.loadData(id: selectedStop.id)
+                        }
+                        .frame(maxHeight: UIScreen.main.bounds.height - 300)
+                    
+                    Button(action: {showSettingsView.toggle()}) {
+                        Text("Settings")
+                    }.sheet(isPresented: $showSettingsView) {
+                        SettingsView(showSettingsView: self.$showSettingsView)
                     }
+                    
                     Spacer()
                 }
             }
