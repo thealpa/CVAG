@@ -15,26 +15,47 @@ struct DrawerView: View {
     @Binding var setDrawerHeight: drawerType
     @State var drawerHeights: [CGFloat]
     @State var showSettingsView: Bool = false
+    @State var currentDrawerHeight: CGFloat = drawerDefault[1]
+    
+    /// Haptics
+    var impactGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
+    var dislodgeGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .light)
     
     /// Sets the drawer height
     func changeHeight(newHeight: drawerType) -> Void {
         
-        switch newHeight {
-        case .low:
-            drawerHeights = [drawerDefault.first!]
-        case .medium:
-            drawerHeights = [drawerDefault[drawerDefault.count / 2]]
-        case .high:
-            drawerHeights = [drawerDefault.last!]
-        case .variable:
-            break
+        if newHeight != .variable {
+            DispatchQueue.main.async {
+                dislodgeGenerator.impactOccurred()
+            }
+            
+            var tempDrawerHeight = drawerHeights
+
+            switch newHeight {
+            case .low:
+                tempDrawerHeight = [drawerDefault.first!]
+            case .medium:
+                tempDrawerHeight = [drawerDefault[drawerDefault.count / 2]]
+            case .high:
+                tempDrawerHeight = [drawerDefault.last!]
+            case .variable:
+                break
+            }
+            
+            if currentDrawerHeight != tempDrawerHeight[0] {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                    impactGenerator.impactOccurred()
+                }
+            }
+            
+            drawerHeights = tempDrawerHeight
         }
         
         // TODO: A better solution would be to wait until animation is finished
         if drawerHeights != drawerDefault {
             DispatchQueue.global(qos: .background).async {
                 let second: Double = 1000000
-                usleep(useconds_t(0.5 * second))
+                usleep(useconds_t(0.3 * second))
                 DispatchQueue.main.async {
                     drawerHeights = drawerDefault
                     setDrawerHeight = .variable
@@ -87,6 +108,9 @@ struct DrawerView: View {
         .dislodge(.light)
         .spring(0)
         .rest(at: $drawerHeights)
+        .onRest { restingHeight in
+            currentDrawerHeight = restingHeight
+        }
         .onChange(of: setDrawerHeight) {newValue in
             changeHeight(newHeight: newValue)
         }
