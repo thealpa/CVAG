@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D0BDBA327E2ADC900ADC84A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0BDBA227E2ADC900ADC84A /* SettingsView.swift */; };
+		3D4012F527E931DE00649196 /* FavoritesDrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4012F427E931DE00649196 /* FavoritesDrawerView.swift */; };
 		3D4CA70227E8025000154B91 /* Drawer in Frameworks */ = {isa = PBXBuildFile; productRef = 3D4CA70127E8025000154B91 /* Drawer */; };
 		3D53804527D92D60005860CE /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D53804427D92D60005860CE /* DrawerView.swift */; };
 		3D53804727D92D67005860CE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D53804627D92D67005860CE /* MapView.swift */; };
@@ -22,10 +23,13 @@
 		3D635F4A27D81789008906D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D635F4927D81789008906D3 /* ContentView.swift */; };
 		3D635F4C27D8178A008906D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D635F4B27D8178A008906D3 /* Assets.xcassets */; };
 		3D635F4F27D8178A008906D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D635F4E27D8178A008906D3 /* Preview Assets.xcassets */; };
+		3D732E8727EBF7BA003E8110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D732E8627EBF7BA003E8110 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D0BDBA227E2ADC900ADC84A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3D4012F427E931DE00649196 /* FavoritesDrawerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesDrawerView.swift; sourceTree = "<group>"; };
+		3D4012F627EA94B100649196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3D53804427D92D60005860CE /* DrawerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerView.swift; sourceTree = "<group>"; };
 		3D53804627D92D67005860CE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		3D53804827D93B2E005860CE /* Stop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
@@ -40,6 +44,7 @@
 		3D635F4927D81789008906D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3D635F4B27D8178A008906D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D635F4E27D8178A008906D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3D732E8627EBF7BA003E8110 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +66,7 @@
 				3D53804627D92D67005860CE /* MapView.swift */,
 				3D59B66927DE73BE00BA0DFA /* DepartureCellView.swift */,
 				3D0BDBA227E2ADC900ADC84A /* SettingsView.swift */,
+				3D4012F427E931DE00649196 /* FavoritesDrawerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -111,6 +117,8 @@
 		3D635F4627D81789008906D3 /* CVAG */ = {
 			isa = PBXGroup;
 			children = (
+				3D4012F627EA94B100649196 /* Info.plist */,
+				3D732E8627EBF7BA003E8110 /* LaunchScreen.storyboard */,
 				3D635F4727D81789008906D3 /* CVAGApp.swift */,
 				3D635F4927D81789008906D3 /* ContentView.swift */,
 				3D53804A27D93EC5005860CE /* Models */,
@@ -196,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D635F4F27D8178A008906D3 /* Preview Assets.xcassets in Resources */,
+				3D732E8727EBF7BA003E8110 /* LaunchScreen.storyboard in Resources */,
 				3D635F4C27D8178A008906D3 /* Assets.xcassets in Resources */,
 				3D53804D27D94181005860CE /* Stops.json in Resources */,
 			);
@@ -215,6 +224,7 @@
 				3D53805A27DA9A6A005860CE /* DeparturesLoader.swift in Sources */,
 				3D635F4827D81789008906D3 /* CVAGApp.swift in Sources */,
 				3D53805827DA7D41005860CE /* Departures.swift in Sources */,
+				3D4012F527E931DE00649196 /* FavoritesDrawerView.swift in Sources */,
 				3D53804927D93B2E005860CE /* Stop.swift in Sources */,
 				3D53805427DA3760005860CE /* Drawer.swift in Sources */,
 				3D59B66A27DE73BE00BA0DFA /* DepartureCellView.swift in Sources */,
@@ -347,14 +357,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 30;
 				DEVELOPMENT_ASSET_PATHS = "\"CVAG/Preview Content\"";
 				DEVELOPMENT_TEAM = B7HSFEB698;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CVAG/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -376,14 +387,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 30;
 				DEVELOPMENT_ASSET_PATHS = "\"CVAG/Preview Content\"";
 				DEVELOPMENT_TEAM = B7HSFEB698;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CVAG/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
