@@ -24,14 +24,7 @@ struct MapView: View {
     var body: some View {
         Map(coordinateRegion: .constant(region), annotationItems: stopData.stops) { stop in
             MapAnnotation(coordinate: stop.coordinate) {
-                Image(systemName: "mappin.circle.fill")
-                    .font(.title)
-                    .foregroundColor(.blue)
-                    .onTapGesture {
-                        print("Tapped on \(stop.name)")
-                        setDrawerHeight = .medium
-                        selectedStop = stop
-                    }
+                StopAnnotationView(stop: stop, selectedStop: $selectedStop, setDrawerHeight: $setDrawerHeight)
             }
         }.edgesIgnoringSafeArea(.all)
     }
