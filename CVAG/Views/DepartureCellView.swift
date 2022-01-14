@@ -15,7 +15,7 @@ struct DepartureCellView: View {
             Text(departure.destination)
             Spacer()
             Text(getReadableTime(actualDeparture: departure.actualDeparture))
-        }
+        }.padding()
     }
 }
 

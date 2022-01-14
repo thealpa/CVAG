@@ -14,7 +14,6 @@ struct DrawerView: View {
     @StateObject var departuresList = DeparturesLoader()
     @Binding var setDrawerHeight: drawerType
     @State var drawerHeights: [CGFloat]
-    @State var showSettingsView: Bool = false
     @State var currentDrawerHeight: CGFloat = drawerDefault[1]
     
     /// Haptics
@@ -84,6 +83,7 @@ struct DrawerView: View {
                           .frame(maxWidth: .infinity, alignment: .leading) // << full width
                           .font(.system(size: 30, weight: .semibold, design: .default))
                           .padding()
+                          .animation(Animation.linear(duration: 0.1), value: selectedStop)
                     
                     ScrollView {
                         ForEach(departuresList.departures) { departure in
@@ -94,12 +94,8 @@ struct DrawerView: View {
                     }
                     .frame(maxHeight: UIScreen.main.bounds.height - 300)
                     .disabled(true)
-                    
-                    Button(action: {showSettingsView.toggle()}) {
-                        Text("Settings")
-                    }.sheet(isPresented: $showSettingsView) {
-                        SettingsView(showSettingsView: self.$showSettingsView)
-                    }
+                    //.transition(.opacity)
+                    //.id("departures" + String(selectedStop.id))
                     
                     Spacer()
                 }
