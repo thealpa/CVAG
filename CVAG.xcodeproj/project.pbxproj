@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D0BDBA327E2ADC900ADC84A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0BDBA227E2ADC900ADC84A /* SettingsView.swift */; };
 		3D4012F527E931DE00649196 /* FavoritesDrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4012F427E931DE00649196 /* FavoritesDrawerView.swift */; };
 		3D4CA70227E8025000154B91 /* Drawer in Frameworks */ = {isa = PBXBuildFile; productRef = 3D4CA70127E8025000154B91 /* Drawer */; };
 		3D53804527D92D60005860CE /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D53804427D92D60005860CE /* DrawerView.swift */; };
@@ -24,10 +23,11 @@
 		3D635F4C27D8178A008906D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D635F4B27D8178A008906D3 /* Assets.xcassets */; };
 		3D635F4F27D8178A008906D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D635F4E27D8178A008906D3 /* Preview Assets.xcassets */; };
 		3D732E8727EBF7BA003E8110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D732E8627EBF7BA003E8110 /* LaunchScreen.storyboard */; };
+		3DCEB98D27ED4118003FC99C /* StopAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCEB98C27ED4118003FC99C /* StopAnnotationView.swift */; };
+		3DDAF3C527FA3100006C8730 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 3DDAF3C427FA3100006C8730 /* Introspect */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3D0BDBA227E2ADC900ADC84A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3D4012F427E931DE00649196 /* FavoritesDrawerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesDrawerView.swift; sourceTree = "<group>"; };
 		3D4012F627EA94B100649196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3D53804427D92D60005860CE /* DrawerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerView.swift; sourceTree = "<group>"; };
@@ -45,6 +45,7 @@
 		3D635F4B27D8178A008906D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D635F4E27D8178A008906D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3D732E8627EBF7BA003E8110 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DCEB98C27ED4118003FC99C /* StopAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +54,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D4CA70227E8025000154B91 /* Drawer in Frameworks */,
+				3DDAF3C527FA3100006C8730 /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,8 +66,8 @@
 			children = (
 				3D53804427D92D60005860CE /* DrawerView.swift */,
 				3D53804627D92D67005860CE /* MapView.swift */,
+				3DCEB98C27ED4118003FC99C /* StopAnnotationView.swift */,
 				3D59B66927DE73BE00BA0DFA /* DepartureCellView.swift */,
-				3D0BDBA227E2ADC900ADC84A /* SettingsView.swift */,
 				3D4012F427E931DE00649196 /* FavoritesDrawerView.swift */,
 			);
 			path = Views;
@@ -157,6 +159,7 @@
 			name = CVAG;
 			packageProductDependencies = (
 				3D4CA70127E8025000154B91 /* Drawer */,
+				3DDAF3C427FA3100006C8730 /* Introspect */,
 			);
 			productName = CVAG;
 			productReference = 3D635F4427D81789008906D3 /* CVAG.app */;
@@ -188,6 +191,7 @@
 			mainGroup = 3D635F3B27D81789008906D3;
 			packageReferences = (
 				3D4CA70027E8025000154B91 /* XCRemoteSwiftPackageReference "swiftui-drawer" */,
+				3DDAF3C327FA3100006C8730 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
 			);
 			productRefGroup = 3D635F4527D81789008906D3 /* Products */;
 			projectDirPath = "";
@@ -224,11 +228,11 @@
 				3D53805A27DA9A6A005860CE /* DeparturesLoader.swift in Sources */,
 				3D635F4827D81789008906D3 /* CVAGApp.swift in Sources */,
 				3D53805827DA7D41005860CE /* Departures.swift in Sources */,
+				3DCEB98D27ED4118003FC99C /* StopAnnotationView.swift in Sources */,
 				3D4012F527E931DE00649196 /* FavoritesDrawerView.swift in Sources */,
 				3D53804927D93B2E005860CE /* Stop.swift in Sources */,
 				3D53805427DA3760005860CE /* Drawer.swift in Sources */,
 				3D59B66A27DE73BE00BA0DFA /* DepartureCellView.swift in Sources */,
-				3D0BDBA327E2ADC900ADC84A /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +447,14 @@
 				kind = branch;
 			};
 		};
+		3DDAF3C327FA3100006C8730 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -450,6 +462,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3D4CA70027E8025000154B91 /* XCRemoteSwiftPackageReference "swiftui-drawer" */;
 			productName = Drawer;
+		};
+		3DDAF3C427FA3100006C8730 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DDAF3C327FA3100006C8730 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

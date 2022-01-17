@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Drawer
+import Introspect
 
 struct DrawerView: View {
     
@@ -91,11 +92,10 @@ struct DrawerView: View {
                         }
                     }.onChange(of: selectedStop) { newStop in
                         departuresList.loadData(id: selectedStop.id)
+                    }.introspectScrollView { scrollView in
+                        scrollView.alwaysBounceVertical = false
                     }
                     .frame(maxHeight: UIScreen.main.bounds.height - 300)
-                    .disabled(true)
-                    //.transition(.opacity)
-                    //.id("departures" + String(selectedStop.id))
                     
                     Spacer()
                 }

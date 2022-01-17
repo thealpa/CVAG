@@ -8,18 +8,30 @@
 import SwiftUI
 
 struct DepartureCellView: View {
+    
+    // Store whether to use absolute or relative departure times
+    @AppStorage("useRelativeTime") var useRelativeTime: Bool = false
+    
     var departure: Departure
+    
     var body: some View {
+        let absoluteTime: String = getAbsoluteTime(actualDeparture: departure.actualDeparture)
+        
+        let relativeTime: String = getRelativeTime(actualDeparture: departure.actualDeparture)
+        
         HStack {
             Text(departure.line)
             Text(departure.destination)
             Spacer()
-            Text(getReadableTime(actualDeparture: departure.actualDeparture))
+            Text(useRelativeTime ? relativeTime : absoluteTime)
+                .onTapGesture {
+                    useRelativeTime.toggle()
+                }
         }.padding()
     }
 }
 
-func getReadableTime (actualDeparture: Int) -> String {
+func getAbsoluteTime (actualDeparture: Int) -> String {
     let date = NSDate(timeIntervalSince1970: Double(actualDeparture/1000))
     let calendar = Calendar.current
     let hour = calendar.component(.hour, from: date as Date)
@@ -29,6 +41,14 @@ func getReadableTime (actualDeparture: Int) -> String {
     } else {
         return String(hour) + ":" + String(minute)
     }
+}
+
+func getRelativeTime (actualDeparture: Int) -> String {
+    let date = NSDate(timeIntervalSince1970: Double(actualDeparture/1000))
+    let currentDate = NSDate.now
+    let difference = Calendar.current.dateComponents([.minute], from: currentDate, to: date as Date)
+    
+    return String(difference.minute!) + " min"
 }
 
 struct DepartureCellView_Previews: PreviewProvider {
