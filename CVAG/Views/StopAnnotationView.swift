@@ -14,21 +14,36 @@ struct StopAnnotationView: View {
     @State private var showSelected: Bool = false
     
     var body: some View {
-        Image(systemName: "mappin.circle.fill")
-            .font(.title)
-            .foregroundColor(.blue)
-            .scaleEffect(showSelected ? 1.75 : 1, anchor: .bottom)
-            .animation(.interpolatingSpring(stiffness: 200, damping: 10), value: showSelected)
-            .onTapGesture {
-                setDrawerHeight = .medium
-                selectedStop = stop
-                showSelected.toggle()
+        VStack {
+            ZStack {
+                RoundedRectangle(cornerRadius: 12.0)
+                    .foregroundColor(Color(.systemBackground))
+                    .frame(width: 40, height: 40)
+                
+                Image("Haltestelle")
+                    .resizable()
+                    .frame(width: 25, height: 25)
             }
-            .onChange(of: selectedStop) { newStop in
-                if stop.id != newStop.id {
-                    showSelected = false
-                }
+            
+            Image(systemName: "arrowtriangle.down.fill")
+                .font(.system(size: 10, weight: .black))
+                .foregroundColor(Color(.systemBackground))
+                .offset(x: 0, y: -5)
+            
+        }.compositingGroup()
+        .shadow(radius: 2)
+        .scaleEffect(showSelected ? 1.8 : 1, anchor: .bottom)
+        .animation(.interpolatingSpring(stiffness: 300, damping: 10), value: showSelected)
+        .onTapGesture {
+            setDrawerHeight = .medium
+            selectedStop = stop
+            showSelected.toggle()
+        }
+        .onChange(of: selectedStop) { newStop in
+            if stop.id != newStop.id {
+                showSelected = false
             }
+        }
     }
 }
 
