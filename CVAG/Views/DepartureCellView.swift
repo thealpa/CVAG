@@ -51,9 +51,16 @@ struct DepartureCellView: View {
             }
             
             VStack(alignment: .leading) {
-                Text(departure.line)
-                    .font(.title2)
-                    .fontWeight(.semibold)
+                HStack {
+                    Text(departure.line)
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                    Text(departure.platform ?? "")
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                        .opacity(0.6)
+                        .offset(y: 3)
+                }
                 
                 Text(departure.destination)
                     .font(.body)
@@ -93,6 +100,6 @@ func getRelativeTime (actualDeparture: Int) -> String {
 
 struct DepartureCellView_Previews: PreviewProvider {
     static var previews: some View {
-        DepartureCellView(departure: Departure(destination: "Flemmingstr. ü. Klinikum", serviceType: serviceType.bus, hasActualDeparture: true, actualDeparture: 1647180720000, line: "31", platform: ""))
+        DepartureCellView(departure: Departure(destination: "Flemmingstr. ü. Klinikum", serviceType: serviceType.bus, hasActualDeparture: true, actualDeparture: 1647180720000, line: "31", platform: "5A"))
     }
 }
