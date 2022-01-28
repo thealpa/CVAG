@@ -70,8 +70,7 @@ struct DrawerView: View {
                 
                 RoundedRectangle(cornerRadius: 50.0)
                     .foregroundColor(Color(.systemBackground))
-                    //.opacity(0.95)
-                    .shadow(radius: 50)
+                    .shadow(radius: 25)
                 
                 VStack {
                     Spacer().frame(height: 8.0)
@@ -80,22 +79,40 @@ struct DrawerView: View {
                         .foregroundColor(Color(.systemGray5))
                         .frame(width: 35.0, height: 6.0)
                     
-                    Text(selectedStop.name)
-                          .frame(maxWidth: .infinity, alignment: .leading) // << full width
-                          .font(.system(size: 30, weight: .semibold, design: .default))
-                          .padding()
-                          .animation(Animation.linear(duration: 0.1), value: selectedStop)
+                    HStack {
+                        Text(selectedStop.name)
+                              .frame(maxWidth: .infinity, alignment: .leading) // << full width
+                              .font(.system(size: 30, weight: .semibold, design: .default))
+                              .padding(20)
+                              .animation(Animation.linear(duration: 0.1), value: selectedStop)
+                        
+                        Spacer()
+                        
+                        /*
+                        Button {
+                            print("Closed tapped")
+                        } label: {
+                            Image(systemName: "xmark")
+                                .font(.system(size: 15, weight: .bold, design: .rounded))
+                                .foregroundColor(.secondary)
+                        }
+                        .padding(30)
+                        */
+                    }
                     
                     ScrollView {
                         ForEach(departuresList.departures) { departure in
                             DepartureCellView(departure: departure)
+                            Divider()
+                                .padding(.horizontal, 20)
+                                .padding(.bottom, 10)
                         }
                     }.onChange(of: selectedStop) { newStop in
                         departuresList.loadData(id: selectedStop.id)
                     }.introspectScrollView { scrollView in
                         scrollView.alwaysBounceVertical = false
                     }
-                    .frame(maxHeight: UIScreen.main.bounds.height - 300)
+                    .frame(maxHeight: UIScreen.main.bounds.height - 270)
                     
                     Spacer()
                 }
