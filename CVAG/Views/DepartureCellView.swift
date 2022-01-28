@@ -20,16 +20,31 @@ struct DepartureCellView: View {
         let relativeTime: String = getRelativeTime(actualDeparture: departure.actualDeparture)
         
         HStack {
-            ZStack {
-                RoundedRectangle(cornerRadius: 15)
-                    .frame(width: 45, height: 45)
-                
-                if departure.serviceType == serviceType.tram || departure.serviceType == serviceType.bahn {
+            switch departure.serviceType {
+            case serviceType.bus:
+                ZStack {
+                    RoundedRectangle(cornerRadius: 15)
+                        .frame(width: 45, height: 45)
+                        .foregroundColor(Color(red: 0.44, green: 0.1, blue: 0.38))
+                    Image(systemName: "bus.fill")
+                        .font(.headline)
+                        .foregroundColor(Color(.systemBackground))
+                }
+            case serviceType.bahn:
+                ZStack {
+                    RoundedRectangle(cornerRadius: 15)
+                        .frame(width: 45, height: 45)
+                        .foregroundColor(Color(red: 0.12, green: 0.55, blue: 0.25))
                     Image(systemName: "tram.fill")
                         .font(.headline)
                         .foregroundColor(Color(.systemBackground))
-                } else if departure.serviceType == serviceType.bus {
-                    Image(systemName: "bus.fill")
+                }
+            case serviceType.tram:
+                ZStack {
+                    RoundedRectangle(cornerRadius: 15)
+                        .frame(width: 45, height: 45)
+                        .foregroundColor(Color(red: 0.80, green: 0.07, blue: 0.09))
+                    Image(systemName: "tram.fill")
                         .font(.headline)
                         .foregroundColor(Color(.systemBackground))
                 }
