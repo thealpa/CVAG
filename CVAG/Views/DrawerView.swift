@@ -32,6 +32,8 @@ struct DrawerView: View {
             var tempDrawerHeight = drawerHeights
 
             switch newHeight {
+            case .hidden:
+                tempDrawerHeight = [-100]
             case .low:
                 tempDrawerHeight = [drawerDefault.first!]
             case .medium:
@@ -42,7 +44,7 @@ struct DrawerView: View {
                 break
             }
             
-            if currentDrawerHeight != tempDrawerHeight[0] {
+            if currentDrawerHeight != tempDrawerHeight[0]  && setDrawerHeight != .hidden {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                     impactGenerator.impactOccurred()
                 }
@@ -52,7 +54,7 @@ struct DrawerView: View {
         }
         
         // TODO: A better solution would be to wait until animation is finished
-        if drawerHeights != drawerDefault {
+        if drawerHeights != drawerDefault && setDrawerHeight != .hidden {
             DispatchQueue.global(qos: .background).async {
                 let second: Double = 1000000
                 usleep(useconds_t(0.3 * second))
@@ -88,16 +90,16 @@ struct DrawerView: View {
                         
                         Spacer()
                         
-                        /*
+                        
                         Button {
-                            print("Closed tapped")
+                            setDrawerHeight = .hidden
                         } label: {
                             Image(systemName: "xmark")
                                 .font(.system(size: 15, weight: .bold, design: .rounded))
                                 .foregroundColor(.secondary)
                         }
                         .padding(30)
-                        */
+                        
                     }
                     
                     ScrollView {

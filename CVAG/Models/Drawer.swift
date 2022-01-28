@@ -11,6 +11,7 @@ import SwiftUI
 let drawerDefault: [CGFloat] = [50, 400, UIScreen.main.bounds.height - 150]
 
 public enum drawerType {
+    case hidden
     case variable
     case low
     case medium
