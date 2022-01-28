@@ -11,12 +11,12 @@ struct ContentView: View {
     
     // Start with a placeholder stop
     @State var selectedStop: Stop = Stop(id: 0, name: "-", latitude: 0, longitude: 0)
-    @State var setDrawerHeight: drawerType = .variable
+    @State var setDrawerHeight: drawerType = .hidden
     
     var body: some View {
         ZStack {
             MapView(selectedStop: $selectedStop, setDrawerHeight: $setDrawerHeight)
-            DrawerView(selectedStop: $selectedStop, setDrawerHeight: $setDrawerHeight, drawerHeights: drawerDefault)
+            DrawerView(selectedStop: $selectedStop, setDrawerHeight: $setDrawerHeight, drawerHeights: [-100])
         }
     }
 }
