@@ -64,6 +64,7 @@ struct DepartureCellView: View {
                 
                 Text(departure.destination)
                     .font(.body)
+                    .lineLimit(1)
                 
             }.padding(.leading, 10)
 

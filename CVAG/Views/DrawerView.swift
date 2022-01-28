@@ -83,24 +83,29 @@ struct DrawerView: View {
                     
                     HStack {
                         Text(selectedStop.name)
-                              .frame(maxWidth: .infinity, alignment: .leading) // << full width
-                              .font(.system(size: 30, weight: .semibold, design: .default))
-                              .padding(20)
+                              .frame(maxWidth: .infinity, alignment: .leading)
+                              .font(.system(size: 32, weight: .semibold, design: .default))
+                              .lineLimit(1)
                               .animation(Animation.linear(duration: 0.1), value: selectedStop)
                         
                         Spacer()
                         
-                        
-                        Button {
-                            setDrawerHeight = .hidden
-                        } label: {
-                            Image(systemName: "xmark")
-                                .font(.system(size: 15, weight: .bold, design: .rounded))
-                                .foregroundColor(.secondary)
+                        ZStack {
+                            Circle()
+                                .frame(width: 25, height: 25)
+                                .foregroundColor(Color(.secondarySystemBackground))
+                            Button {
+                                setDrawerHeight = .hidden
+                            } label: {
+                                Image(systemName: "xmark")
+                                    .font(.system(size: 12, weight: .bold, design: .rounded))
+                                    .foregroundColor(Color(.secondaryLabel))
+                            }
                         }
-                        .padding(30)
                         
-                    }
+                    }.padding(.horizontal, 20)
+                        .padding(.top, 15)
+                        .padding(.bottom, 20)
                     
                     ScrollView {
                         ForEach(departuresList.departures) { departure in
