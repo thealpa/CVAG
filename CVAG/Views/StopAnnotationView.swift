@@ -31,7 +31,6 @@ struct StopAnnotationView: View {
                 .offset(x: 0, y: -5)
             
         }.compositingGroup()
-        .shadow(radius: 2)
         .scaleEffect(showSelected ? 1.8 : 1, anchor: .bottom)
         .animation(.interpolatingSpring(stiffness: 300, damping: 10), value: showSelected)
         .onTapGesture {
