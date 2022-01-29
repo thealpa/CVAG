@@ -9,6 +9,7 @@ import Foundation
 
 class DeparturesLoader: ObservableObject {
     @Published var departures = [Departure]()
+    @Published var loadingError: Bool = false
         
     func loadData(id: Int16)  {
         let url = URL(string: "https://www.cvag.de/eza/mis/stops/station/CAG-" + String(id) + ".json")!
@@ -21,14 +22,21 @@ class DeparturesLoader: ObservableObject {
                 if let departureData = data {
                     let decodedData = try JSONDecoder().decode(DeparturesTest.self, from: departureData)
                     DispatchQueue.main.async {
+                        self.loadingError = false
                         self.departures = decodedData.stops
                     }
                 } else {
                     print("No data")
+                    DispatchQueue.main.async {
+                        self.loadingError = true
+                    }
                 }
             } catch {
                 print("Error")
                 print(error)
+                DispatchQueue.main.async {
+                    self.loadingError = true
+                }
             }
         }.resume()
     }

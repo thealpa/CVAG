@@ -16,6 +16,7 @@ struct DrawerView: View {
     @Binding var setDrawerHeight: drawerType
     @State var drawerHeights: [CGFloat]
     @State var currentDrawerHeight: CGFloat = drawerDefault[1]
+    @State private var showError = false
     
     /// Haptics
     var impactGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
@@ -107,6 +108,13 @@ struct DrawerView: View {
                         .padding(.top, 15)
                         .padding(.bottom, 20)
                     
+                    if showError {
+                        Image(systemName: "exclamationmark.icloud.fill")
+                            .font(.system(size: 48))
+                            .foregroundColor(Color(.systemRed))
+                            .padding(.top, 100)
+                    }
+        
                     ScrollView {
                         ForEach(departuresList.departures) { departure in
                             DepartureCellView(departure: departure)
@@ -133,6 +141,13 @@ struct DrawerView: View {
         }
         .onChange(of: setDrawerHeight) {newValue in
             changeHeight(newHeight: newValue)
+        }
+        .onChange(of: departuresList.loadingError) {newValue in
+            if newValue == true {
+                showError = true
+            } else {
+                showError = false
+            }
         }
     }
 }
