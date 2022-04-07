@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     // Start with a placeholder stop
-    @State var selectedStop: Stop = Stop(id: 0, name: "-", latitude: 0, longitude: 0)
+    @State var selectedStop: Stop = noStop
     @State var setDrawerHeight: drawerType = .hidden
     
     var body: some View {

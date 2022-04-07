@@ -18,3 +18,5 @@ struct Stop: Identifiable, Codable, Equatable {
         CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
 }
+
+let noStop: Stop = Stop(id: 0, name: "", latitude: 0.0, longitude: 0.0)

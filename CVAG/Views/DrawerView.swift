@@ -97,6 +97,7 @@ struct DrawerView: View {
                                 .foregroundColor(Color(.secondarySystemBackground))
                             Button {
                                 setDrawerHeight = .hidden
+                                selectedStop = noStop
                             } label: {
                                 Image(systemName: "xmark")
                                     .font(.system(size: 12, weight: .bold, design: .rounded))

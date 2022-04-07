@@ -11,7 +11,12 @@ class DeparturesLoader: ObservableObject {
     @Published var departures = [Departure]()
     @Published var loadingError: Bool = false
         
-    func loadData(id: Int16)  {
+    func loadData(id: Int16) {
+        // Skip if using placeholder id
+        if id == 0 {
+            return
+        }
+        
         let url = URL(string: "https://www.cvag.de/eza/mis/stops/station/CAG-" + String(id) + ".json")!
         print("Loading data from URL: " + url.absoluteString)
         let referrerURL = "http://www.cvag.de/eza/liste.html?station=CAG-" + String(id)
