@@ -18,6 +18,9 @@ struct DrawerView: View {
     @State var currentDrawerHeight: CGFloat = drawerDefault[1]
     @State private var showError = false
     
+    /// Update timer
+    let timer = Timer.publish(every: 30, tolerance: 5, on: .main, in: .common).autoconnect()
+    
     /// Haptics
     var impactGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
     var dislodgeGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .light)
@@ -124,6 +127,9 @@ struct DrawerView: View {
                                 .padding(.bottom, 10)
                         }
                     }.onChange(of: selectedStop) { newStop in
+                        departuresList.loadData(id: selectedStop.id)
+                    }.onReceive(timer) { time in
+                        print("The time is now \(time)")
                         departuresList.loadData(id: selectedStop.id)
                     }.introspectScrollView { scrollView in
                         scrollView.alwaysBounceVertical = false
