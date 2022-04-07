@@ -25,7 +25,7 @@ class DeparturesLoader: ObservableObject {
         URLSession.shared.dataTask(with: request) {(data, response, error) in
             do {
                 if let departureData = data {
-                    let decodedData = try JSONDecoder().decode(DeparturesTest.self, from: departureData)
+                    let decodedData = try JSONDecoder().decode(Departures.self, from: departureData)
                     DispatchQueue.main.async {
                         self.loadingError = false
                         self.departures = decodedData.stops

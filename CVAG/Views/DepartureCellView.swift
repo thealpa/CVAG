@@ -20,31 +20,42 @@ struct DepartureCellView: View {
         let relativeTime: String = getRelativeTime(actualDeparture: departure.actualDeparture)
         
         HStack {
-            switch departure.serviceType {
-            case serviceType.bus:
-                ZStack {
-                    RoundedRectangle(cornerRadius: 15)
-                        .frame(width: 45, height: 45)
-                        .foregroundColor(Color(red: 0.44, green: 0.1, blue: 0.38))
-                    Image(systemName: "bus.fill")
-                        .font(.headline)
-                        .foregroundColor(Color(.systemBackground))
+            if departure.serviceType != nil {
+                switch departure.serviceType! {
+                case serviceType.bus:
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 15)
+                            .frame(width: 45, height: 45)
+                            .foregroundColor(Color(red: 0.44, green: 0.1, blue: 0.38))
+                        Image(systemName: "bus.fill")
+                            .font(.headline)
+                            .foregroundColor(Color(.systemBackground))
+                    }
+                case serviceType.bahn:
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 15)
+                            .frame(width: 45, height: 45)
+                            .foregroundColor(Color(red: 0.12, green: 0.55, blue: 0.25))
+                        Image(systemName: "tram.fill")
+                            .font(.headline)
+                            .foregroundColor(Color(.systemBackground))
+                    }
+                case serviceType.tram:
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 15)
+                            .frame(width: 45, height: 45)
+                            .foregroundColor(Color(red: 0.80, green: 0.07, blue: 0.09))
+                        Image(systemName: "tram.fill")
+                            .font(.headline)
+                            .foregroundColor(Color(.systemBackground))
+                    }
                 }
-            case serviceType.bahn:
-                ZStack {
-                    RoundedRectangle(cornerRadius: 15)
-                        .frame(width: 45, height: 45)
-                        .foregroundColor(Color(red: 0.12, green: 0.55, blue: 0.25))
-                    Image(systemName: "tram.fill")
-                        .font(.headline)
-                        .foregroundColor(Color(.systemBackground))
-                }
-            case serviceType.tram:
+            } else {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
                         .frame(width: 45, height: 45)
                         .foregroundColor(Color(red: 0.80, green: 0.07, blue: 0.09))
-                    Image(systemName: "tram.fill")
+                    Image(systemName: "questionmark")
                         .font(.headline)
                         .foregroundColor(Color(.systemBackground))
                 }
@@ -52,7 +63,7 @@ struct DepartureCellView: View {
             
             VStack(alignment: .leading) {
                 HStack {
-                    Text(departure.line)
+                    Text(departure.line ?? "")
                         .font(.title2)
                         .fontWeight(.semibold)
                     Text(departure.platform ?? "")
@@ -62,7 +73,7 @@ struct DepartureCellView: View {
                         .offset(y: 3)
                 }
                 
-                Text(departure.destination)
+                Text(departure.destination ?? "")
                     .font(.body)
                     .lineLimit(1)
                 

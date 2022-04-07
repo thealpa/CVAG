@@ -7,18 +7,18 @@
 
 import Foundation
 
-struct DeparturesTest: Codable {
+struct Departures: Codable {
     let stops: [Departure]
     let now: Int
 }
 
 struct Departure: Identifiable, Codable {
     let id = UUID()
-    let destination: String
-    let serviceType: serviceType
-    let hasActualDeparture: Bool
+    let destination: String?
+    let serviceType: serviceType?
+    let hasActualDeparture: Bool?
     let actualDeparture: Int
-    let line: String
+    let line: String?
     let platform: String?
     
     private enum CodingKeys: String, CodingKey {
