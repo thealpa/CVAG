@@ -128,7 +128,7 @@ struct DrawerView: View {
                     }.introspectScrollView { scrollView in
                         scrollView.alwaysBounceVertical = false
                     }
-                    .frame(maxHeight: UIScreen.main.bounds.height - 270)
+                    .frame(maxHeight: UIScreen.main.bounds.height - 200)
                     
                     Spacer()
                 }
