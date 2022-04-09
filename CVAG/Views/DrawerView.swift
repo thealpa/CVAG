@@ -117,6 +117,17 @@ struct DrawerView: View {
                             .font(.system(size: 48))
                             .foregroundColor(Color(.systemRed))
                             .padding(.top, 100)
+                        Text("Keine Verbindung zur CVAG")
+                            .font(.footnote)
+                            .padding()
+                    } else if departuresList.departures.count == 0 {
+                        Image(systemName: "moon.zzz.fill")
+                            .font(.system(size: 48))
+                            .foregroundColor(Color(.systemGray))
+                            .padding(.top, 100)
+                        Text("Aktuell keine Abfahrten")
+                            .font(.footnote)
+                            .padding()
                     }
         
                     ScrollView {
