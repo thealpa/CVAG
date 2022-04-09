@@ -129,8 +129,11 @@ struct DrawerView: View {
                     }.onChange(of: selectedStop) { newStop in
                         departuresList.loadData(id: selectedStop.id)
                     }.onReceive(timer) { time in
-                        print("The time is now \(time)")
-                        departuresList.loadData(id: selectedStop.id)
+                        
+                        // Only reload data if drawer is visible
+                        if currentDrawerHeight > 0 {
+                            departuresList.loadData(id: selectedStop.id)
+                        }
                     }.introspectScrollView { scrollView in
                         scrollView.alwaysBounceVertical = false
                     }
