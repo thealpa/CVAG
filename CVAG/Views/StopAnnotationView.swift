@@ -36,11 +36,12 @@ struct StopAnnotationView: View {
         .onTapGesture {
             setDrawerHeight = .medium
             selectedStop = stop
-            showSelected.toggle()
         }
         .onChange(of: selectedStop) { newStop in
             if stop.id != newStop.id {
                 showSelected = false
+            } else {
+                showSelected.toggle()
             }
         }
     }

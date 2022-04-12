@@ -8,7 +8,8 @@
 import SwiftUI
 
 /// Default positions of drawer in __ascending__ order.
-let drawerDefault: [CGFloat] = [50, 400, UIScreen.main.bounds.height - 150]
+//
+let drawerDefault: [CGFloat] = [(UIScreen.screenHeight * 0.15), (UIScreen.screenHeight * 0.60), (UIScreen.screenHeight * 0.90)]
 
 public enum drawerType {
     case hidden
@@ -16,4 +17,9 @@ public enum drawerType {
     case low
     case medium
     case high
+}
+
+extension UIScreen{
+   static let screenWidth = UIScreen.main.bounds.size.width
+   static let screenHeight = UIScreen.main.bounds.size.height
 }

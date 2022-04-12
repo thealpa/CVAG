@@ -18,12 +18,15 @@
 		3D53805827DA7D41005860CE /* Departures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D53805727DA7D41005860CE /* Departures.swift */; };
 		3D53805A27DA9A6A005860CE /* DeparturesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D53805927DA9A6A005860CE /* DeparturesLoader.swift */; };
 		3D59B66A27DE73BE00BA0DFA /* DepartureCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59B66927DE73BE00BA0DFA /* DepartureCellView.swift */; };
+		3D5CA9C62804720800DE6E60 /* FavoriteAddButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5CA9C52804720800DE6E60 /* FavoriteAddButtonView.swift */; };
 		3D635F4827D81789008906D3 /* CVAGApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D635F4727D81789008906D3 /* CVAGApp.swift */; };
 		3D635F4A27D81789008906D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D635F4927D81789008906D3 /* ContentView.swift */; };
 		3D635F4C27D8178A008906D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D635F4B27D8178A008906D3 /* Assets.xcassets */; };
 		3D635F4F27D8178A008906D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D635F4E27D8178A008906D3 /* Preview Assets.xcassets */; };
 		3D732E8727EBF7BA003E8110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D732E8627EBF7BA003E8110 /* LaunchScreen.storyboard */; };
 		3DCEB98D27ED4118003FC99C /* StopAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCEB98C27ED4118003FC99C /* StopAnnotationView.swift */; };
+		3DD72ACC2801BC8000044491 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD72ACB2801BC8000044491 /* Favorites.swift */; };
+		3DD72AD728032A8F00044491 /* FavoriteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD72AD628032A8F00044491 /* FavoriteButtonView.swift */; };
 		3DDAF3C527FA3100006C8730 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 3DDAF3C427FA3100006C8730 /* Introspect */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +42,7 @@
 		3D53805727DA7D41005860CE /* Departures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Departures.swift; sourceTree = "<group>"; };
 		3D53805927DA9A6A005860CE /* DeparturesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeparturesLoader.swift; sourceTree = "<group>"; };
 		3D59B66927DE73BE00BA0DFA /* DepartureCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartureCellView.swift; sourceTree = "<group>"; };
+		3D5CA9C52804720800DE6E60 /* FavoriteAddButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteAddButtonView.swift; sourceTree = "<group>"; };
 		3D635F4427D81789008906D3 /* CVAG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVAG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D635F4727D81789008906D3 /* CVAGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVAGApp.swift; sourceTree = "<group>"; };
 		3D635F4927D81789008906D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +50,8 @@
 		3D635F4E27D8178A008906D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3D732E8627EBF7BA003E8110 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DCEB98C27ED4118003FC99C /* StopAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopAnnotationView.swift; sourceTree = "<group>"; };
+		3DD72ACB2801BC8000044491 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
+		3DD72AD628032A8F00044491 /* FavoriteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,8 @@
 				3DCEB98C27ED4118003FC99C /* StopAnnotationView.swift */,
 				3D59B66927DE73BE00BA0DFA /* DepartureCellView.swift */,
 				3D4012F427E931DE00649196 /* FavoritesDrawerView.swift */,
+				3DD72AD628032A8F00044491 /* FavoriteButtonView.swift */,
+				3D5CA9C52804720800DE6E60 /* FavoriteAddButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -79,6 +87,7 @@
 				3D53804827D93B2E005860CE /* Stop.swift */,
 				3D53805727DA7D41005860CE /* Departures.swift */,
 				3D53805327DA3760005860CE /* Drawer.swift */,
+				3DD72ACB2801BC8000044491 /* Favorites.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -227,12 +236,15 @@
 				3D635F4A27D81789008906D3 /* ContentView.swift in Sources */,
 				3D53805A27DA9A6A005860CE /* DeparturesLoader.swift in Sources */,
 				3D635F4827D81789008906D3 /* CVAGApp.swift in Sources */,
+				3DD72AD728032A8F00044491 /* FavoriteButtonView.swift in Sources */,
+				3D5CA9C62804720800DE6E60 /* FavoriteAddButtonView.swift in Sources */,
 				3D53805827DA7D41005860CE /* Departures.swift in Sources */,
 				3DCEB98D27ED4118003FC99C /* StopAnnotationView.swift in Sources */,
 				3D4012F527E931DE00649196 /* FavoritesDrawerView.swift in Sources */,
 				3D53804927D93B2E005860CE /* Stop.swift in Sources */,
 				3D53805427DA3760005860CE /* Drawer.swift in Sources */,
 				3D59B66A27DE73BE00BA0DFA /* DepartureCellView.swift in Sources */,
+				3DD72ACC2801BC8000044491 /* Favorites.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,8 +372,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CVAG/CVAG.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 35;
 				DEVELOPMENT_ASSET_PATHS = "\"CVAG/Preview Content\"";
 				DEVELOPMENT_TEAM = B7HSFEB698;
 				ENABLE_PREVIEWS = YES;
@@ -391,8 +404,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CVAG/CVAG.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 35;
 				DEVELOPMENT_ASSET_PATHS = "\"CVAG/Preview Content\"";
 				DEVELOPMENT_TEAM = B7HSFEB698;
 				ENABLE_PREVIEWS = YES;

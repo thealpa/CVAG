@@ -13,10 +13,12 @@ struct DrawerView: View {
     
     @Binding var selectedStop: Stop
     @StateObject var departuresList = DeparturesLoader()
+    @Binding var showFavoritesView: Bool
     @Binding var setDrawerHeight: drawerType
     @State var drawerHeights: [CGFloat]
     @State var currentDrawerHeight: CGFloat = drawerDefault[1]
     @State private var showError = false
+    @State private var noDepartures = false
     
     /// Update timer
     let timer = Timer.publish(every: 30, tolerance: 5, on: .main, in: .common).autoconnect()
@@ -101,6 +103,7 @@ struct DrawerView: View {
                             Button {
                                 setDrawerHeight = .hidden
                                 selectedStop = noStop
+                                showFavoritesView = true
                             } label: {
                                 Image(systemName: "xmark")
                                     .font(.system(size: 12, weight: .bold, design: .rounded))
@@ -120,7 +123,7 @@ struct DrawerView: View {
                         Text("Keine Verbindung zur CVAG")
                             .font(.footnote)
                             .padding()
-                    } else if departuresList.departures.count == 0 {
+                    } else if noDepartures {
                         Image(systemName: "moon.zzz.fill")
                             .font(.system(size: 48))
                             .foregroundColor(Color(.systemGray))
@@ -128,30 +131,32 @@ struct DrawerView: View {
                         Text("Aktuell keine Abfahrten")
                             .font(.footnote)
                             .padding()
-                    }
-        
-                    ScrollView {
-                        ForEach(departuresList.departures) { departure in
-                            DepartureCellView(departure: departure)
-                            Divider()
-                                .padding(.horizontal, 20)
-                                .padding(.bottom, 10)
+                    } else {
+                        ScrollView {
+                            ForEach(departuresList.departures) { departure in
+                                DepartureCellView(departure: departure)
+                                Divider()
+                                    .padding(.horizontal, 20)
+                                    .padding(.bottom, 10)
+                            }
+                        }.onReceive(timer) { time in
+                            
+                            // Only reload data if drawer is visible
+                            if currentDrawerHeight > 0 {
+                                departuresList.loadData(id: selectedStop.id)
+                            }
+                        }.introspectScrollView { scrollView in
+                            scrollView.alwaysBounceVertical = false
                         }
-                    }.onChange(of: selectedStop) { newStop in
-                        departuresList.loadData(id: selectedStop.id)
-                    }.onReceive(timer) { time in
-                        
-                        // Only reload data if drawer is visible
-                        if currentDrawerHeight > 0 {
-                            departuresList.loadData(id: selectedStop.id)
-                        }
-                    }.introspectScrollView { scrollView in
-                        scrollView.alwaysBounceVertical = false
                     }
-                    .frame(maxHeight: UIScreen.main.bounds.height - 200)
                     
                     Spacer()
                 }
+                
+                FavoriteAddButtonView(stop: selectedStop)
+                    .shadow(radius: 5)
+                    .padding(.top, drawerDefault[2] - 200)
+    
             }
         }.impact(.medium)
         .dislodge(.light)
@@ -170,11 +175,24 @@ struct DrawerView: View {
                 showError = false
             }
         }
+        .onChange(of: departuresList.noDepartures) { newValue in
+            if newValue == true {
+                noDepartures = true
+            } else {
+                noDepartures = false
+            }
+        }
+        .onChange(of: selectedStop) { newStop in
+            departuresList.loadData(id: selectedStop.id)
+            if newStop != noStop {
+                showFavoritesView = false
+            }
+        }.ignoresSafeArea(.all)
     }
 }
 
 struct DrawerView_Previews: PreviewProvider {
     static var previews: some View {
-        DrawerView(selectedStop: .constant(Stop(id: 131, name: "Zentralhaltestelle", latitude: 50.1, longitude: 50.1)), setDrawerHeight: .constant(.variable), drawerHeights: [drawerDefault.last!])
+        DrawerView(selectedStop: .constant(Stop(id: 131, name: "Zentralhaltestelle", latitude: 50.1, longitude: 50.1)), showFavoritesView: .constant(false), setDrawerHeight: .constant(.variable), drawerHeights: [drawerDefault.last!])
     }
 }

@@ -1,0 +1,29 @@
+//
+//  Favorites.swift
+//  CVAG
+//
+//  Created by Jan Hülsmann on 09.04.22.
+//
+
+import SwiftUI
+
+class FavoritesModel: ObservableObject {
+    
+    // Load example data on first run
+    init() {
+        if !UserDefaults.standard.bool(forKey: "didLaunchBefore") {
+            UserDefaults.standard.set(true, forKey: "didLaunchBefore")
+            favorites = exampleFavorites
+        }
+    }
+    
+    @AppStorage("favoriteStops") var favorites = FavoriteStops()
+    
+    @Published var currentFavorite: Stop?
+    
+    private var exampleFavorites: [Stop] = [
+        Stop(id: 131, name: "Zentralhaltestelle", latitude: 50.8327427033286, longitude: 12.9213850148795),
+        Stop(id: 216, name: "TU Campus", latitude: 50.8134653801663, longitude: 12.931050887338),
+        Stop(id: 59, name: "Hauptbahnhof", latitude: 50.8400951572571, longitude: 12.929685448106)
+    ]
+}

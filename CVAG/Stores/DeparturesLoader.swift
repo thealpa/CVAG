@@ -10,6 +10,7 @@ import Foundation
 class DeparturesLoader: ObservableObject {
     @Published var departures = [Departure]()
     @Published var loadingError: Bool = false
+    @Published var noDepartures: Bool = false
         
     func loadData(id: Int16) {
         // Skip if using placeholder id
@@ -29,6 +30,12 @@ class DeparturesLoader: ObservableObject {
                     DispatchQueue.main.async {
                         self.loadingError = false
                         self.departures = decodedData.stops
+                        
+                        if self.departures.isEmpty {
+                            self.noDepartures = true
+                        } else {
+                            self.noDepartures = false
+                        }
                     }
                 } else {
                     print("No data")
