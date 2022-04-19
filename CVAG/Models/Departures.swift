@@ -35,4 +35,5 @@ enum serviceType: String, Codable {
     case bus = "BUS"
     case tram = "TRAM"
     case bahn = "CHEMNITZBAHN"
+    case ev = "SCHIENENERSATZVERKEHR"
 }

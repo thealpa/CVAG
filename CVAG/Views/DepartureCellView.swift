@@ -49,6 +49,15 @@ struct DepartureCellView: View {
                             .font(.headline)
                             .foregroundColor(Color(.systemBackground))
                     }
+                case serviceType.ev:
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 15)
+                            .frame(width: 45, height: 45)
+                            .foregroundColor(Color(red: 0.93, green: 0.45, blue: 0.01))
+                        Image(systemName: "bus.fill")
+                            .font(.headline)
+                            .foregroundColor(Color(.systemBackground))
+                    }
                 }
             } else {
                 ZStack {
