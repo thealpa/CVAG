@@ -19,6 +19,10 @@ struct FavoritesDrawerView: View {
     @State var restingHeight: [CGFloat] = drawerDefault
     @State var currentDrawerHeight: CGFloat = drawerDefault[1]
     
+    /// Haptics
+    var impactGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
+    var dislodgeGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .light)
+    
     //Workaround
     @State var showGrid: Bool = true
     
@@ -95,8 +99,14 @@ struct FavoritesDrawerView: View {
         .onChange(of: showFavoritesView) { showView in
             if showView == false {
                 restingHeight = [-100]
+                DispatchQueue.main.async {
+                    dislodgeGenerator.impactOccurred()
+                }
             } else if showView == true {
                 restingHeight = drawerDefault
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                    impactGenerator.impactOccurred()
+                }
             }
         }.ignoresSafeArea(.all)
     }
