@@ -96,15 +96,15 @@ struct DrawerView: View {
                         
                         Spacer()
                         
-                        ZStack {
-                            Circle()
-                                .frame(width: 25, height: 25)
-                                .foregroundColor(Color(.secondarySystemBackground))
-                            Button {
-                                setDrawerHeight = .hidden
-                                selectedStop = noStop
-                                showFavoritesView = true
-                            } label: {
+                        Button {
+                            setDrawerHeight = .hidden
+                            selectedStop = noStop
+                            showFavoritesView = true
+                        } label: {
+                            ZStack {
+                                Circle()
+                                    .frame(width: 25, height: 25)
+                                    .foregroundColor(Color(.secondarySystemBackground))
                                 Image(systemName: "xmark")
                                     .font(.system(size: 12, weight: .bold, design: .rounded))
                                     .foregroundColor(Color(.secondaryLabel))
