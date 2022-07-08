@@ -116,7 +116,7 @@ struct DrawerView: View {
                         .padding(.bottom, 20)
                     
                     if showError {
-                        Image(systemName: "exclamationmark.icloud.fill")
+                        Image(systemName: "wifi.exclamationmark")
                             .font(.system(size: 48))
                             .foregroundColor(Color(.systemRed))
                             .padding(.top, 100)
