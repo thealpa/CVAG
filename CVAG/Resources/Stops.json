@@ -6,6 +6,12 @@
         "longitude": 12.809607644061
     },
     {
+        "id": 4,
+        "name": "Theaterplatz/Kunstsammlungen",
+        "latitude": 50.83732,
+        "longitude": 12.92573
+    },
+    {
         "id": 5,
         "name": "An der Bahnbrücke",
         "latitude": 50.8606770002532,
@@ -300,6 +306,12 @@
         "longitude": 12.8794965731752
     },
     {
+        "id": 62,
+        "name": "Hauptbahnhof, Bahnhofstr.",
+        "latitude": 50.83819,
+        "longitude": 12.92918
+    },
+    {
         "id": 63,
         "name": "Schillerplatz",
         "latitude": 50.8395959532143,
@@ -352,6 +364,12 @@
         "name": "Richard-Hartmann-Platz",
         "latitude": 50.8383365738304,
         "longitude": 12.911323883696
+    },
+    {
+        "id": 72,
+        "name": "Str. Usti nad Labem",
+        "latitude": 50.81116,
+        "longitude": 12.89288
     },
     {
         "id": 73,
@@ -474,10 +492,28 @@
         "longitude": 12.9057004300166
     },
     {
+        "id": 94,
+        "name": "Altes Rathaus Harthau",
+        "latitude": 50.7817,
+        "longitude": 12.92511
+    },
+    {
         "id": 95,
         "name": "Alte Harth",
         "latitude": 50.7784087345475,
         "longitude": 12.9260113385934
+    },
+    {
+        "id": 96,
+        "name": "Klaffenbacher Str.",
+        "latitude": 50.77467,
+        "longitude": 12.92467
+    },
+    {
+        "id": 97,
+        "name": "Albert-Schenk-Str.",
+        "latitude": 50.77319,
+        "longitude": 12.91831
     },
     {
         "id": 98,
@@ -552,6 +588,18 @@
         "longitude": 12.9727506828327
     },
     {
+        "id": 112,
+        "name": "Kindergarten Einsiedel",
+        "latitude": 50.77746,
+        "longitude": 12.97091
+    },
+    {
+        "id": 113,
+        "name": "Rathaus Einsiedel",
+        "latitude": 50.7737,
+        "longitude": 12.97396
+    },
+    {
         "id": 114,
         "name": "August-Bebel-Platz",
         "latitude": 50.7682968165201,
@@ -570,6 +618,18 @@
         "longitude": 12.8764063685974
     },
     {
+        "id": 119,
+        "name": "Chemnitz Center (Marktkauf)",
+        "latitude": 50.86514,
+        "longitude": 12.86819
+    },
+    {
+        "id": 120,
+        "name": "Harthauer Str.",
+        "latitude": 50.79076,
+        "longitude": 12.91925
+    },
+    {
         "id": 121,
         "name": "Bruno-Granz-Str.",
         "latitude": 50.7959233100186,
@@ -586,12 +646,6 @@
         "name": "Hilbersdorfer Str.",
         "latitude": 50.8516207470545,
         "longitude": 12.9392884384945
-    },
-    {
-        "id": 126,
-        "name": "Rosenstr.",
-        "latitude": 50.7665980270746,
-        "longitude": 12.9734244192958
     },
     {
         "id": 127,
@@ -634,6 +688,12 @@
         "name": "Euba",
         "latitude": 50.8493351403946,
         "longitude": 13.0076592147784
+    },
+    {
+        "id": 135,
+        "name": "Abzweig Berbisdorf",
+        "latitude": 50.76829,
+        "longitude": 12.96918
     },
     {
         "id": 137,
@@ -804,6 +864,12 @@
         "longitude": 12.829505327607
     },
     {
+        "id": 168,
+        "name": "Abzweig Eibenberg",
+        "latitude": 50.76302,
+        "longitude": 12.94202
+    },
+    {
         "id": 169,
         "name": "Kaßbergauffahrt",
         "latitude": 50.833939825311,
@@ -932,20 +998,20 @@
     {
         "id": 192,
         "name": "Frauen- und Kinderklinik",
-        "latitude": 50.843124303624,
-        "longitude": 12.8846888355182
+        "latitude": 50.84308,
+        "longitude": 12.8843
     },
     {
         "id": 193,
         "name": "Rehabilitationszentrum für Blinde",
-        "latitude": 50.8417742589354,
-        "longitude": 12.8778436730522
+        "latitude": 50.84179,
+        "longitude": 12.87742
     },
     {
         "id": 194,
         "name": "Flemmingstr.",
-        "latitude": 50.8442077145957,
-        "longitude": 12.8860273252917
+        "latitude": 50.84158,
+        "longitude": 12.8747
     },
     {
         "id": 196,
@@ -1068,6 +1134,12 @@
         "longitude": 12.9253915010473
     },
     {
+        "id": 221,
+        "name": "Sportforum, Tor 1",
+        "latitude": 50.80736,
+        "longitude": 12.93246
+    },
+    {
         "id": 222,
         "name": "Christian-Wehner-Str.",
         "latitude": 50.850350349237,
@@ -1090,6 +1162,12 @@
         "name": "Dresdner Str.",
         "latitude": 50.8519213271906,
         "longitude": 12.9552515010956
+    },
+    {
+        "id": 226,
+        "name": "Sportforum, Tor 4",
+        "latitude": 50.80649,
+        "longitude": 12.9373
     },
     {
         "id": 227,
@@ -1180,6 +1258,12 @@
         "name": "Schösserholz",
         "latitude": 50.8014704953562,
         "longitude": 12.9915973374961
+    },
+    {
+        "id": 243,
+        "name": "Schule Wittgensdorf",
+        "latitude": 50.88047,
+        "longitude": 12.87041
     },
     {
         "id": 244,
@@ -1350,6 +1434,12 @@
         "longitude": 12.9965201052538
     },
     {
+        "id": 279,
+        "name": "Schule Klaffenbach",
+        "latitude": 50.76136,
+        "longitude": 12.91411
+    },
+    {
         "id": 281,
         "name": "Schillerstr.",
         "latitude": 50.7975188320107,
@@ -1464,10 +1554,22 @@
         "longitude": 12.8815087994119
     },
     {
+        "id": 301,
+        "name": "Kirche Kleinolbersdorf",
+        "latitude": 50.80098,
+        "longitude": 13.01655
+    },
+    {
         "id": 302,
         "name": "Löbenhainer Str.",
         "latitude": 50.8623383510872,
         "longitude": 12.8124822529706
+    },
+    {
+        "id": 303,
+        "name": "Gasthof Kleinolbersdorf",
+        "latitude": 50.80072,
+        "longitude": 13.01997
     },
     {
         "id": 304,
@@ -1486,6 +1588,12 @@
         "name": "Ebersdorfer Höhe",
         "latitude": 50.8694366986967,
         "longitude": 12.964917373554
+    },
+    {
+        "id": 309,
+        "name": "Gasthaus Zur Post",
+        "latitude": 50.87395,
+        "longitude": 12.96856
     },
     {
         "id": 310,
@@ -1576,6 +1684,12 @@
         "name": "Bernsbachplatz",
         "latitude": 50.8247251662333,
         "longitude": 12.927286946297
+    },
+    {
+        "id": 327,
+        "name": "Dorfstr. Mittelbach",
+        "latitude": 50.79532,
+        "longitude": 12.79143
     },
     {
         "id": 328,
@@ -1698,6 +1812,12 @@
         "longitude": 13.0122316395752
     },
     {
+        "id": 352,
+        "name": "Rathaus Altenhain",
+        "latitude": 50.78632,
+        "longitude": 13.00728
+    },
+    {
         "id": 353,
         "name": "Poststr.",
         "latitude": 50.81247207317,
@@ -1716,6 +1836,12 @@
         "longitude": 12.7931235585951
     },
     {
+        "id": 356,
+        "name": "Rathaus Grüna",
+        "latitude": 50.81062,
+        "longitude": 12.78404
+    },
+    {
         "id": 357,
         "name": "Am Stadtpark",
         "latitude": 50.8020212035153,
@@ -1726,6 +1852,18 @@
         "name": "Chemnitzer Str.",
         "latitude": 50.7818905912831,
         "longitude": 12.8980916995591
+    },
+    {
+        "id": 360,
+        "name": "Ernst-Enge-Str.",
+        "latitude": 50.82428,
+        "longitude": 12.95842
+    },
+    {
+        "id": 361,
+        "name": "Rotdorn",
+        "latitude": 50.82601,
+        "longitude": 12.95551
     },
     {
         "id": 362,
@@ -1756,6 +1894,12 @@
         "name": "Glösa",
         "latitude": 50.8673560650049,
         "longitude": 12.9130306827361
+    },
+    {
+        "id": 367,
+        "name": "Rathaus Mittelbach",
+        "latitude": 50.79965,
+        "longitude": 12.79984
     },
     {
         "id": 368,
@@ -1842,6 +1986,12 @@
         "longitude": 12.9015322470977
     },
     {
+        "id": 387,
+        "name": "Gasthof Goldener Hahn",
+        "latitude": 50.78195,
+        "longitude": 12.99354
+    },
+    {
         "id": 389,
         "name": "Am Flughafen",
         "latitude": 50.8109792349268,
@@ -1854,10 +2004,22 @@
         "longitude": 12.897696440834
     },
     {
+        "id": 391,
+        "name": "Haydnstr./Villa Esche",
+        "latitude": 50.81699,
+        "longitude": 12.90163
+    },
+    {
         "id": 392,
         "name": "Goetheplatz",
         "latitude": 50.82140540067,
         "longitude": 12.9066077284537
+    },
+    {
+        "id": 393,
+        "name": "Bahnhof Mitte",
+        "latitude": 50.82678,
+        "longitude": 12.9142
     },
     {
         "id": 394,
@@ -1980,6 +2142,12 @@
         "longitude": 12.9471756466902
     },
     {
+        "id": 417,
+        "name": "Haltepunkt Kinderwaldstätte",
+        "latitude": 50.8819,
+        "longitude": 12.95223
+    },
+    {
         "id": 418,
         "name": "Eibenberger Str.",
         "latitude": 50.7622399807652,
@@ -2002,6 +2170,12 @@
         "name": "Horststr.",
         "latitude": 50.8178754081214,
         "longitude": 12.8959716754883
+    },
+    {
+        "id": 424,
+        "name": "Ortseingang Mittelbach",
+        "latitude": 50.80606,
+        "longitude": 12.80841
     },
     {
         "id": 425,
@@ -2092,6 +2266,12 @@
         "name": "Weg zur Sternmühle",
         "latitude": 50.7983421227649,
         "longitude": 13.0316532160206
+    },
+    {
+        "id": 448,
+        "name": "Rathaus Wittgensdorf",
+        "latitude": 50.88195,
+        "longitude": 12.86969
     },
     {
         "id": 449,
@@ -2298,6 +2478,12 @@
         "longitude": 12.8789486008518
     },
     {
+        "id": 500,
+        "name": "C.-Zetkin-Str./Schauspielhaus",
+        "latitude": 50.82784,
+        "longitude": 12.92797
+    },
+    {
         "id": 501,
         "name": "Kaufmannstr.",
         "latitude": 50.8204009122689,
@@ -2344,6 +2530,12 @@
         "name": "Bürgelstr.",
         "latitude": 50.8221374718238,
         "longitude": 12.8467350147588
+    },
+    {
+        "id": 510,
+        "name": "Gasthof Wildpark",
+        "latitude": 50.86308,
+        "longitude": 12.85575
     },
     {
         "id": 512,
@@ -2484,6 +2676,12 @@
         "longitude": 12.8870693710214
     },
     {
+        "id": 541,
+        "name": "Abzweig Kleinolbersdorf",
+        "latitude": 50.7932,
+        "longitude": 12.98558
+    },
+    {
         "id": 542,
         "name": "Albert-Köhler-Str.",
         "latitude": 50.7929081357519,
@@ -2506,6 +2704,12 @@
         "name": "Dresdner Platz",
         "latitude": 50.8361127218339,
         "longitude": 12.9307005443772
+    },
+    {
+        "id": 554,
+        "name": "Oelsnitz, Bahnhofstr.",
+        "latitude": 50.87876,
+        "longitude": 12.80186
     },
     {
         "id": 555,
@@ -2550,6 +2754,12 @@
         "longitude": 12.9198578788963
     },
     {
+        "id": 571,
+        "name": "Lößnitz ob Bf",
+        "latitude": 50.90778,
+        "longitude": 12.95913
+    },
+    {
         "id": 572,
         "name": "Grüna",
         "latitude": 50.820015001375,
@@ -2580,10 +2790,22 @@
         "longitude": 12.9645131316761
     },
     {
+        "id": 577,
+        "name": "Friedrichstr.",
+        "latitude": 50.77288,
+        "longitude": 12.91933
+    },
+    {
         "id": 578,
         "name": "Altchemnitz",
         "latitude": 50.7909717348335,
         "longitude": 12.9260742206633
+    },
+    {
+        "id": 580,
+        "name": "Gasthof Draisdorf",
+        "latitude": 50.88185,
+        "longitude": 12.89965
     },
     {
         "id": 583,
@@ -2622,6 +2844,18 @@
         "longitude": 12.8502114949089
     },
     {
+        "id": 592,
+        "name": "Heinrich-Heine-Str.",
+        "latitude": 50.86111,
+        "longitude": 12.84263
+    },
+    {
+        "id": 593,
+        "name": "Gemeindepark Röhrsdorf",
+        "latitude": 50.86152,
+        "longitude": 12.83437
+    },
+    {
         "id": 594,
         "name": "Sebastian-Bach-Gasse",
         "latitude": 50.8622929907583,
@@ -2658,10 +2892,28 @@
         "longitude": 13.0231731197373
     },
     {
+        "id": 615,
+        "name": "Bahnhof Einsiedel",
+        "latitude": 50.77371,
+        "longitude": 12.97156
+    },
+    {
         "id": 616,
         "name": "Am Regenbogenhaus",
         "latitude": 50.8812157559502,
         "longitude": 12.8675849125061
+    },
+    {
+        "id": 617,
+        "name": "Post Röhrsdorf",
+        "latitude": 50.86127,
+        "longitude": 12.83818
+    },
+    {
+        "id": 618,
+        "name": "Würschnitztalstr.",
+        "latitude": 50.77267,
+        "longitude": 12.90348
     },
     {
         "id": 621,
@@ -2670,10 +2922,28 @@
         "longitude": 13.0101475481158
     },
     {
+        "id": 624,
+        "name": "Ortseingang Draisdorf",
+        "latitude": 50.88365,
+        "longitude": 12.89723
+    },
+    {
+        "id": 625,
+        "name": "Wittgensdorf Chemnitztalstr.",
+        "latitude": 50.89315,
+        "longitude": 12.89269
+    },
+    {
         "id": 626,
         "name": "Zum Chemnitztalradweg",
         "latitude": 50.8908102558236,
         "longitude": 12.8884976923234
+    },
+    {
+        "id": 627,
+        "name": "Marktsteig Wittgensdorf",
+        "latitude": 50.89018,
+        "longitude": 12.88245
     },
     {
         "id": 628,
@@ -2692,6 +2962,12 @@
         "name": "Am Wittgensdorfer Bach",
         "latitude": 50.881385787912,
         "longitude": 12.8531400027355
+    },
+    {
+        "id": 633,
+        "name": "Oberer Bahnhof Wittgensdorf",
+        "latitude": 50.88009,
+        "longitude": 12.84355
     },
     {
         "id": 634,
@@ -2730,16 +3006,34 @@
         "longitude": 12.9165969944145
     },
     {
+        "id": 642,
+        "name": "Hauptbahnhof, Dresdner Str.",
+        "latitude": 50.83869,
+        "longitude": 12.93171
+    },
+    {
         "id": 643,
         "name": "Am Ried",
         "latitude": 50.827539688543,
         "longitude": 12.8266397018503
     },
     {
+        "id": 650,
+        "name": "Riemenschneiderstr.",
+        "latitude": 50.78541,
+        "longitude": 12.9255
+    },
+    {
         "id": 651,
         "name": "Harthau",
         "latitude": 50.7768693645072,
         "longitude": 12.9241967417192
+    },
+    {
+        "id": 652,
+        "name": "Haltepunkt Klaffenbach",
+        "latitude": 50.77134,
+        "longitude": 12.9031
     },
     {
         "id": 655,
@@ -2862,6 +3156,12 @@
         "longitude": 12.9378062182755
     },
     {
+        "id": 678,
+        "name": "Bernhardstr.",
+        "latitude": 50.82959,
+        "longitude": 12.95513
+    },
+    {
         "id": 679,
         "name": "Pappelstr.",
         "latitude": 50.8145324521463,
@@ -2982,6 +3282,12 @@
         "longitude": 12.7992680351393
     },
     {
+        "id": 805,
+        "name": "Haltepunkt Grüna",
+        "latitude": 50.81182,
+        "longitude": 12.80068
+    },
+    {
         "id": 806,
         "name": "Blumenweg",
         "latitude": 50.8150603032087,
@@ -3019,9 +3325,9 @@
     },
     {
         "id": 818,
-        "name": "Lichtenstein, Bahnhof",
-        "latitude": 50.7570291110095,
-        "longitude": 12.6269621804684
+        "name": "Curiestr.",
+        "latitude": 50.81424,
+        "longitude": 12.84756
     },
     {
         "id": 819,
@@ -3166,6 +3472,12 @@
         "name": "Wüstenbrand, Rathaus",
         "latitude": 50.8081183013201,
         "longitude": 12.7560950025785
+    },
+    {
+        "id": 919,
+        "name": "Burg Rabenstein",
+        "latitude": 50.83273,
+        "longitude": 12.8188
     },
     {
         "id": 939,
