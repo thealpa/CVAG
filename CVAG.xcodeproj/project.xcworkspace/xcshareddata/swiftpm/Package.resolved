@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/thealpa/swiftui-drawer",
       "state" : {
-        "branch" : "master",
-        "revision" : "fa1c439ddff2a402f20178f1ac2c9d9426c1d125"
+        "branch" : "smooth-drag",
+        "revision" : "b0a0f33676a75b942aabd889e09972bfcb6d51a2"
       }
     },
     {

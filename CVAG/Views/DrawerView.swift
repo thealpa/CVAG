@@ -92,7 +92,6 @@ struct DrawerView: View {
                               .frame(maxWidth: .infinity, alignment: .leading)
                               .font(.system(size: 32, weight: .semibold, design: .default))
                               .lineLimit(1)
-                              .animation(Animation.linear(duration: 0.1), value: selectedStop)
                         
                         Spacer()
                         
