@@ -7,10 +7,10 @@
 
 import Foundation
 
-class DeparturesLoader: ObservableObject {
-    @Published var departures = [Departure]()
-    @Published var loadingError: Bool = false
-    @Published var noDepartures: Bool = false
+final class DeparturesLoader: ObservableObject {
+    @Published private(set) var departures = [Departure]()
+    @Published private(set) var loadingError: Bool = false
+    @Published private(set) var noDepartures: Bool = false
         
     func loadData(id: Int16) {
         // Skip if using placeholder id
@@ -44,7 +44,6 @@ class DeparturesLoader: ObservableObject {
                     }
                 }
             } catch {
-                print("Error")
                 print(error)
                 DispatchQueue.main.async {
                     self.loadingError = true

@@ -7,7 +7,6 @@
 
 import SwiftUI
 import Drawer
-import Introspect
 
 struct FavoritesDrawerView: View {
     
@@ -23,16 +22,13 @@ struct FavoritesDrawerView: View {
     var impactGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
     var dislodgeGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .light)
     
-    //Workaround
-    @State var showGrid: Bool = true
-    
     let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
     
     var body: some View {
         Drawer(){
             ZStack {
                 
-                RoundedRectangle(cornerRadius: 50.0)
+                RoundedRectangle(cornerRadius: UIScreen.main.displayCornerRadius, style: .continuous)
                     .foregroundColor(Color(.systemBackground))
                     .shadow(radius: 25)
                 

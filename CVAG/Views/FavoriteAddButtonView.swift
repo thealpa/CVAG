@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct FavoriteAddButtonView: View {
-    
+    @StateObject var favoritesData = FavoritesModel()
+    @State var isFavorite: Bool = false
     var stop: Stop
     var impactGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
-    @State var isFavorite: Bool = false
-    @StateObject var favoritesData = FavoritesModel()
     
     var body: some View {
         
@@ -41,8 +40,9 @@ struct FavoriteAddButtonView: View {
                         .font(.system(size: 16, weight: .medium, design: .rounded))
                 }
 
-            }.padding(.horizontal, 20)
-                .padding(.vertical, 5)
+            }
+            .padding(.horizontal, 20)
+            .padding(.vertical, 5)
         }
         .foregroundColor(Color(.systemBackground))
         .padding()

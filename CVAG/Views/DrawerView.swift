@@ -9,7 +9,7 @@ import SwiftUI
 import Drawer
 import Introspect
 
-struct DrawerView: View {
+struct DrawerView: View, Sendable {
     
     @Binding var selectedStop: Stop
     @StateObject var departuresList = DeparturesLoader()
@@ -76,7 +76,7 @@ struct DrawerView: View {
         Drawer(){
             ZStack {
                 
-                RoundedRectangle(cornerRadius: 50.0)
+                RoundedRectangle(cornerRadius: UIScreen.main.displayCornerRadius, style: .continuous)
                     .foregroundColor(Color(.systemBackground))
                     .shadow(radius: 25)
                 
