@@ -28,7 +28,7 @@ struct DepartureCellView: View {
                             .foregroundColor(Color(red: 0.44, green: 0.1, blue: 0.38))
                         Image(systemName: "bus.fill")
                             .font(.headline)
-                            .foregroundColor(Color(.systemBackground))
+                            .foregroundColor(.white)
                     }
                 case serviceType.bahn:
                     ZStack {
@@ -37,7 +37,7 @@ struct DepartureCellView: View {
                             .foregroundColor(Color(red: 0.12, green: 0.55, blue: 0.25))
                         Image(systemName: "tram.fill")
                             .font(.headline)
-                            .foregroundColor(Color(.systemBackground))
+                            .foregroundColor(.white)
                     }
                 case serviceType.tram:
                     ZStack {
@@ -46,7 +46,7 @@ struct DepartureCellView: View {
                             .foregroundColor(Color(red: 0.80, green: 0.07, blue: 0.09))
                         Image(systemName: "tram.fill")
                             .font(.headline)
-                            .foregroundColor(Color(.systemBackground))
+                            .foregroundColor(.white)
                     }
                 case serviceType.ev:
                     ZStack {
@@ -55,7 +55,7 @@ struct DepartureCellView: View {
                             .foregroundColor(Color(red: 0.93, green: 0.45, blue: 0.01))
                         Image(systemName: "bus.fill")
                             .font(.headline)
-                            .foregroundColor(Color(.systemBackground))
+                            .foregroundColor(.white)
                     }
                 }
             } else {
@@ -65,7 +65,7 @@ struct DepartureCellView: View {
                         .foregroundColor(Color(red: 0.80, green: 0.07, blue: 0.09))
                     Image(systemName: "questionmark")
                         .font(.headline)
-                        .foregroundColor(Color(.systemBackground))
+                        .foregroundColor(.white)
                 }
             }
             
