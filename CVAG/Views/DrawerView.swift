@@ -76,7 +76,7 @@ struct DrawerView: View, Sendable {
         Drawer(){
             ZStack {
                 
-                RoundedRectangle(cornerRadius: 50.0)
+                RoundedRectangle(cornerRadius: UIScreen.main.displayCornerRadius, style: .continuous)
                     .foregroundColor(Color(.systemBackground))
                     .shadow(radius: 25)
                 
