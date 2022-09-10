@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import AVKit
 
 struct FavoriteButtonView: View {
     var stop: Stop

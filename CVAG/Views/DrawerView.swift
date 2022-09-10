@@ -9,7 +9,7 @@ import SwiftUI
 import Drawer
 import Introspect
 
-struct DrawerView: View {
+struct DrawerView: View, Sendable {
     
     @Binding var selectedStop: Stop
     @StateObject var departuresList = DeparturesLoader()

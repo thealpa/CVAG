@@ -8,18 +8,17 @@
 import Foundation
 
 class StopLoader: ObservableObject {
-    @Published var stops = [Stop]()
+    @Published private(set) var stops = [Stop]()
         
-    init(){
+    init() {
         loadData()
     }
     
-    func loadData()  {
-        guard let url = Bundle.main.url(forResource: "Stops", withExtension: "json")
-            else {
-                print("JSON file not found")
-                return
-            }
+    func loadData() {
+        guard let url = Bundle.main.url(forResource: "Stops", withExtension: "json") else {
+            print("JSON file not found")
+            return
+        }
         
         let data = try? Data(contentsOf: url)
         let stops = try? JSONDecoder().decode([Stop].self, from: data!)

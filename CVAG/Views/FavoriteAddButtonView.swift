@@ -40,8 +40,9 @@ struct FavoriteAddButtonView: View {
                         .font(.system(size: 16, weight: .medium, design: .rounded))
                 }
 
-            }.padding(.horizontal, 20)
-                .padding(.vertical, 5)
+            }
+            .padding(.horizontal, 20)
+            .padding(.vertical, 5)
         }
         .foregroundColor(Color(.systemBackground))
         .padding()
