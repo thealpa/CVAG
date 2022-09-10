@@ -16,7 +16,6 @@ struct DepartureCellView: View {
     
     var body: some View {
         let absoluteTime: String = getAbsoluteTime(actualDeparture: departure.actualDeparture)
-        
         let relativeTime: String = getRelativeTime(actualDeparture: departure.actualDeparture)
         
         HStack {
@@ -99,7 +98,7 @@ struct DepartureCellView: View {
     }
 }
 
-func getAbsoluteTime (actualDeparture: Int) -> String {
+func getAbsoluteTime(actualDeparture: Int) -> String {
     let date = NSDate(timeIntervalSince1970: Double(actualDeparture/1000))
     let calendar = Calendar.current
     let hour = calendar.component(.hour, from: date as Date)
@@ -111,7 +110,7 @@ func getAbsoluteTime (actualDeparture: Int) -> String {
     }
 }
 
-func getRelativeTime (actualDeparture: Int) -> String {
+func getRelativeTime(actualDeparture: Int) -> String {
     let date = NSDate(timeIntervalSince1970: Double(actualDeparture/1000))
     let currentDate = NSDate.now
     let difference = Calendar.current.dateComponents([.minute], from: currentDate, to: date as Date)

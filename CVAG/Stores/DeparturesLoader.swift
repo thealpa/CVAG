@@ -7,7 +7,7 @@
 
 import Foundation
 
-class DeparturesLoader: ObservableObject {
+final class DeparturesLoader: ObservableObject {
     @Published var departures = [Departure]()
     @Published var loadingError: Bool = false
     @Published var noDepartures: Bool = false

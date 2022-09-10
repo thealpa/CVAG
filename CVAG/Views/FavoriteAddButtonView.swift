@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct FavoriteAddButtonView: View {
-    
+    @StateObject var favoritesData = FavoritesModel()
+    @State var isFavorite: Bool = false
     var stop: Stop
     var impactGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
-    @State var isFavorite: Bool = false
-    @StateObject var favoritesData = FavoritesModel()
     
     var body: some View {
         

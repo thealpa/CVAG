@@ -7,7 +7,6 @@
 
 import SwiftUI
 import Drawer
-import Introspect
 
 struct FavoritesDrawerView: View {
     
@@ -22,9 +21,6 @@ struct FavoritesDrawerView: View {
     /// Haptics
     var impactGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
     var dislodgeGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .light)
-    
-    //Workaround
-    @State var showGrid: Bool = true
     
     let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
     
