@@ -40,7 +40,7 @@ struct FavoritesDrawerView: View {
                         .frame(width: 35.0, height: 6.0)
                     
                     HStack {
-                        Text("Favoriten")
+                        Text("Favorites")
                               .frame(maxWidth: .infinity, alignment: .leading)
                               .font(.system(size: 32, weight: .semibold, design: .default))
                         

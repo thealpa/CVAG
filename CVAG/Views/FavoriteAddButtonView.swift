@@ -31,12 +31,12 @@ struct FavoriteAddButtonView: View {
                 if isFavorite == false {
                     Image(systemName: "plus")
                         .font(.system(size: 16, weight: .medium, design: .rounded))
-                    Text("Zu Favoriten hinzufügen")
+                    Text("AddToFavorites")
                         .font(.system(size: 16, weight: .medium, design: .rounded))
                 } else {
                     Image(systemName: "xmark")
                         .font(.system(size: 16, weight: .medium, design: .rounded))
-                    Text("Von Favoriten entfernen")
+                    Text("RemoveFromFavorites")
                         .font(.system(size: 16, weight: .medium, design: .rounded))
                 }
 
