@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  CVAG
+
+  Created by Jan Hülsmann on 02.10.22.
+  
+*/
+
+"Favorites" = "Вибране";
+"NoConnection" = "Не вдалося підключитися до CVAG";
+"NoDepartures" = "На даний момент вильотів немає";
+"AddToFavorites" = "Додати в обране Обране";
+"RemoveFromFavorites" = "Видалити з обраного";

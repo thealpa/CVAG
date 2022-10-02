@@ -119,7 +119,7 @@ struct DrawerView: View, Sendable {
                             .font(.system(size: 48))
                             .foregroundColor(Color(.systemRed))
                             .padding(.top, 100)
-                        Text("Keine Verbindung zur CVAG")
+                        Text("NoConnection")
                             .font(.footnote)
                             .padding()
                     } else if noDepartures {
@@ -127,7 +127,7 @@ struct DrawerView: View, Sendable {
                             .font(.system(size: 48))
                             .foregroundColor(Color(.systemGray))
                             .padding(.top, 100)
-                        Text("Aktuell keine Abfahrten")
+                        Text("NoDepartures")
                             .font(.footnote)
                             .padding()
                     } else {

@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  CVAG
+
+  Created by Jan Hülsmann on 02.10.22.
+  
+*/
+
+"Favorites" = "Favoriten";
+"NoConnection" = "Keine Verbindung zur CVAG";
+"NoDepartures" = "Aktuell keine Abfahrten";
+"AddToFavorites" = "Zu Favoriten hinzufügen";
+"RemoveFromFavorites" = "Von Favoriten entfernen";
