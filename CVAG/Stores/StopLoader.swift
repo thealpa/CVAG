@@ -7,14 +7,15 @@
 
 import Foundation
 
-class StopLoader: ObservableObject {
+final class StopLoader: ObservableObject {
+
     @Published private(set) var stops = [Stop]()
 
     init() {
         loadData()
     }
 
-    func loadData() {
+    private func loadData() {
         guard let url = Bundle.main.url(forResource: "Stops", withExtension: "json") else {
             print("JSON file not found")
             return

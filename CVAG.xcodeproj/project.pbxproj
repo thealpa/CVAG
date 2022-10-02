@@ -30,6 +30,7 @@
 		3DD72ACC2801BC8000044491 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD72ACB2801BC8000044491 /* Favorites.swift */; };
 		3DD72AD728032A8F00044491 /* FavoriteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD72AD628032A8F00044491 /* FavoriteButtonView.swift */; };
 		3DDAF3C527FA3100006C8730 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 3DDAF3C427FA3100006C8730 /* Introspect */; };
+		3DF83FB728E9B82A00925E1E /* UIScreen+ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF83FB628E9B82A00925E1E /* UIScreen+ScreenSize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		3DCEB98C27ED4118003FC99C /* StopAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopAnnotationView.swift; sourceTree = "<group>"; };
 		3DD72ACB2801BC8000044491 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 		3DD72AD628032A8F00044491 /* FavoriteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButtonView.swift; sourceTree = "<group>"; };
+		3DF83FB628E9B82A00925E1E /* UIScreen+ScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+ScreenSize.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				3D36831E28CD1D3E006CF87B /* UIScreen+ScreenCorners.swift */,
+				3DF83FB628E9B82A00925E1E /* UIScreen+ScreenSize.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				3D53804927D93B2E005860CE /* Stop.swift in Sources */,
 				3D36831F28CD1D3E006CF87B /* UIScreen+ScreenCorners.swift in Sources */,
 				3D53805427DA3760005860CE /* Drawer.swift in Sources */,
+				3DF83FB728E9B82A00925E1E /* UIScreen+ScreenSize.swift in Sources */,
 				3D59B66A27DE73BE00BA0DFA /* DepartureCellView.swift in Sources */,
 				3DD72ACC2801BC8000044491 /* Favorites.swift in Sources */,
 			);

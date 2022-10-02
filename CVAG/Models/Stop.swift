@@ -5,7 +5,6 @@
 //  Created by Jan Hülsmann on 01.01.22.
 //
 
-import Foundation
 import MapKit
 
 struct Stop: Identifiable, Codable, Equatable {
