@@ -95,7 +95,7 @@ struct FavoritesDrawerView: View {
         }
         .onChange(of: showFavoritesView) { showView in
             if showView == false {
-                restingHeight = [-100]
+                restingHeight = [-10]
                 DispatchQueue.main.async {
                     dislodgeGenerator.impactOccurred()
                 }

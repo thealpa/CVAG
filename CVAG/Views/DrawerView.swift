@@ -39,7 +39,7 @@ struct DrawerView: View, Sendable {
 
             switch newHeight {
             case .hidden:
-                tempDrawerHeight = [-100]
+                tempDrawerHeight = [-10]
             case .low:
                 tempDrawerHeight = [drawerDefault.first!]
             case .medium:
@@ -163,10 +163,10 @@ struct DrawerView: View, Sendable {
         .onRest { restingHeight in
             currentDrawerHeight = restingHeight
         }
-        .onChange(of: setDrawerHeight) {newValue in
-            changeHeight(newHeight: newValue)
+        .onChange(of: setDrawerHeight) { newHeight in
+            changeHeight(newHeight: newHeight)
         }
-        .onChange(of: departuresList.loadingError) {newValue in
+        .onChange(of: departuresList.loadingError) { newValue in
             if newValue == true {
                 showError = true
             } else {
