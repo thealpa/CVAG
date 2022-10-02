@@ -12,9 +12,9 @@ struct FavoriteAddButtonView: View {
     @State var isFavorite: Bool = false
     var stop: Stop
     var impactGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
-    
+
     var body: some View {
-        
+
         Button {
             DispatchQueue.main.async {
                 impactGenerator.impactOccurred()
@@ -54,7 +54,7 @@ struct FavoriteAddButtonView: View {
             } else {
                 isFavorite = false
             }
-        }         
+        }
     }
 }
 

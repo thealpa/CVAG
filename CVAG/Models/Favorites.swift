@@ -10,7 +10,7 @@ import SwiftUI
 class FavoritesModel: ObservableObject {
     @AppStorage("favoriteStops") var favorites = FavoriteStops()
     @Published var currentFavorite: Stop?
-    
+
     // Load example data on first run
     init() {
         if !UserDefaults.standard.bool(forKey: "didLaunchBefore") {
@@ -18,7 +18,7 @@ class FavoritesModel: ObservableObject {
             favorites = exampleFavorites
         }
     }
-    
+
     private var exampleFavorites: [Stop] = [
         Stop(id: 131, name: "Zentralhaltestelle", latitude: 50.8327427033286, longitude: 12.9213850148795),
         Stop(id: 216, name: "TU Campus", latitude: 50.8134653801663, longitude: 12.931050887338),

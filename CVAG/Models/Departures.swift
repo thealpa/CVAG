@@ -15,12 +15,12 @@ struct Departures: Codable {
 struct Departure: Identifiable, Codable {
     let id = UUID()
     let destination: String?
-    let serviceType: serviceType?
+    let serviceType: ServiceType?
     let hasActualDeparture: Bool?
     let actualDeparture: Int
     let line: String?
     let platform: String?
-    
+
     private enum CodingKeys: String, CodingKey {
         case destination
         case serviceType
@@ -31,9 +31,11 @@ struct Departure: Identifiable, Codable {
     }
 }
 
-enum serviceType: String, Codable {
+// swiftlint:disable identifier_name
+enum ServiceType: String, Codable {
     case bus = "BUS"
     case tram = "TRAM"
     case bahn = "CHEMNITZBAHN"
     case ev = "SCHIENENERSATZVERKEHR"
 }
+// swiftlint:enable identifier_name

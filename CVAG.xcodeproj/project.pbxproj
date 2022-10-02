@@ -173,6 +173,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D635F5227D8178A008906D3 /* Build configuration list for PBXNativeTarget "CVAG" */;
 			buildPhases = (
+				3D26BA4328E9B2C600BFBC22 /* ShellScript */,
 				3D635F4027D81789008906D3 /* Sources */,
 				3D635F4127D81789008906D3 /* Frameworks */,
 				3D635F4227D81789008906D3 /* Resources */,
@@ -243,6 +244,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D26BA4328E9B2C600BFBC22 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D635F4027D81789008906D3 /* Sources */ = {

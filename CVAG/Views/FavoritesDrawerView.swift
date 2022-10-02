@@ -9,43 +9,43 @@ import SwiftUI
 import Drawer
 
 struct FavoritesDrawerView: View {
-    
+
     @Binding var selectedStop: Stop
-    @Binding var setDrawerHeight: drawerType
-    
+    @Binding var setDrawerHeight: DrawerType
+
     @StateObject var favoritesData = FavoritesModel()
     @Binding var showFavoritesView: Bool
     @State var restingHeight: [CGFloat] = drawerDefault
     @State var currentDrawerHeight: CGFloat = drawerDefault[1]
-    
+
     /// Haptics
     var impactGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
     var dislodgeGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .light)
-    
+
     let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
-    
+
     var body: some View {
-        Drawer(){
+        Drawer {
             ZStack {
-                
+
                 RoundedRectangle(cornerRadius: UIScreen.main.displayCornerRadius, style: .continuous)
                     .foregroundColor(Color(.systemBackground))
                     .shadow(radius: 25)
-                
+
                 VStack {
                     Spacer().frame(height: 8.0)
-                    
+
                     RoundedRectangle(cornerRadius: 3.0)
                         .foregroundColor(Color(.systemGray5))
                         .frame(width: 35.0, height: 6.0)
-                    
+
                     HStack {
                         Text("Favorites")
                               .frame(maxWidth: .infinity, alignment: .leading)
                               .font(.system(size: 32, weight: .semibold, design: .default))
-                        
+
                         Spacer()
-                        
+
                         Button {
                             showFavoritesView = false
                         } label: {
@@ -61,18 +61,19 @@ struct FavoritesDrawerView: View {
                     }.padding(.horizontal, 20)
                         .padding(.top, 15)
                         .padding(.bottom, 20)
-                    
+
                     if showFavoritesView {
                         LazyVGrid(columns: columns, spacing: 20) {
                             ForEach(favoritesData.favorites) { favoriteStop in
-                                
+
                                 FavoriteButtonView(stop: favoriteStop)
                                     .contentShape(.dragPreview, RoundedRectangle(cornerRadius: 15))
                                     .opacity(favoritesData.currentFavorite?.id == favoriteStop.id ? 0.01 : 1)
                                     .onDrag({
                                         return NSItemProvider(object: String(favoriteStop.id) as NSString)
                                     })
-                                    .onDrop(of: ["favorite"], delegate: DropViewDelegate(stop: favoriteStop, favoritesData: favoritesData))
+                                    .onDrop(of: ["favorite"], delegate: DropViewDelegate(stop: favoriteStop,
+                                                                                         favoritesData: favoritesData))
                                     .onTapGesture {
                                         selectedStop = favoriteStop
                                         setDrawerHeight = .medium
@@ -81,7 +82,7 @@ struct FavoritesDrawerView: View {
                             }
                         }.padding(.horizontal, 15)
                     }
-                    
+
                     Spacer()
                 }
             }
@@ -111,33 +112,33 @@ struct FavoritesDrawerView: View {
 struct DropViewDelegate: DropDelegate {
     var stop: Stop
     var favoritesData: FavoritesModel
-    
+
     func performDrop(info: DropInfo) -> Bool {
         favoritesData.currentFavorite = nil
         return true
     }
-    
+
     func dropEntered(info: DropInfo) {
-        
+
         if favoritesData.currentFavorite == nil {
             favoritesData.currentFavorite = stop
         }
-        
+
         let fromIndex = favoritesData.favorites.firstIndex { (stop) -> Bool in
             return stop.id == favoritesData.currentFavorite?.id
         } ?? 0
-        
+
         let toIndex = favoritesData.favorites.firstIndex { (stop) -> Bool in
             return stop.id == self.stop.id
         } ?? 0
-        
+
         if fromIndex != toIndex {
             let fromStop = favoritesData.favorites[fromIndex]
             favoritesData.favorites[fromIndex] = favoritesData.favorites[toIndex]
             favoritesData.favorites[toIndex] = fromStop
         }
     }
-    
+
     func dropUpdated(info: DropInfo) -> DropProposal? {
         return DropProposal(operation: .move)
     }
@@ -145,6 +146,9 @@ struct DropViewDelegate: DropDelegate {
 
 struct FavoritesDrawerView_Previews: PreviewProvider {
     static var previews: some View {
-        FavoritesDrawerView(selectedStop: .constant(noStop), setDrawerHeight: .constant(.variable), showFavoritesView: .constant(true), restingHeight: [500] )
+        FavoritesDrawerView(selectedStop: .constant(noStop),
+                            setDrawerHeight: .constant(.variable),
+                            showFavoritesView: .constant(true),
+                            restingHeight: [500] )
     }
 }

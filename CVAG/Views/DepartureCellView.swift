@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct DepartureCellView: View {
-    
+
     // Store whether to use absolute or relative departure times
     @AppStorage("useRelativeTime") var useRelativeTime: Bool = false
-    
+
     var departure: Departure
-    
+
     var body: some View {
         let absoluteTime: String = getAbsoluteTime(actualDeparture: departure.actualDeparture)
         let relativeTime: String = getRelativeTime(actualDeparture: departure.actualDeparture)
-        
+
         HStack {
             if departure.serviceType != nil {
                 switch departure.serviceType! {
-                case serviceType.bus:
+                case .bus:
                     ZStack {
                         RoundedRectangle(cornerRadius: 15)
                             .frame(width: 45, height: 45)
@@ -30,7 +30,7 @@ struct DepartureCellView: View {
                             .font(.headline)
                             .foregroundColor(.white)
                     }
-                case serviceType.bahn:
+                case .bahn:
                     ZStack {
                         RoundedRectangle(cornerRadius: 15)
                             .frame(width: 45, height: 45)
@@ -39,7 +39,7 @@ struct DepartureCellView: View {
                             .font(.headline)
                             .foregroundColor(.white)
                     }
-                case serviceType.tram:
+                case .tram:
                     ZStack {
                         RoundedRectangle(cornerRadius: 15)
                             .frame(width: 45, height: 45)
@@ -48,7 +48,7 @@ struct DepartureCellView: View {
                             .font(.headline)
                             .foregroundColor(.white)
                     }
-                case serviceType.ev:
+                case .ev:
                     ZStack {
                         RoundedRectangle(cornerRadius: 15)
                             .frame(width: 45, height: 45)
@@ -68,7 +68,7 @@ struct DepartureCellView: View {
                         .foregroundColor(.white)
                 }
             }
-            
+
             VStack(alignment: .leading) {
                 HStack {
                     Text(departure.line ?? "")
@@ -80,11 +80,11 @@ struct DepartureCellView: View {
                         .opacity(0.6)
                         .offset(y: 3)
                 }
-                
+
                 Text(departure.destination ?? "")
                     .font(.body)
                     .lineLimit(1)
-                
+
             }.padding(.leading, 10)
 
             Spacer()
@@ -114,12 +114,17 @@ func getRelativeTime(actualDeparture: Int) -> String {
     let date = NSDate(timeIntervalSince1970: Double(actualDeparture/1000))
     let currentDate = NSDate.now
     let difference = Calendar.current.dateComponents([.minute], from: currentDate, to: date as Date)
-    
+
     return String(difference.minute!) + " min"
 }
 
 struct DepartureCellView_Previews: PreviewProvider {
     static var previews: some View {
-        DepartureCellView(departure: Departure(destination: "Flemmingstr. ü. Klinikum", serviceType: serviceType.bus, hasActualDeparture: true, actualDeparture: 1647180720000, line: "31", platform: "5A"))
+        DepartureCellView(departure: Departure(destination: "Flemmingstr. ü. Klinikum",
+                                               serviceType: .bus,
+                                               hasActualDeparture: true,
+                                               actualDeparture: 1647180720000,
+                                               line: "31",
+                                               platform: "5A"))
     }
 }

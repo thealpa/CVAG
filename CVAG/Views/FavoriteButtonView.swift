@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FavoriteButtonView: View {
     var stop: Stop
-    
+
     var body: some View {
         VStack {
             HStack {
@@ -17,18 +17,18 @@ struct FavoriteButtonView: View {
                     .font(Font.system(size: 20, weight: .semibold, design: .rounded))
                     .padding(.horizontal, 15)
                     .padding(.top, 15)
-                
+
                 Spacer()
             }
-            
+
             Spacer()
-            
+
             HStack {
                 Text(stop.name)
                     .font(Font.system(size: 20, weight: .semibold, design: .rounded))
                     .padding(.horizontal, 15)
                     .padding(.bottom, 15)
-                
+
                 Spacer()
             }
         }

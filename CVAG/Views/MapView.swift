@@ -10,9 +10,9 @@ import MapKit
 
 struct MapView: View {
     @Binding var selectedStop: Stop
-    @Binding var setDrawerHeight: drawerType
+    @Binding var setDrawerHeight: DrawerType
     @ObservedObject var stopData = StopLoader()
-    
+
     @State private var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(
             latitude: 50.830748,
@@ -20,7 +20,7 @@ struct MapView: View {
         span: MKCoordinateSpan(
             latitudeDelta: 0.02,
             longitudeDelta: 0.02))
-    
+
     var body: some View {
         Map(coordinateRegion: .constant(region), annotationItems: stopData.stops) { stop in
             MapAnnotation(coordinate: stop.coordinate) {
@@ -32,6 +32,10 @@ struct MapView: View {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(selectedStop: .constant(Stop(id: 131, name: "Zentralhaltestelle", latitude: 50.1, longitude: 50.1)), setDrawerHeight: .constant(.variable))
+        MapView(selectedStop: .constant(Stop(id: 131,
+                                             name: "Zentralhaltestelle",
+                                             latitude: 50.1,
+                                             longitude: 50.1)),
+                setDrawerHeight: .constant(.variable))
     }
 }
