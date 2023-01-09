@@ -29,7 +29,6 @@
 		3DCEB98D27ED4118003FC99C /* StopAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCEB98C27ED4118003FC99C /* StopAnnotationView.swift */; };
 		3DD72ACC2801BC8000044491 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD72ACB2801BC8000044491 /* Favorites.swift */; };
 		3DD72AD728032A8F00044491 /* FavoriteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD72AD628032A8F00044491 /* FavoriteButtonView.swift */; };
-		3DDAF3C527FA3100006C8730 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 3DDAF3C427FA3100006C8730 /* Introspect */; };
 		3DF83FB728E9B82A00925E1E /* UIScreen+ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF83FB628E9B82A00925E1E /* UIScreen+ScreenSize.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,7 +67,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D4CA70227E8025000154B91 /* Drawer in Frameworks */,
-				3DDAF3C527FA3100006C8730 /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +186,6 @@
 			name = CVAG;
 			packageProductDependencies = (
 				3D4CA70127E8025000154B91 /* Drawer */,
-				3DDAF3C427FA3100006C8730 /* Introspect */,
 			);
 			productName = CVAG;
 			productReference = 3D635F4427D81789008906D3 /* CVAG.app */;
@@ -222,7 +219,6 @@
 			mainGroup = 3D635F3B27D81789008906D3;
 			packageReferences = (
 				3D4CA70027E8025000154B91 /* XCRemoteSwiftPackageReference "swiftui-drawer" */,
-				3DDAF3C327FA3100006C8730 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
 			);
 			productRefGroup = 3D635F4527D81789008906D3 /* Products */;
 			projectDirPath = "";
@@ -530,14 +526,6 @@
 				kind = branch;
 			};
 		};
-		3DDAF3C327FA3100006C8730 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -545,11 +533,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3D4CA70027E8025000154B91 /* XCRemoteSwiftPackageReference "swiftui-drawer" */;
 			productName = Drawer;
-		};
-		3DDAF3C427FA3100006C8730 /* Introspect */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3DDAF3C327FA3100006C8730 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
-			productName = Introspect;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

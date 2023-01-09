@@ -7,10 +7,8 @@
 
 import SwiftUI
 import Drawer
-import Introspect
 
 struct DrawerView: View, Sendable {
-
     @Binding var selectedStop: Stop
     @StateObject var departuresList = DeparturesLoader()
     @Binding var showFavoritesView: Bool
@@ -19,6 +17,7 @@ struct DrawerView: View, Sendable {
     @State var currentDrawerHeight: CGFloat = drawerDefault[1]
     @State private var showError = false
     @State private var noDepartures = false
+    @State private var scrollFits = false
 
     /// Update timer
     let timer = Timer.publish(every: 30, tolerance: 5, on: .main, in: .common).autoconnect()
@@ -130,21 +129,30 @@ struct DrawerView: View, Sendable {
                             .font(.footnote)
                             .padding()
                     } else {
-                        ScrollView {
-                            ForEach(departuresList.departures) { departure in
-                                DepartureCellView(departure: departure)
-                                Divider()
-                                    .padding(.horizontal, 20)
-                                    .padding(.bottom, 10)
-                            }
+                        GeometryReader { proxy in
+                            ScrollView(.vertical, showsIndicators: true) {
+                                ForEach(departuresList.departures) { departure in
+                                    DepartureCellView(departure: departure)
+                                    Divider()
+                                        .padding(.horizontal, 20)
+                                        .padding(.bottom, 10)
+                                }.background {
+                                    GeometryReader {
+                                        Color.clear.preference(
+                                            key: ViewHeightKey.self,
+                                            value: $0.frame(in: .local).size.height
+                                        )
+                                    }
+                                }
+                            }.onPreferenceChange(ViewHeightKey.self) {
+                                self.scrollFits = $0 < proxy.size.height
+                            }.disabled(self.scrollFits)
                         }.onReceive(timer) { _ in
 
                             // Only reload data if drawer is visible
                             if currentDrawerHeight > 0 {
                                 departuresList.loadData(id: selectedStop.id)
                             }
-                        }.introspectScrollView { scrollView in
-                            scrollView.alwaysBounceVertical = false
                         }
                     }
 
@@ -186,6 +194,13 @@ struct DrawerView: View, Sendable {
                 showFavoritesView = false
             }
         }.ignoresSafeArea(.all)
+    }
+
+    private struct ViewHeightKey: PreferenceKey {
+        static var defaultValue: CGFloat { 0 }
+        static func reduce(value: inout Value, nextValue: () -> Value) {
+            value += nextValue()
+        }
     }
 }
 

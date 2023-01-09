@@ -8,15 +8,6 @@
         "branch" : "smooth-drag",
         "revision" : "b0a0f33676a75b942aabd889e09972bfcb6d51a2"
       }
-    },
-    {
-      "identity" : "swiftui-introspect",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/siteline/SwiftUI-Introspect.git",
-      "state" : {
-        "branch" : "master",
-        "revision" : "d3cbf32788250741d397cfb5bcd532c37aa1096d"
-      }
     }
   ],
   "version" : 2
