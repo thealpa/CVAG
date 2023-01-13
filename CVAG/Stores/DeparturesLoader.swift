@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class DeparturesLoader: ObservableObject {
+final class DeparturesLoader: ObservableObject, @unchecked Sendable {
     @Published private(set) var departures = [Departure]()
     @Published private(set) var loadingError: Bool = false
     @Published private(set) var noDepartures: Bool = false
