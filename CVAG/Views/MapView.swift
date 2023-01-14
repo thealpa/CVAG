@@ -11,20 +11,25 @@ import MapKit
 struct MapView: View {
     @Binding var selectedStop: Stop
     @Binding var setDrawerHeight: DrawerType
-    @ObservedObject var stopData = StopLoader()
+    @ObservedObject private var stopData = StopLoader()
 
-    @State private var region = MKCoordinateRegion(
+    private let region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(
             latitude: 50.830748,
             longitude: 12.921231),
         span: MKCoordinateSpan(
             latitudeDelta: 0.02,
-            longitudeDelta: 0.02))
+            longitudeDelta: 0.02)
+    )
 
     var body: some View {
-        Map(coordinateRegion: .constant(region), annotationItems: stopData.stops) { stop in
+        Map(coordinateRegion: .constant(self.region), annotationItems: self.stopData.stops) { stop in
             MapAnnotation(coordinate: stop.coordinate) {
-                StopAnnotationView(stop: stop, selectedStop: $selectedStop, setDrawerHeight: $setDrawerHeight)
+                StopAnnotationView(
+                    stop: stop,
+                    selectedStop: self.$selectedStop,
+                    setDrawerHeight: self.$setDrawerHeight
+                )
             }
         }.edgesIgnoringSafeArea(.all)
     }

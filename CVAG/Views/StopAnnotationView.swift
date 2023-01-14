@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StopAnnotationView: View {
-    var stop: Stop
+    let stop: Stop
     @Binding var selectedStop: Stop
     @Binding var setDrawerHeight: DrawerType
     @State private var showSelected: Bool = false
@@ -31,17 +31,17 @@ struct StopAnnotationView: View {
                 .offset(x: 0, y: -5)
 
         }.compositingGroup()
-        .scaleEffect(showSelected ? 1.8 : 1, anchor: .bottom)
-        .animation(.interpolatingSpring(stiffness: 300, damping: 10), value: showSelected)
+        .scaleEffect(self.showSelected ? 1.8 : 1, anchor: .bottom)
+        .animation(.interpolatingSpring(stiffness: 300, damping: 10), value: self.showSelected)
         .onTapGesture {
-            setDrawerHeight = .medium
-            selectedStop = stop
+            self.setDrawerHeight = .medium
+            self.selectedStop = self.stop
         }
-        .onChange(of: selectedStop) { newStop in
-            if stop.id != newStop.id {
-                showSelected = false
+        .onChange(of: self.selectedStop) { newStop in
+            if self.stop.id != newStop.id {
+                self.showSelected = false
             } else {
-                showSelected.toggle()
+                self.showSelected.toggle()
             }
         }
     }

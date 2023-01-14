@@ -10,31 +10,31 @@ import Drawer
 
 struct DrawerView: View, Sendable {
     @Binding var selectedStop: Stop
-    @StateObject var departuresList = DeparturesLoader()
+    @StateObject private var departuresList = DeparturesLoader()
     @Binding var showFavoritesView: Bool
     @Binding var setDrawerHeight: DrawerType
     @State var drawerHeights: [CGFloat]
-    @State var currentDrawerHeight: CGFloat = drawerDefault[1]
+    @State private var currentDrawerHeight: CGFloat = drawerDefault[1]
     @State private var showError = false
     @State private var noDepartures = false
     @State private var scrollFits = false
 
     /// Update timer
-    let timer = Timer.publish(every: 30, tolerance: 5, on: .main, in: .common).autoconnect()
+    private let timer = Timer.publish(every: 30, tolerance: 5, on: .main, in: .common).autoconnect()
 
     /// Haptics
-    var impactGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
-    var dislodgeGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .light)
+    private let impactGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
+    private let dislodgeGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .light)
 
     /// Sets the drawer height
     func changeHeight(newHeight: DrawerType) {
 
         if newHeight != .variable {
             DispatchQueue.main.async {
-                dislodgeGenerator.impactOccurred()
+                self.dislodgeGenerator.impactOccurred()
             }
 
-            var tempDrawerHeight = drawerHeights
+            var tempDrawerHeight = self.drawerHeights
 
             switch newHeight {
             case .hidden:
@@ -49,22 +49,22 @@ struct DrawerView: View, Sendable {
                 break
             }
 
-            if currentDrawerHeight != tempDrawerHeight[0]  && setDrawerHeight != .hidden {
+            if currentDrawerHeight != tempDrawerHeight[0]  && self.setDrawerHeight != .hidden {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                    impactGenerator.impactOccurred()
+                    self.impactGenerator.impactOccurred()
                 }
             }
 
-            drawerHeights = tempDrawerHeight
+            self.drawerHeights = tempDrawerHeight
         }
 
-        if drawerHeights != drawerDefault && setDrawerHeight != .hidden {
+        if self.drawerHeights != drawerDefault && self.setDrawerHeight != .hidden {
             DispatchQueue.global(qos: .background).async {
-                let second: Double = 1000000
+                let second: Double = 1_000_000
                 usleep(useconds_t(0.3 * second))
                 DispatchQueue.main.async {
-                    drawerHeights = drawerDefault
-                    setDrawerHeight = .variable
+                    self.drawerHeights = drawerDefault
+                    self.setDrawerHeight = .variable
                 }
             }
         }
@@ -86,7 +86,7 @@ struct DrawerView: View, Sendable {
                         .frame(width: 35.0, height: 6.0)
 
                     HStack {
-                        Text(selectedStop.name)
+                        Text(self.selectedStop.name)
                               .frame(maxWidth: .infinity, alignment: .leading)
                               .font(.system(size: 32, weight: .semibold, design: .default))
                               .lineLimit(1)
@@ -94,9 +94,9 @@ struct DrawerView: View, Sendable {
                         Spacer()
 
                         Button {
-                            setDrawerHeight = .hidden
-                            selectedStop = noStop
-                            showFavoritesView = true
+                            self.setDrawerHeight = .hidden
+                            self.selectedStop = noStop
+                            self.showFavoritesView = true
                         } label: {
                             ZStack {
                                 Circle()
@@ -112,7 +112,7 @@ struct DrawerView: View, Sendable {
                         .padding(.top, 15)
                         .padding(.bottom, 20)
 
-                    if showError {
+                    if self.showError {
                         Image(systemName: "wifi.exclamationmark")
                             .font(.system(size: 48))
                             .foregroundColor(Color(.systemRed))
@@ -120,7 +120,7 @@ struct DrawerView: View, Sendable {
                         Text("NoConnection")
                             .font(.footnote)
                             .padding()
-                    } else if noDepartures {
+                    } else if self.noDepartures {
                         Image(systemName: "moon.zzz.fill")
                             .font(.system(size: 48))
                             .foregroundColor(Color(.systemGray))
@@ -131,7 +131,7 @@ struct DrawerView: View, Sendable {
                     } else {
                         GeometryReader { proxy in
                             ScrollView(.vertical, showsIndicators: true) {
-                                ForEach(departuresList.departures) { departure in
+                                ForEach(self.departuresList.departures) { departure in
                                     DepartureCellView(departure: departure)
                                     Divider()
                                         .padding(.horizontal, 20)
@@ -147,11 +147,11 @@ struct DrawerView: View, Sendable {
                             }.onPreferenceChange(ViewHeightKey.self) {
                                 self.scrollFits = $0 < proxy.size.height
                             }.disabled(self.scrollFits)
-                        }.onReceive(timer) { _ in
+                        }.onReceive(self.timer) { _ in
 
                             // Only reload data if drawer is visible
-                            if currentDrawerHeight > 0 {
-                                departuresList.loadData(id: selectedStop.id)
+                            if self.currentDrawerHeight > 0 {
+                                self.departuresList.loadData(id: self.selectedStop.id)
                             }
                         }
                     }
@@ -159,7 +159,7 @@ struct DrawerView: View, Sendable {
                     Spacer()
                 }
 
-                FavoriteAddButtonView(stop: selectedStop)
+                FavoriteAddButtonView(stop: self.selectedStop)
                     .shadow(radius: 5)
                     .padding(.top, drawerDefault[2] - 200)
 
@@ -167,31 +167,23 @@ struct DrawerView: View, Sendable {
         }.impact(.medium)
         .dislodge(.light)
         .spring(0)
-        .rest(at: $drawerHeights)
+        .rest(at: self.$drawerHeights)
         .onRest { restingHeight in
-            currentDrawerHeight = restingHeight
+            self.currentDrawerHeight = restingHeight
         }
-        .onChange(of: setDrawerHeight) { newHeight in
-            changeHeight(newHeight: newHeight)
+        .onChange(of: self.setDrawerHeight) { newHeight in
+            self.changeHeight(newHeight: newHeight)
         }
-        .onChange(of: departuresList.loadingError) { newValue in
-            if newValue == true {
-                showError = true
-            } else {
-                showError = false
-            }
+        .onChange(of: self.departuresList.loadingError) { newValue in
+            self.showError = newValue
         }
-        .onChange(of: departuresList.noDepartures) { newValue in
-            if newValue == true {
-                noDepartures = true
-            } else {
-                noDepartures = false
-            }
+        .onChange(of: self.departuresList.noDepartures) { newValue in
+            self.noDepartures = newValue
         }
-        .onChange(of: selectedStop) { newStop in
-            departuresList.loadData(id: selectedStop.id)
+        .onChange(of: self.selectedStop) { newStop in
+            self.departuresList.loadData(id: self.selectedStop.id)
             if newStop != noStop {
-                showFavoritesView = false
+                self.showFavoritesView = false
             }
         }.ignoresSafeArea(.all)
     }
@@ -206,12 +198,17 @@ struct DrawerView: View, Sendable {
 
 struct DrawerView_Previews: PreviewProvider {
     static var previews: some View {
-        DrawerView(selectedStop: .constant(Stop(id: 131,
-                                                name: "Zentralhaltestelle",
-                                                latitude: 50.1,
-                                                longitude: 50.1)),
-                   showFavoritesView: .constant(false),
-                   setDrawerHeight: .constant(.variable),
-                   drawerHeights: [drawerDefault.last!])
+        DrawerView(
+            selectedStop: .constant(
+                Stop(
+                    id: 131,
+                    name: "Zentralhaltestelle",
+                    latitude: 50.1,
+                    longitude: 50.1)
+            ),
+            showFavoritesView: .constant(false),
+            setDrawerHeight: .constant(.variable),
+            drawerHeights: [drawerDefault.last!]
+        )
     }
 }

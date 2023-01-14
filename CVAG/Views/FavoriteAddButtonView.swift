@@ -8,27 +8,27 @@
 import SwiftUI
 
 struct FavoriteAddButtonView: View {
-    @StateObject var favoritesData = FavoritesModel()
-    @State var isFavorite: Bool = false
-    var stop: Stop
-    var impactGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
+    let stop: Stop
+
+    @StateObject private var favoritesData = FavoritesModel()
+    @State private var isFavorite: Bool = false
+    private let impactGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
 
     var body: some View {
-
         Button {
             DispatchQueue.main.async {
-                impactGenerator.impactOccurred()
+                self.impactGenerator.impactOccurred()
             }
-            if !favoritesData.favorites.contains(stop) {
-                favoritesData.favorites.append(stop)
-                isFavorite = true
-            } else if let index = favoritesData.favorites.firstIndex(of: stop) {
-                favoritesData.favorites.remove(at: index)
-                isFavorite = false
+            if !self.favoritesData.favorites.contains(stop) {
+                self.favoritesData.favorites.append(stop)
+                self.isFavorite = true
+            } else if let index = self.favoritesData.favorites.firstIndex(of: self.stop) {
+                self.favoritesData.favorites.remove(at: index)
+                self.isFavorite = false
             }
         } label: {
             HStack {
-                if isFavorite == false {
+                if self.isFavorite == false {
                     Image(systemName: "plus")
                         .font(.system(size: 16, weight: .medium, design: .rounded))
                     Text("AddToFavorites")
@@ -48,11 +48,11 @@ struct FavoriteAddButtonView: View {
         .padding()
         .background(Color(.label))
         .clipShape(Capsule())
-        .onChange(of: stop) { newStop in
-            if favoritesData.favorites.contains(newStop) {
-                isFavorite = true
+        .onChange(of: self.stop) { newStop in
+            if self.favoritesData.favorites.contains(newStop) {
+                self.isFavorite = true
             } else {
-                isFavorite = false
+                self.isFavorite = false
             }
         }
     }

@@ -14,7 +14,7 @@ struct Stop: Identifiable, Codable, Equatable {
     let longitude: Double
 
     var coordinate: CLLocationCoordinate2D {
-        CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        CLLocationCoordinate2D(latitude: self.latitude, longitude: self.longitude)
     }
 }
 

@@ -16,17 +16,23 @@ struct ContentView: View {
 
     var body: some View {
         ZStack {
-            MapView(selectedStop: $selectedStop,
-                    setDrawerHeight: $setDrawerHeight)
+            MapView(
+                selectedStop: self.$selectedStop,
+                setDrawerHeight: self.$setDrawerHeight
+            )
 
-            DrawerView(selectedStop: $selectedStop,
-                       showFavoritesView: $showFavoritesView,
-                       setDrawerHeight: $setDrawerHeight,
-                       drawerHeights: [-100])
+            DrawerView(
+                selectedStop: self.$selectedStop,
+                showFavoritesView: self.$showFavoritesView,
+                setDrawerHeight: self.$setDrawerHeight,
+                drawerHeights: [-100]
+            )
 
-            FavoritesDrawerView(selectedStop: $selectedStop,
-                                setDrawerHeight: $setDrawerHeight,
-                                showFavoritesView: $showFavoritesView)
+            FavoritesDrawerView(
+                selectedStop: self.$selectedStop,
+                setDrawerHeight: self.$setDrawerHeight,
+                showFavoritesView: self.$showFavoritesView
+            )
         }
     }
 }

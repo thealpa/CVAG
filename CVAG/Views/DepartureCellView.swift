@@ -8,19 +8,18 @@
 import SwiftUI
 
 struct DepartureCellView: View {
-
     // Store whether to use absolute or relative departure times
-    @AppStorage("useRelativeTime") var useRelativeTime: Bool = false
+    @AppStorage("useRelativeTime") private var useRelativeTime: Bool = false
 
-    var departure: Departure
+    let departure: Departure
 
     var body: some View {
-        let absoluteTime: String = getAbsoluteTime(actualDeparture: departure.actualDeparture)
-        let relativeTime: String = getRelativeTime(actualDeparture: departure.actualDeparture)
+        let absoluteTime: String = DepartureCellView.getAbsoluteTime(actualDeparture: departure.actualDeparture)
+        let relativeTime: String = DepartureCellView.getRelativeTime(actualDeparture: departure.actualDeparture)
 
         HStack {
-            if departure.serviceType != nil {
-                switch departure.serviceType! {
+            if self.departure.serviceType != nil {
+                switch self.departure.serviceType! {
                 case .bus:
                     ZStack {
                         RoundedRectangle(cornerRadius: 15)
@@ -71,60 +70,64 @@ struct DepartureCellView: View {
 
             VStack(alignment: .leading) {
                 HStack {
-                    Text(departure.line ?? "")
+                    Text(self.departure.line ?? "")
                         .font(.title2)
                         .fontWeight(.semibold)
-                    Text(departure.platform ?? "")
+                    Text(self.departure.platform ?? "")
                         .font(.subheadline)
                         .fontWeight(.semibold)
                         .opacity(0.6)
                         .offset(y: 3)
                 }
 
-                Text(departure.destination ?? "")
+                Text(self.departure.destination ?? "")
                     .font(.body)
                     .lineLimit(1)
 
             }.padding(.leading, 10)
 
             Spacer()
-            Text(useRelativeTime ? relativeTime : absoluteTime)
+            Text(self.useRelativeTime ? relativeTime : absoluteTime)
                 .font(.title)
                 .fontWeight(.medium)
                 .onTapGesture {
-                    useRelativeTime.toggle()
+                    self.useRelativeTime.toggle()
                 }
         }.padding(.horizontal, 20)
     }
-}
 
-func getAbsoluteTime(actualDeparture: Int) -> String {
-    let date = NSDate(timeIntervalSince1970: Double(actualDeparture/1000))
-    let calendar = Calendar.current
-    let hour = calendar.component(.hour, from: date as Date)
-    let minute = calendar.component(.minute, from: date as Date)
-    if minute <= 9 {
-        return String(hour) + ":0" + String(minute)
-    } else {
-        return String(hour) + ":" + String(minute)
+    private static func getAbsoluteTime(actualDeparture: Int) -> String {
+        let date = NSDate(timeIntervalSince1970: Double(actualDeparture/1000))
+        let calendar = Calendar.current
+        let hour = calendar.component(.hour, from: date as Date)
+        let minute = calendar.component(.minute, from: date as Date)
+        if minute <= 9 {
+            return String(hour) + ":0" + String(minute)
+        } else {
+            return String(hour) + ":" + String(minute)
+        }
     }
-}
 
-func getRelativeTime(actualDeparture: Int) -> String {
-    let date = NSDate(timeIntervalSince1970: Double(actualDeparture/1000))
-    let currentDate = NSDate.now
-    let difference = Calendar.current.dateComponents([.minute], from: currentDate, to: date as Date)
+    private static func getRelativeTime(actualDeparture: Int) -> String {
+        let date = NSDate(timeIntervalSince1970: Double(actualDeparture/1000))
+        let currentDate = NSDate.now
+        let difference = Calendar.current.dateComponents([.minute], from: currentDate, to: date as Date)
 
-    return String(difference.minute!) + " min"
+        return String(difference.minute!) + " min"
+    }
 }
 
 struct DepartureCellView_Previews: PreviewProvider {
     static var previews: some View {
-        DepartureCellView(departure: Departure(destination: "Flemmingstr. ü. Klinikum",
-                                               serviceType: .bus,
-                                               hasActualDeparture: true,
-                                               actualDeparture: 1647180720000,
-                                               line: "31",
-                                               platform: "5A"))
+        DepartureCellView(
+            departure: Departure(
+                destination: "Flemmingstr. ü. Klinikum",
+                serviceType: .bus,
+                hasActualDeparture: true,
+                actualDeparture: 1647180720000,
+                line: "31",
+                platform: "5A"
+            )
+        )
     }
 }

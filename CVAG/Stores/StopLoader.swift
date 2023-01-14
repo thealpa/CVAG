@@ -8,7 +8,6 @@
 import Foundation
 
 final class StopLoader: ObservableObject {
-
     @Published private(set) var stops = [Stop]()
 
     init() {
