@@ -94,7 +94,7 @@ struct FavoritesDrawerView: View {
         .onRest { restingHeight in
             self.currentDrawerHeight = restingHeight
         }
-        .onChange(of: self.showFavoritesView) { showView in
+        .onChange(of: self.showFavoritesView) { _, showView in
             if showView == false {
                 self.restingHeight = [-10]
                 DispatchQueue.main.async {

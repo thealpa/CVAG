@@ -48,7 +48,7 @@ struct FavoriteAddButtonView: View {
         .padding()
         .background(Color(.label))
         .clipShape(Capsule())
-        .onChange(of: self.stop) { newStop in
+        .onChange(of: self.stop) { _, newStop in
             if self.favoritesData.favorites.contains(newStop) {
                 self.isFavorite = true
             } else {

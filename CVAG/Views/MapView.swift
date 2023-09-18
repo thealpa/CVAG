@@ -23,15 +23,15 @@ struct MapView: View {
     )
 
     var body: some View {
-        Map(coordinateRegion: .constant(self.region), annotationItems: self.stopData.stops) { stop in
-            MapAnnotation(coordinate: stop.coordinate) {
-                StopAnnotationView(
-                    stop: stop,
-                    selectedStop: self.$selectedStop,
-                    setDrawerHeight: self.$setDrawerHeight
-                )
+        Map(initialPosition: .region(self.region), bounds: .none, interactionModes: .all) {
+            ForEach(self.stopData.stops) { stop in
+                Annotation(stop.name, coordinate: stop.coordinate) {
+                    StopAnnotationView(stop: stop,
+                                       selectedStop: self.$selectedStop,
+                                       setDrawerHeight: self.$setDrawerHeight)
+                }
             }
-        }.edgesIgnoringSafeArea(.all)
+        }.ignoresSafeArea()
     }
 }
 

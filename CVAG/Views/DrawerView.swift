@@ -171,16 +171,16 @@ struct DrawerView: View, Sendable {
         .onRest { restingHeight in
             self.currentDrawerHeight = restingHeight
         }
-        .onChange(of: self.setDrawerHeight) { newHeight in
+        .onChange(of: self.setDrawerHeight) { _, newHeight in
             self.changeHeight(newHeight: newHeight)
         }
-        .onChange(of: self.departuresList.loadingError) { newValue in
+        .onChange(of: self.departuresList.loadingError) { _, newValue in
             self.showError = newValue
         }
-        .onChange(of: self.departuresList.noDepartures) { newValue in
+        .onChange(of: self.departuresList.noDepartures) { _, newValue in
             self.noDepartures = newValue
         }
-        .onChange(of: self.selectedStop) { newStop in
+        .onChange(of: self.selectedStop) { _, newStop in
             self.departuresList.loadData(id: self.selectedStop.id)
             if newStop != noStop {
                 self.showFavoritesView = false

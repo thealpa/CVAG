@@ -37,7 +37,7 @@ struct StopAnnotationView: View {
             self.setDrawerHeight = .medium
             self.selectedStop = self.stop
         }
-        .onChange(of: self.selectedStop) { newStop in
+        .onChange(of: self.selectedStop) { _, newStop in
             if self.stop.id != newStop.id {
                 self.showSelected = false
             } else {
